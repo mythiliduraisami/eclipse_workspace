@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="JobLog-v1.0.xsl"?>
+<modelerjob id="IMI_ModelValidation_ACME_1559400562882" >
+<jobinfo>
+<Jobtype>Model Validation</Jobtype>
+<startdate>Sat Jun 01 20:19:25 IST 2019</startdate>
+<enddate>Sat Jun 01 20:19:36 IST 2019</enddate>
+<elapsedtime>10.421 Seconds</elapsedtime>
+<systemuri>newdb://IMI:LOCALHOST:04:P2001109445TRIAL-HDB:ACME</systemuri>
+<result>WARNING</result>
+</jobinfo>
+<executioninfo>
+<message>
+<status>OK</status>
+<info>Client-side validation</info>
+<message>
+<status>OK</status>
+<info>Validation of modelling::STAR_JOIN_TEST </info>
+<message>
+<status>INFORMATION</status>
+<info>No rule selected</info>
+</message>
+</message>
+</message>
+<message>
+<status>WARNING</status>
+<info>Skipped Client Side Validation Rules</info>
+<message>
+<status>WARNING</status>
+<info>Decision Table Validation Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Decision Table Check Consistency Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Modeler View Input Parameter Existence Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Large object data type Check Rule </info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Table Validity Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Filter Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Measure Validation Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Stacked Counter Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Execute Engine Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Counter Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Currency Target Hidden Column Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Star Join Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Validate Data Sources with Right Outer Join Type</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Currency Stacking Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Floating Node Check Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Rank Node Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Join Validity Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Join column Data Type Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Variable and Input Parameter Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Hierarchy Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Hierarchy SQL Enable Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>ABAP Name Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Description Length Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>BI Virtual InfoProvider Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Unique Constraint Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Analytic Privilege Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>History view validation rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Table Function Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Calculation in Joins Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Calculation in Filter Expressions Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Partition Types in Join Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Validate Stacked Aggregations</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Spatial Join Validity Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Description Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Naming Convention Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Default Property Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Client Field Join Check</info>
+</message>
+</message>
+<message>
+<status>INFORMATION</status>
+<info>Server-side validation: Activation ID: 42</info>
+<message>
+<status>INFORMATION</status>
+<info>No error</info>
+<message>
+<status>INFORMATION</status>
+<info>Activation is performed with activation mode Check only.</info>
+</message>
+<message>
+<status>INFORMATION</status>
+<info>Runtime &#039;sqlproc-runtime&#039; finished activation of 1 object(s) in 100ms</info>
+</message>
+<message>
+<status>OK</status>
+<info>modelling.STAR_JOIN_TEST</info>
+<message>
+<status>OK</status>
+<info>Model deployment started: modelling/STAR_JOIN_TEST timestamp: 2019-06-01,14:51:14.606</info>
+</message>
+<message>
+<status>OK</status>
+<info>Removing BIMC records for modelling/STAR_JOIN_TEST timestamp: 2019-06-01,14:51:14.606</info>
+</message>
+<message>
+<status>OK</status>
+<info>Removing hierarchy views for modelling/STAR_JOIN_TEST timestamp: 2019-06-01,14:51:14.611</info>
+</message>
+<message>
+<status>OK</status>
+<info>Start deployment of graphical calculation view, timestamp: 2019-06-01,14:51:14.623</info>
+</message>
+<message>
+<status>OK</status>
+<info>Calculation Scenario XML: &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&lt;cubeSchema defaultLanguage=&quot;EN&quot; defaultSchema=&quot;_SYS_BIC&quot; operation=&quot;createCalculationScenario&quot; version=&quot;3&quot;&gt;&lt;calculationScenario name=&quot;modelling/STAR_JOIN_TEST&quot; externalScenarioName=&quot;modelling::STAR_JOIN_TEST&quot; schema=&quot;_SYS_BIC&quot;&gt;&lt;scenarioHints starJoinScenario=&quot;true&quot;/&gt;&lt;dataSources&gt;&lt;tableDataSource name=&quot;Empfact1&quot; schema=&quot;ACME&quot; table=&quot;Empfact1&quot;&gt;&lt;attributes&gt;&lt;allAttribute/&gt;&lt;/attributes&gt;&lt;/tableDataSource&gt;&lt;tableDataSource name=&quot;Empfact2&quot; schema=&quot;ACME&quot; table=&quot;Empfact2&quot;&gt;&lt;attributes&gt;&lt;allAttribute/&gt;&lt;/attributes&gt;&lt;/tableDataSource&gt;&lt;calcScenarioDataSource name=&quot;__dimDataSource_modelling/EMPDAT_DIM&quot; schema=&quot;_SYS_BIC&quot; view=&quot;modelling/EMPDAT_DIM&quot; resolveType=&quot;mergeScenarios&quot;&gt;&lt;variableMappings/&gt;&lt;attributes&gt;&lt;allAttribute/&gt;&lt;/attributes&gt;&lt;/calcScenarioDataSource&gt;&lt;calcScenarioDataSource name=&quot;__dimDataSource_modelling/EMPLOYEE_DIM&quot; schema=&quot;_SYS_BIC&quot; view=&quot;modelling/EMPLOYEE_DIM&quot; resolveType=&quot;mergeScenarios&quot;&gt;&lt;variableMappings/&gt;&lt;attributes&gt;&lt;allAttribute/&gt;&lt;/attributes&gt;&lt;/calcScenarioDataSource&gt;&lt;/dataSources&gt;&lt;calculationViews&gt;&lt;projection name=&quot;__dimDataSourceProj___dimDataSource_modelling/EMPDAT_DIM&quot;&gt;&lt;debugInfo nodeName=&quot;Star Join&quot;/&gt;&lt;viewAttributes&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;CALDATE&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;CALMONTH&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;CALYEAR&quot;/&gt;&lt;/viewAttributes&gt;&lt;inputs&gt;&lt;input name=&quot;__dimDataSource_modelling/EMPDAT_DIM&quot;&gt;&lt;mapping source=&quot;CALDATE&quot; target=&quot;CALDATE&quot;/&gt;&lt;mapping source=&quot;CALMONTH&quot; target=&quot;CALMONTH&quot;/&gt;&lt;mapping source=&quot;CALYEAR&quot; target=&quot;CALYEAR&quot;/&gt;&lt;/input&gt;&lt;/inputs&gt;&lt;/projection&gt;&lt;projection name=&quot;__dimDataSourceProj___dimDataSource_modelling/EMPLOYEE_DIM&quot;&gt;&lt;debugInfo nodeName=&quot;Star Join&quot;/&gt;&lt;viewAttributes&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;EMPID&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;EMPNAME&quot;/&gt;&lt;/viewAttributes&gt;&lt;inputs&gt;&lt;input name=&quot;__dimDataSource_modelling/EMPLOYEE_DIM&quot;&gt;&lt;mapping source=&quot;EMPID&quot; target=&quot;EMPID&quot;/&gt;&lt;mapping source=&quot;EMPNAME&quot; target=&quot;EMPNAME&quot;/&gt;&lt;/input&gt;&lt;/inputs&gt;&lt;/projection&gt;&lt;projection name=&quot;EMP_FACT1&quot;&gt;&lt;debugInfo nodeName=&quot;EMP_FACT1&quot;/&gt;&lt;viewAttributes&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;EMPID&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;EMPDATE&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;SAL&quot;/&gt;&lt;/viewAttributes&gt;&lt;inputs&gt;&lt;input name=&quot;Empfact1&quot;&gt;&lt;mapping source=&quot;EMPID&quot; target=&quot;EMPID&quot;/&gt;&lt;mapping source=&quot;EMPDATE&quot; target=&quot;EMPDATE&quot;/&gt;&lt;mapping source=&quot;SAL&quot; target=&quot;SAL&quot;/&gt;&lt;/input&gt;&lt;/inputs&gt;&lt;/projection&gt;&lt;projection name=&quot;EMP_FACT2&quot;&gt;&lt;debugInfo nodeName=&quot;EMP_FACT2&quot;/&gt;&lt;viewAttributes&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;EMPID&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;DEPTNAME&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;BONUS&quot;/&gt;&lt;/viewAttributes&gt;&lt;inputs&gt;&lt;input name=&quot;Empfact2&quot;&gt;&lt;mapping source=&quot;EMPID&quot; target=&quot;EMPID&quot;/&gt;&lt;mapping source=&quot;DEPTNAME&quot; target=&quot;DEPTNAME&quot;/&gt;&lt;mapping source=&quot;BONUS&quot; target=&quot;BONUS&quot;/&gt;&lt;/input&gt;&lt;/inputs&gt;&lt;/projection&gt;&lt;join name=&quot;FACT_JOIN&quot; type=&quot;inner&quot; cardinality=&quot;1:1&quot;&gt;&lt;debugInfo nodeName=&quot;FACT_JOIN&quot;/&gt;&lt;viewAttributes&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;EMPID&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;EMPDATE&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;SAL&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;DEPTNAME&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;BONUS&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;JOIN$EMPID$EMPID&quot;/&gt;&lt;/viewAttributes&gt;&lt;inputs&gt;&lt;input name=&quot;EMP_FACT2&quot;&gt;&lt;mapping source=&quot;DEPTNAME&quot; target=&quot;DEPTNAME&quot;/&gt;&lt;mapping source=&quot;BONUS&quot; target=&quot;BONUS&quot;/&gt;&lt;mapping source=&quot;EMPID&quot; target=&quot;JOIN$EMPID$EMPID&quot;/&gt;&lt;/input&gt;&lt;input name=&quot;EMP_FACT1&quot;&gt;&lt;mapping source=&quot;EMPID&quot; target=&quot;EMPID&quot;/&gt;&lt;mapping source=&quot;EMPDATE&quot; target=&quot;EMPDATE&quot;/&gt;&lt;mapping source=&quot;SAL&quot; target=&quot;SAL&quot;/&gt;&lt;mapping source=&quot;EMPID&quot; target=&quot;JOIN$EMPID$EMPID&quot;/&gt;&lt;/input&gt;&lt;/inputs&gt;&lt;joinAttributes&gt;&lt;joinAttribute excludeFlag=&quot;false&quot; name=&quot;JOIN$EMPID$EMPID&quot;/&gt;&lt;/joinAttributes&gt;&lt;/join&gt;&lt;join name=&quot;__logicalJoin___dimDataSourceProj___dimDataSource_modelling/EMPDAT_DIM&quot; type=&quot;inner&quot; referentialIntegrityFlag=&quot;left&quot;&gt;&lt;debugInfo nodeName=&quot;Star Join&quot;/&gt;&lt;viewAttributes&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;EMPID_1&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;EMPDATE&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;DEPTNAME&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;EMPID$local&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;EMPDATE$local&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;SAL&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;BONUS&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;CALDATE&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;CALMONTH&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;CALYEAR&quot;/&gt;&lt;/viewAttributes&gt;&lt;inputs&gt;&lt;input name=&quot;FACT_JOIN&quot;&gt;&lt;mapping source=&quot;EMPID&quot; target=&quot;EMPID_1&quot;/&gt;&lt;mapping source=&quot;EMPDATE&quot; target=&quot;EMPDATE&quot;/&gt;&lt;mapping source=&quot;DEPTNAME&quot; target=&quot;DEPTNAME&quot;/&gt;&lt;mapping source=&quot;EMPID&quot; target=&quot;EMPID$local&quot;/&gt;&lt;mapping source=&quot;EMPDATE&quot; target=&quot;EMPDATE$local&quot;/&gt;&lt;mapping source=&quot;SAL&quot; target=&quot;SAL&quot;/&gt;&lt;mapping source=&quot;BONUS&quot; target=&quot;BONUS&quot;/&gt;&lt;mapping source=&quot;EMPDATE&quot; target=&quot;CALDATE&quot;/&gt;&lt;/input&gt;&lt;input name=&quot;__dimDataSourceProj___dimDataSource_modelling/EMPDAT_DIM&quot;&gt;&lt;mapping source=&quot;CALDATE&quot; target=&quot;CALDATE&quot;/&gt;&lt;mapping source=&quot;CALMONTH&quot; target=&quot;CALMONTH&quot;/&gt;&lt;mapping source=&quot;CALYEAR&quot; target=&quot;CALYEAR&quot;/&gt;&lt;/input&gt;&lt;/inputs&gt;&lt;joinAttributes&gt;&lt;joinAttribute excludeFlag=&quot;false&quot; name=&quot;CALDATE&quot;/&gt;&lt;/joinAttributes&gt;&lt;/join&gt;&lt;join name=&quot;__starJoinOutputNode&quot; type=&quot;inner&quot; referentialIntegrityFlag=&quot;left&quot;&gt;&lt;debugInfo nodeName=&quot;Star Join&quot;/&gt;&lt;viewAttributes&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;EMPID_1&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;EMPDATE&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;DEPTNAME&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;EMPID$local&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;EMPDATE$local&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;SAL&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;BONUS&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;CALDATE&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;CALMONTH&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;CALYEAR&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;EMPID&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;EMPNAME&quot;/&gt;&lt;/viewAttributes&gt;&lt;inputs&gt;&lt;input name=&quot;__logicalJoin___dimDataSourceProj___dimDataSource_modelling/EMPDAT_DIM&quot;&gt;&lt;mapping source=&quot;EMPID_1&quot; target=&quot;EMPID_1&quot;/&gt;&lt;mapping source=&quot;EMPDATE&quot; target=&quot;EMPDATE&quot;/&gt;&lt;mapping source=&quot;DEPTNAME&quot; target=&quot;DEPTNAME&quot;/&gt;&lt;mapping source=&quot;EMPID$local&quot; target=&quot;EMPID$local&quot;/&gt;&lt;mapping source=&quot;EMPDATE$local&quot; target=&quot;EMPDATE$local&quot;/&gt;&lt;mapping source=&quot;SAL&quot; target=&quot;SAL&quot;/&gt;&lt;mapping source=&quot;BONUS&quot; target=&quot;BONUS&quot;/&gt;&lt;mapping source=&quot;CALDATE&quot; target=&quot;CALDATE&quot;/&gt;&lt;mapping source=&quot;CALMONTH&quot; target=&quot;CALMONTH&quot;/&gt;&lt;mapping source=&quot;CALYEAR&quot; target=&quot;CALYEAR&quot;/&gt;&lt;mapping source=&quot;EMPID$local&quot; target=&quot;EMPID&quot;/&gt;&lt;/input&gt;&lt;input name=&quot;__dimDataSourceProj___dimDataSource_modelling/EMPLOYEE_DIM&quot;&gt;&lt;mapping source=&quot;EMPID&quot; target=&quot;EMPID&quot;/&gt;&lt;mapping source=&quot;EMPNAME&quot; target=&quot;EMPNAME&quot;/&gt;&lt;/input&gt;&lt;/inputs&gt;&lt;joinAttributes&gt;&lt;joinAttribute excludeFlag=&quot;false&quot; name=&quot;EMPID&quot;/&gt;&lt;/joinAttributes&gt;&lt;/join&gt;&lt;aggregation name=&quot;finalAggregation&quot; defaultViewFlag=&quot;true&quot;&gt;&lt;debugInfo nodeName=&quot;Star Join&quot;/&gt;&lt;inputs&gt;&lt;input name=&quot;__starJoinOutputNode&quot;&gt;&lt;mapping source=&quot;EMPID_1&quot; target=&quot;EMPID_1&quot;/&gt;&lt;mapping source=&quot;EMPDATE&quot; target=&quot;EMPDATE&quot;/&gt;&lt;mapping source=&quot;DEPTNAME&quot; target=&quot;DEPTNAME&quot;/&gt;&lt;mapping source=&quot;SAL&quot; target=&quot;SAL&quot;/&gt;&lt;mapping source=&quot;BONUS&quot; target=&quot;BONUS&quot;/&gt;&lt;mapping source=&quot;CALDATE&quot; target=&quot;CALDATE&quot;/&gt;&lt;mapping source=&quot;CALMONTH&quot; target=&quot;CALMONTH&quot;/&gt;&lt;mapping source=&quot;CALYEAR&quot; target=&quot;CALYEAR&quot;/&gt;&lt;mapping source=&quot;EMPID&quot; target=&quot;EMPID&quot;/&gt;&lt;mapping source=&quot;EMPNAME&quot; target=&quot;EMPNAME&quot;/&gt;&lt;/input&gt;&lt;/inputs&gt;&lt;viewAttributes&gt;&lt;viewAttribute name=&quot;EMPID_1&quot;&gt;&lt;descriptions&gt;&lt;description&gt;EMPID&lt;/description&gt;&lt;/descriptions&gt;&lt;/viewAttribute&gt;&lt;viewAttribute name=&quot;EMPDATE&quot;&gt;&lt;descriptions&gt;&lt;description&gt;EMPDATE&lt;/description&gt;&lt;/descriptions&gt;&lt;/viewAttribute&gt;&lt;viewAttribute name=&quot;DEPTNAME&quot;&gt;&lt;descriptions&gt;&lt;description&gt;DEPTNAME&lt;/description&gt;&lt;/descriptions&gt;&lt;/viewAttribute&gt;&lt;viewAttribute name=&quot;CALDATE&quot;&gt;&lt;descriptions&gt;&lt;description&gt;CALDATE&lt;/description&gt;&lt;/descriptions&gt;&lt;/viewAttribute&gt;&lt;viewAttribute name=&quot;CALMONTH&quot;&gt;&lt;descriptions&gt;&lt;description&gt;CALMONTH&lt;/description&gt;&lt;/descriptions&gt;&lt;/viewAttribute&gt;&lt;viewAttribute name=&quot;CALYEAR&quot;&gt;&lt;descriptions&gt;&lt;description&gt;CALYEAR&lt;/description&gt;&lt;/descriptions&gt;&lt;/viewAttribute&gt;&lt;viewAttribute name=&quot;EMPID&quot;&gt;&lt;descriptions&gt;&lt;description&gt;EMPID&lt;/description&gt;&lt;/descriptions&gt;&lt;/viewAttribute&gt;&lt;viewAttribute name=&quot;EMPNAME&quot;&gt;&lt;descriptions&gt;&lt;description&gt;EMPNAME&lt;/description&gt;&lt;/descriptions&gt;&lt;/viewAttribute&gt;&lt;/viewAttributes&gt;&lt;keyfigures&gt;&lt;keyfigure name=&quot;SAL&quot; aggregationType=&quot;sum&quot;&gt;&lt;descriptions&gt;&lt;description&gt;SAL&lt;/description&gt;&lt;/descriptions&gt;&lt;/keyfigure&gt;&lt;keyfigure name=&quot;BONUS&quot; aggregationType=&quot;sum&quot;&gt;&lt;descriptions&gt;&lt;description&gt;BONUS&lt;/description&gt;&lt;/descriptions&gt;&lt;/keyfigure&gt;&lt;keyfigure name=&quot;row.count&quot; datatype=&quot;fixed&quot; length=&quot;18&quot; isVisible=&quot;false&quot; aggregationType=&quot;count&quot;/&gt;&lt;/keyfigures&gt;&lt;unitConversionInfos/&gt;&lt;calculationNodeHints countStarAttribute=&quot;row.count&quot;/&gt;&lt;/aggregation&gt;&lt;/calculationViews&gt;&lt;variables&gt;&lt;variable name=&quot;$$language$$&quot; typeMask=&quot;512&quot; isGlobal=&quot;true&quot; usage=&quot;optional&quot;/&gt;&lt;variable name=&quot;$$client$$&quot; typeMask=&quot;512&quot; isGlobal=&quot;true&quot; usage=&quot;optional&quot;/&gt;&lt;/variables&gt;&lt;descriptions&gt;&lt;description&gt;STAR_JOIN_TEST&lt;/description&gt;&lt;/descriptions&gt;&lt;/calculationScenario&gt;&lt;/cubeSchema&gt;</info>
+</message>
+<message>
+<status>OK</status>
+<info>End deployment of graphical calculation view, timestamp: 2019-06-01,14:51:14.641</info>
+</message>
+<message>
+<status>OK</status>
+<info>Create hierarchy view: CREATE COLUMN VIEW &quot;_SYS_BIC&quot;.&quot;modelling/STAR_JOIN_TEST/Measures/hier/Measures&quot; TYPE hierarchy WITH PARAMETERS ( &#039;hierarchyDefinition&#039; = &#039;{ &quot;runtimeObjectType&quot;:&quot;blob&quot;,&quot;nodeType&quot;:&quot;string&quot;,&quot;nodeStyle&quot;:&quot;nameOnly&quot;,&quot;sourceType&quot;:&quot;leveled&quot;,&quot;sourceQuery&quot;:&quot;SELECT &#092;&quot;ALTERNATIVE_PROPERTY_NAME&#092;&quot; AS &#092;&quot;Measure&#092;&quot;,&#092;&quot;PROPERTY_ID&#092;&quot; as &#092;&quot;$!DUMMYSORTCOL!$0&#092;&quot; FROM &#092;&quot;_SYS_BI&#092;&quot;.&#092;&quot;BIMC_PROPERTIES&#092;&quot; WHERE &#092;&quot;CATALOG_NAME&#092;&quot; = &#039;&#039;modelling&#039;&#039; AND &#092;&quot;CUBE_NAME&#092;&quot; = &#039;&#039;STAR_JOIN_TEST&#039;&#039; AND &#092;&quot;DIMENSION_UNIQUE_NAME&#092;&quot; =  &#039;&#039;[Measures]&#039;&#039; and &#092;&quot;COLUMN_FLAG&#092;&quot; = &#039;&#039;User Attribute&#039;&#039; ORDER BY &#092;&quot;PROPERTY_ID&#092;&quot;&quot; }&#039;) timestamp: 2019-06-01,14:51:14.647</info>
+</message>
+<message>
+<status>OK</status>
+<info>Create hierarchy view: CREATE COLUMN VIEW &quot;_SYS_BIC&quot;.&quot;modelling/EMPDAT_DIM/hier/EMPDAT_DIM&quot; TYPE hierarchy WITH PARAMETERS (&#039;hierarchyDefinition&#039;=&#039;{&quot;sourceType&quot;:&quot;leveled&quot;,&quot;nodeType&quot;:&quot;string&quot;,&quot;rootNode&quot;:&quot;(all)&quot;,&quot;runtimeObjectType&quot;:&quot;blob&quot;,&quot;nodeStyle&quot;:&quot;levelName&quot;,&quot;sources&quot;: [{&quot;type&quot;:&quot;leveled&quot;,&quot;schema&quot;:&quot;_SYS_BIC&quot;,&quot;name&quot;:&quot;modelling/EMPDAT_DIM&quot;,&quot;levels&quot;:[&quot;CALDATE&quot;],&quot;orderBy&quot;:[&quot;CALDATE&quot;,true],&quot;attributeMapping&quot;:{&quot;CALDATE&quot;:&quot;CALDATE&quot;}}]}&#039;) timestamp: 2019-06-01,14:51:14.660</info>
+</message>
+<message>
+<status>OK</status>
+<info>Create hierarchy view: CREATE COLUMN VIEW &quot;_SYS_BIC&quot;.&quot;modelling/EMPLOYEE_DIM/hier/EMPLOYEE_DIM&quot; TYPE hierarchy WITH PARAMETERS (&#039;hierarchyDefinition&#039;=&#039;{&quot;sourceType&quot;:&quot;leveled&quot;,&quot;nodeType&quot;:&quot;string&quot;,&quot;rootNode&quot;:&quot;(all)&quot;,&quot;runtimeObjectType&quot;:&quot;blob&quot;,&quot;nodeStyle&quot;:&quot;levelName&quot;,&quot;sources&quot;: [{&quot;type&quot;:&quot;leveled&quot;,&quot;schema&quot;:&quot;_SYS_BIC&quot;,&quot;name&quot;:&quot;modelling/EMPLOYEE_DIM&quot;,&quot;levels&quot;:[&quot;EMPID&quot;],&quot;orderBy&quot;:[&quot;EMPID&quot;,true],&quot;attributeMapping&quot;:{&quot;EMPID&quot;:&quot;EMPID&quot;}}]}&#039;) timestamp: 2019-06-01,14:51:14.665</info>
+</message>
+<message>
+<status>OK</status>
+<info>Create hierarchy view: CREATE COLUMN VIEW &quot;_SYS_BIC&quot;.&quot;modelling/STAR_JOIN_TEST/EMPID_1/hier/EMPID_1&quot; TYPE hierarchy WITH PARAMETERS (&#039;hierarchyDefinition&#039;=&#039;{&quot;sourceType&quot;:&quot;leveled&quot;,&quot;nodeType&quot;:&quot;string&quot;,&quot;rootNode&quot;:&quot;(all)&quot;,&quot;runtimeObjectType&quot;:&quot;blob&quot;,&quot;nodeStyle&quot;:&quot;levelName&quot;,&quot;sources&quot;: [{&quot;type&quot;:&quot;leveled&quot;,&quot;schema&quot;:&quot;_SYS_BIC&quot;,&quot;name&quot;:&quot;modelling/STAR_JOIN_TEST&quot;,&quot;levels&quot;:[&quot;EMPID_1&quot;],&quot;orderBy&quot;:[&quot;EMPID_1&quot;,true],&quot;attributeMapping&quot;:{&quot;EMPID_1&quot;:&quot;EMPID_1&quot;}}]}&#039;) timestamp: 2019-06-01,14:51:14.670</info>
+</message>
+<message>
+<status>OK</status>
+<info>Create hierarchy view: CREATE COLUMN VIEW &quot;_SYS_BIC&quot;.&quot;modelling/STAR_JOIN_TEST/EMPDATE/hier/EMPDATE&quot; TYPE hierarchy WITH PARAMETERS (&#039;hierarchyDefinition&#039;=&#039;{&quot;sourceType&quot;:&quot;leveled&quot;,&quot;nodeType&quot;:&quot;string&quot;,&quot;rootNode&quot;:&quot;(all)&quot;,&quot;runtimeObjectType&quot;:&quot;blob&quot;,&quot;nodeStyle&quot;:&quot;levelName&quot;,&quot;sources&quot;: [{&quot;type&quot;:&quot;leveled&quot;,&quot;schema&quot;:&quot;_SYS_BIC&quot;,&quot;name&quot;:&quot;modelling/STAR_JOIN_TEST&quot;,&quot;levels&quot;:[&quot;EMPDATE&quot;],&quot;orderBy&quot;:[&quot;EMPDATE&quot;,true],&quot;attributeMapping&quot;:{&quot;EMPDATE&quot;:&quot;EMPDATE&quot;}}]}&#039;) timestamp: 2019-06-01,14:51:14.676</info>
+</message>
+<message>
+<status>OK</status>
+<info>Create hierarchy view: CREATE COLUMN VIEW &quot;_SYS_BIC&quot;.&quot;modelling/STAR_JOIN_TEST/DEPTNAME/hier/DEPTNAME&quot; TYPE hierarchy WITH PARAMETERS (&#039;hierarchyDefinition&#039;=&#039;{&quot;sourceType&quot;:&quot;leveled&quot;,&quot;nodeType&quot;:&quot;string&quot;,&quot;rootNode&quot;:&quot;(all)&quot;,&quot;runtimeObjectType&quot;:&quot;blob&quot;,&quot;nodeStyle&quot;:&quot;levelName&quot;,&quot;sources&quot;: [{&quot;type&quot;:&quot;leveled&quot;,&quot;schema&quot;:&quot;_SYS_BIC&quot;,&quot;name&quot;:&quot;modelling/STAR_JOIN_TEST&quot;,&quot;levels&quot;:[&quot;DEPTNAME&quot;],&quot;orderBy&quot;:[&quot;DEPTNAME&quot;,true],&quot;attributeMapping&quot;:{&quot;DEPTNAME&quot;:&quot;DEPTNAME&quot;}}]}&#039;) timestamp: 2019-06-01,14:51:14.682</info>
+</message>
+<message>
+<status>OK</status>
+<info>Post deploy processing started: modelling/STAR_JOIN_TEST timestamp: 2019-06-01,14:51:14.697</info>
+</message>
+<message>
+<status>OK</status>
+<info>Model deployment ended: modelling/STAR_JOIN_TEST timestamp: 2019-06-01,14:51:14.697</info>
+</message>
+</message>
+<message>
+<status>INFORMATION</status>
+<info>Runtime &#039;BI-runtime&#039; finished activation of 1 object(s) in 100ms</info>
+</message>
+</message>
+</message>
+</executioninfo>
+<objectresults>
+<object result="Success"  type="Model Validation"  uri="newdb://IMI:LOCALHOST:04:P2001109445TRIAL-HDB:ACME/modelling/calculationviews/STAR_JOIN_TEST.calculationview" />
+</objectresults>
+</modelerjob>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="JobLog-v1.0.xsl"?>
+<modelerjob id="IMI_Generic_MYTHILI_SHINE_1558029080003" >
+<jobinfo>
+<Jobtype>Generic</Jobtype>
+<startdate>Thu May 16 23:21:20 IST 2019</startdate>
+<enddate>Thu May 16 23:21:27 IST 2019</enddate>
+<elapsedtime>6.523 Seconds</elapsedtime>
+<systemuri>newdb://IMI:LOCALHOST:03:P2001109445TRIAL-HDB:MYTHILI_SHINE</systemuri>
+<result>INFORMATION</result>
+</jobinfo>
+<executioninfo>
+<message>
+<status>INFORMATION</status>
+<info>User selections</info>
+<message>
+<status>INFORMATION</status>
+<info>Source</info>
+<message>
+<status>OK</status>
+<info>File:N:&#092;CloudStorage&#092;OneDrive&#092;2.SAP_Training&#092;software&#092;STS_DIMPRODUCT.csv</info>
+</message>
+<message>
+<status>OK</status>
+<info>Delimiter :COMMA</info>
+</message>
+<message>
+<status>OK</status>
+<info>No header row selected</info>
+</message>
+</message>
+<message>
+<status>INFORMATION</status>
+<info>Target :</info>
+<message>
+<status>OK</status>
+<info>Table name :DIMPRODUCT</info>
+</message>
+<message>
+<status>OK</status>
+<info>Schema name :MYTHILI_SHINE</info>
+</message>
+<message>
+<status>OK</status>
+<info>Store Type :columnstore</info>
+</message>
+</message>
+</message>
+<message>
+<status>INFORMATION</status>
+<info>Table creation</info>
+<message>
+<status>OK</status>
+<info>Table created</info>
+</message>
+</message>
+<message>
+<status>INFORMATION</status>
+<info>Data load</info>
+<message>
+<status>INFORMATION</status>
+<info>Mapping Column List</info>
+<message>
+<status>OK</status>
+<info>COLUMN_0-&gt;PRODUCTID</info>
+</message>
+<message>
+<status>OK</status>
+<info>COLUMN_1-&gt;CATEGORYID</info>
+</message>
+<message>
+<status>OK</status>
+<info>COLUMN_2-&gt;LINEID</info>
+</message>
+<message>
+<status>OK</status>
+<info>COLUMN_3-&gt;PRODUCTNAME</info>
+</message>
+<message>
+<status>OK</status>
+<info>COLUMN_4-&gt;PRODUCTDESCRIPTION</info>
+</message>
+<message>
+<status>OK</status>
+<info>COLUMN_5-&gt;CATEGORYNAME</info>
+</message>
+<message>
+<status>OK</status>
+<info>COLUMN_6-&gt;CATEGORYDESCRIPTION</info>
+</message>
+<message>
+<status>OK</status>
+<info>COLUMN_7-&gt;LINENAME</info>
+</message>
+<message>
+<status>OK</status>
+<info>COLUMN_8-&gt;LINEDESCRIPTION</info>
+</message>
+<message>
+<status>OK</status>
+<info>COLUMN_9-&gt;DISCONTINUED</info>
+</message>
+<message>
+<status>OK</status>
+<info>COLUMN_10-&gt;CAPACITY</info>
+</message>
+<message>
+<status>OK</status>
+<info>COLUMN_11-&gt;SCREENSIZE</info>
+</message>
+</message>
+<message>
+<status>INFORMATION</status>
+<info>Data load - batch information</info>
+<message>
+<status>OK</status>
+<info>Batch from record 1 to 65 inserted</info>
+</message>
+</message>
+</message>
+</executioninfo>
+<objectresults>
+<object result="Success"  name="MYTHILI_SHINE.DIMPRODUCT"  type="Generic" />
+<object result="Success"  name="Loading Data from STS_DIMPRODUCT.csv"  type="Generic" />
+</objectresults>
+</modelerjob>

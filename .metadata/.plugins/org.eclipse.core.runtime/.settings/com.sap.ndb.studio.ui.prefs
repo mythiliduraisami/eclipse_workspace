@@ -1,0 +1,11 @@
+EXTVIEWER\:com.sap.ndb.studio.authorization.editor.appprivsection.privilegestreeControl\:COLUMN_PREFS=Application Privilege,300,-|Grantor,150,-
+EXTVIEWER\:com.sap.ndb.studio.authorization.editor.packageprivsection.packagetreeControl\:COLUMN_PREFS=Package Name,300,-|Grantor,150,-
+EXTVIEWER\:com.sap.ndb.studio.authorization.editor.rolessection.rolestreeControl\:COLUMN_PREFS=Role,300,-|Grantor,150,-
+EXTVIEWER\:com.sap.ndb.studio.authorization.editor.sqlprivsection.sqlobjecttreeControl\:COLUMN_PREFS=Catalog Object,300,-|Grantor,150,-
+EXTVIEWER\:com.sap.ndb.studio.authorization.editor.structprivsection.privilegestreeControl\:COLUMN_PREFS=Analytic Privilege,300,-|Grantor,150,-
+EXTVIEWER\:com.sap.ndb.studio.authorization.editor.sysprivsection.privilegestreeControl\:COLUMN_PREFS=System Privilege,300,-|Grantor,150,-
+EXTVIEWER\:com.sap.ndb.studio.authorization.editor.userprivsection.privilegestreeControl\:COLUMN_PREFS=User,300,-|Grantor,150,-
+EXTVIEWER\:com.sap.ndb.studio.jdbc.uiproperies.multihost.viewer\:COLUMN_PREFS=HOSTNAME,150,-|PORT,50,-
+EXTVIEWER\:com.sap.ndb.studio.sql.editor.tabldefeditor.runtime.columns\:COLUMN_PREFS=COLUMN_NAME,160,A|PART_ID,55,-|HOST,90,-|PORT,45,-|MEMORY_SIZE_IN_TOTAL,110,-|MEMORY_SIZE_IN_MAIN,110,-|MEMORY_SIZE_IN_DELTA,110,-|COMPRESSION_RATIO_IN_PERCENTAGE,190,-|COUNT,110,-|DISTINCT_COUNT,110,-|LOADED,70,-|COMPRESSION_TYPE,,-
+EXTVIEWER\:com.sap.ndb.studio.sql.editor.tabldefeditor.runtime.parts.2\:COLUMN_PREFS=PARTITION,200,A|PART_ID,55,-|RANGE,100,-|MEMORY_SIZE_IN_TOTAL,110,-|MEMORY_SIZE_IN_MAIN,110,-|MEMORY_SIZE_IN_DELTA,110,-|ESTIMATED_MAX_MEMORY_SIZE_IN_TOTAL,110,-|RECORD_COUNT,110,-|CREATE_TIME,140,-|LAST_MERGE_TIME,140,-|LAST_REPLAY_LOG_TIME,140,-|LOADED,70,-|MEMORY_SIZE_IN_HISTORY_MAIN,,-|MEMORY_SIZE_IN_HISTORY_DELTA,,-|RAW_RECORD_COUNT_IN_MAIN,,-|RAW_RECORD_COUNT_IN_DELTA,,-|RAW_RECORD_COUNT_IN_HISTORY_MAIN,,-|RAW_RECORD_COUNT_IN_HISTORY_DELTA,,-|LAST_COMPRESSED_RECORD_COUNT,,-|MAX_MERGE_CID,,-|IS_DELTA2_ACTIVE,,-|IS_DELTA_LOADED,,-|IS_LOG_DELTA,,-
+eclipse.preferences.version=1

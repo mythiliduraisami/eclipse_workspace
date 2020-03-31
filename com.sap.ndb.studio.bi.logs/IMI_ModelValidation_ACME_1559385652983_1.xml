@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="JobLog-v1.0.xsl"?>
+<modelerjob id="IMI_ModelValidation_ACME_1559385652983" >
+<jobinfo>
+<Jobtype>Model Validation</Jobtype>
+<startdate>Sat Jun 01 16:10:53 IST 2019</startdate>
+<enddate>Sat Jun 01 16:10:59 IST 2019</enddate>
+<elapsedtime>5.801 Seconds</elapsedtime>
+<systemuri>newdb://IMI:LOCALHOST:04:P2001109445TRIAL-HDB:ACME</systemuri>
+<result>WARNING</result>
+</jobinfo>
+<executioninfo>
+<message>
+<status>OK</status>
+<info>Client-side validation</info>
+<message>
+<status>OK</status>
+<info>Validation of modelling::AT_PRODUCT </info>
+<message>
+<status>INFORMATION</status>
+<info>No rule selected</info>
+</message>
+</message>
+</message>
+<message>
+<status>WARNING</status>
+<info>Skipped Client Side Validation Rules</info>
+<message>
+<status>WARNING</status>
+<info>Decision Table Validation Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Decision Table Check Consistency Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Modeler View Input Parameter Existence Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Large object data type Check Rule </info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Table Validity Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Filter Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Measure Validation Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Stacked Counter Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Execute Engine Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Counter Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Currency Target Hidden Column Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Star Join Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Validate Data Sources with Right Outer Join Type</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Currency Stacking Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Floating Node Check Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Rank Node Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Join Validity Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Join column Data Type Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Variable and Input Parameter Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Hierarchy Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Hierarchy SQL Enable Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>ABAP Name Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Description Length Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>BI Virtual InfoProvider Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Unique Constraint Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Analytic Privilege Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>History view validation rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Table Function Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Calculation in Joins Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Calculation in Filter Expressions Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Partition Types in Join Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Validate Stacked Aggregations</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Spatial Join Validity Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Description Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Naming Convention Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Default Property Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Client Field Join Check</info>
+</message>
+</message>
+<message>
+<status>INFORMATION</status>
+<info>Server-side validation: Start of validation</info>
+<message>
+<status>INFORMATION</status>
+<info>No inactive version exists for modelling.AT_PRODUCT</info>
+</message>
+</message>
+</executioninfo>
+<objectresults>
+<object result="Success"  type="Model Validation"  uri="newdb://IMI:LOCALHOST:04:P2001109445TRIAL-HDB:ACME/modelling/attributeviews/AT_PRODUCT.attributeview" />
+</objectresults>
+</modelerjob>

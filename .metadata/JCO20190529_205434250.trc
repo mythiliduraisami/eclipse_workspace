@@ -1,0 +1,104 @@
+﻿Framework stop [20:54:34:254]: ************************  Wed May 29 20:54:34 IST 2019  ************************
+Framework stop [20:54:34:351]: SAP Java Connector runtime information
+Framework stop [20:54:34:388]: 
+Framework stop [20:54:34:427]: Java Runtime:
+Framework stop [20:54:34:464]: 	Operating System    : Windows 10 10.0 for amd64
+Framework stop [20:54:34:500]: 	Java VM             : 1.8.0_211 Oracle Corporation
+Framework stop [20:54:34:551]: 	Default charset     : windows-1252
+Framework stop [20:54:34:583]: 
+Framework stop [20:54:34:613]: Versions:
+Framework stop [20:54:34:650]: 	JCo API             : 3.1.0 Embedded (2015-12-15)
+Framework stop [20:54:34:688]: 	JCo middleware      : JavaRfc 2.2.4
+Framework stop [20:54:34:719]: 	JCo library         : 721.619
+Framework stop [20:54:34:744]: 
+Framework stop [20:54:35:002]: Library Paths:
+Framework stop [20:54:35:023]: 	Path to JCo archive : not found
+Framework stop [20:54:35:058]: 	Path to JCo library : System-defined path to sapjco3.dll
+Framework stop [20:54:35:089]: 
+Framework stop [20:54:35:118]: Configuration:
+Framework stop [20:54:35:145]: 	jco.ni.dnscache.negative.ttl = 10
+Framework stop [20:54:35:174]: 	jco.trace.format = jco
+Framework stop [20:54:35:199]: 	jco.delta_management = 1
+Framework stop [20:54:35:236]: 	jco.jdsr_provider = 1
+Framework stop [20:54:35:269]: 	jco.trace_path = C:\eclipse\eclipse_workspace\.metadata
+Framework stop [20:54:35:303]: 	jco.cpic_maxconv = 202
+Framework stop [20:54:35:356]: 	jco.cpic_keep_alive_period = 300
+Framework stop [20:54:35:419]: 	jco.trace_level = 8
+Framework stop [20:54:35:456]: 	jco.use_repository_roundtrip_optimization = 0
+Framework stop [20:54:35:530]: 	jco.allow_non_abap_partner = 0
+Framework stop [20:54:35:591]: 	jco.ni.dnscache.ttl = 86400
+Framework stop [20:54:35:658]: 	jco.jarm = 0
+Framework stop [20:54:35:692]: 	jco.jdsr = 0
+Framework stop [20:54:35:742]: 	jco.program_name = SAPJCo31
+Framework stop [20:54:35:808]: 	jco.ignore_jdsr_error = 1
+Framework stop [20:54:35:935]: 	jco.cpic_keep_alive_timeout = 10
+Framework stop [20:54:36:006]: 
+Framework stop [20:54:36:176]: ********************************************************************************
+Framework stop [20:54:36:237]: [JCoAPI] Current JCo trace level is 8
+Framework stop [20:54:36:237]: [JCoCallStack] removeDestinationDataProvider(com.sap.mw.jco3.eclipse.internal.DestinationDataProviderImpl) 
+	invoked at com.sap.conn.jco.rt.RuntimeEnvironment.removeDestinationDataProvider(RuntimeEnvironment.java:160)
+	invoked at com.sap.conn.jco.ext.Environment.unregisterDestinationDataProvider(Environment.java:367)
+	invoked at com.sap.mw.jco3.eclipse.internal.Activator.stop(Activator.java:85)
+	invoked at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:871)
+	invoked at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	invoked at java.security.AccessController.doPrivileged(Native Method)
+	invoked at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:864)
+	invoked at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1019)
+	invoked at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:362)
+	invoked at org.eclipse.osgi.container.Module.doStop(Module.java:644)
+	invoked at org.eclipse.osgi.container.Module.stop(Module.java:506)
+	invoked at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1825)
+	invoked at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1744)
+	invoked at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:275)
+	invoked at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:195)
+	invoked at org.eclipse.osgi.container.Module.doStop(Module.java:644)
+	invoked at org.eclipse.osgi.container.Module.stop(Module.java:506)
+	invoked at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
+	invoked at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:213)
+	invoked at java.lang.Thread.run(Thread.java:748)
+
+Framework stop [20:54:36:290]: [JCoCallStack] removeSessionReferenceProvider(com.sap.mw.jco3.eclipse.internal.SessionReferenceProviderDelegator) 
+	invoked at com.sap.conn.jco.rt.RuntimeEnvironment.removeSessionReferenceProvider(RuntimeEnvironment.java:293)
+	invoked at com.sap.conn.jco.ext.Environment.unregisterSessionReferenceProvider(Environment.java:404)
+	invoked at com.sap.mw.jco3.eclipse.internal.Activator.stop(Activator.java:86)
+	invoked at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:871)
+	invoked at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	invoked at java.security.AccessController.doPrivileged(Native Method)
+	invoked at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:864)
+	invoked at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1019)
+	invoked at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:362)
+	invoked at org.eclipse.osgi.container.Module.doStop(Module.java:644)
+	invoked at org.eclipse.osgi.container.Module.stop(Module.java:506)
+	invoked at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1825)
+	invoked at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1744)
+	invoked at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:275)
+	invoked at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:195)
+	invoked at org.eclipse.osgi.container.Module.doStop(Module.java:644)
+	invoked at org.eclipse.osgi.container.Module.stop(Module.java:506)
+	invoked at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
+	invoked at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:213)
+	invoked at java.lang.Thread.run(Thread.java:748)
+
+Framework stop [20:54:36:343]: [JCoCallStack] removeClientPassportManager(com.sap.mw.jco3.eclipse.internal.ClientPassportRegistry) 
+	invoked at com.sap.conn.jco.rt.RuntimeEnvironment.removeClientPassportManager(RuntimeEnvironment.java:378)
+	invoked at com.sap.conn.jco.ext.Environment.unregisterClientPassportManager(Environment.java:428)
+	invoked at com.sap.mw.jco3.eclipse.internal.Activator.stop(Activator.java:87)
+	invoked at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:871)
+	invoked at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	invoked at java.security.AccessController.doPrivileged(Native Method)
+	invoked at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:864)
+	invoked at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1019)
+	invoked at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:362)
+	invoked at org.eclipse.osgi.container.Module.doStop(Module.java:644)
+	invoked at org.eclipse.osgi.container.Module.stop(Module.java:506)
+	invoked at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1825)
+	invoked at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1744)
+	invoked at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:275)
+	invoked at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:195)
+	invoked at org.eclipse.osgi.container.Module.doStop(Module.java:644)
+	invoked at org.eclipse.osgi.container.Module.stop(Module.java:506)
+	invoked at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
+	invoked at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:213)
+	invoked at java.lang.Thread.run(Thread.java:748)
+
+JCoPoolFinalizerThread [20:54:42:323]: [JCoAPI] Clearing all connection pools

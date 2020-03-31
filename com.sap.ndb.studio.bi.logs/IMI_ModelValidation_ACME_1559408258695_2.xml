@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="JobLog-v1.0.xsl"?>
+<modelerjob id="IMI_ModelValidation_ACME_1559408258695" >
+<jobinfo>
+<Jobtype>Model Validation</Jobtype>
+<startdate>Sat Jun 01 22:27:41 IST 2019</startdate>
+<enddate>Sat Jun 01 22:27:48 IST 2019</enddate>
+<elapsedtime>6.34 Seconds</elapsedtime>
+<systemuri>newdb://IMI:LOCALHOST:04:P2001109445TRIAL-HDB:ACME</systemuri>
+<result>ERROR</result>
+</jobinfo>
+<executioninfo>
+<message>
+<status>OK</status>
+<info>Client-side validation</info>
+<message>
+<status>OK</status>
+<info>Validation of modelling::SALES_REPORT_CEFUNC </info>
+<message>
+<status>INFORMATION</status>
+<info>No rule selected</info>
+</message>
+</message>
+</message>
+<message>
+<status>WARNING</status>
+<info>Skipped Client Side Validation Rules</info>
+<message>
+<status>WARNING</status>
+<info>Decision Table Validation Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Decision Table Check Consistency Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Modeler View Input Parameter Existence Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Large object data type Check Rule </info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Table Validity Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Filter Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Measure Validation Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Stacked Counter Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Execute Engine Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Counter Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Currency Target Hidden Column Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Star Join Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Validate Data Sources with Right Outer Join Type</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Currency Stacking Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Floating Node Check Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Rank Node Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Join Validity Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Join column Data Type Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Variable and Input Parameter Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Hierarchy Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Hierarchy SQL Enable Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>ABAP Name Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Description Length Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>BI Virtual InfoProvider Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Unique Constraint Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Analytic Privilege Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>History view validation rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Table Function Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Calculation in Joins Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Calculation in Filter Expressions Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Partition Types in Join Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Validate Stacked Aggregations</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Spatial Join Validity Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Description Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Naming Convention Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Default Property Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Client Field Join Check</info>
+</message>
+</message>
+<message>
+<status>ERROR</status>
+<info>Server-side validation: Activation ID: 50</info>
+<message>
+<status>ERROR</status>
+<info>Repository: Activation failed for at least one object;At least one runtime reported an error during activation. Please see CheckResults for details</info>
+<message>
+<status>INFORMATION</status>
+<info>Activation is performed with activation mode Check only.</info>
+</message>
+<message>
+<status>INFORMATION</status>
+<info>Runtime &#039;sqlproc-runtime&#039; finished activation of 1 object(s) in 25ms</info>
+</message>
+<message>
+<status>ERROR</status>
+<info>modelling.SALES_REPORT_CEFUNC</info>
+<message>
+<status>ERROR</status>
+<info>Repository: Encountered an error in repository runtime extension;Model inconsistency. Deploy Calculation View: SQL: sql syntax error: incorrect syntax near &quot;:&quot;: line 5 col 20 (at pos 299)<br/>Set Schema DDL statement: set schema &quot;SYSTEM&quot;<br/>Type DDL: create type &quot;_SYS_BIC&quot;.&quot;modelling/SALES_REPORT_CEFUNC/proc/tabletype/VAR_OUT&quot; as table (&quot;PRODUCT_ID&quot; INTEGER, &quot;PRODUCT_NAME&quot; VARCHAR(100), &quot;REGION_ID&quot; INTEGER, &quot;SUB_REGION_NAME&quot; VARCHAR(15), &quot;SALES_AMOUNT&quot; DOUBLE, &quot;MARGIN&quot; DOUBLE)<br/>Procedure DDL: create procedure &quot;_SYS_BIC&quot;.&quot;modelling/SALES_REPORT_CEFUNC/proc&quot; ( OUT var_out &quot;_SYS_BIC&quot;.&quot;modelling/SALES_REPORT_CEFUNC/proc/tabletype/VAR_OUT&quot; ) language sqlscript sql security definer reads sql data as /********* Begin Procedure Script ************/<br/>BEGIN<br/><br/>                  <br/>   join1 = CE_JOIN(:“ACME”.“REGION”, :“ACME”.“SALES”,<br/>           [“REGION_ID”],<br/>           [“REGION_ID”,<br/>                      “SUB_REGION_NAME”,<br/>                      “PRODUCT_ID”,<br/>                      “SALES_AMOUNT” ]);<br/>   join2 = CE_JOIN(:join1, :“ACME”.“PRODUCTS”,<br/>           [“PRODUCT_ID”],<br/>           [“PRODUCT_ID”,<br/>                      “PRODUCT_NAME”,<br/>                      “REGION_ID”,<br/>                      “SUB_REGION_NAME”,<br/>                      “SALES_AMOUNT”]);<br/>                    <br/>   var_out = CE_PROJECTION(:join2,<br/>           [“PRODUCT_ID”,<br/>                      “PRODUCT_NAME”,<br/>                      “REGION_ID”,<br/>                      “SUB_REGION_NAME”,<br/>                      “SALES_AMOUNT”,<br/>            CE_CALC(‘”SALES_AMOUNT”*0.3’,DOUBLE) as “MARGIN” ]);                   <br/>          <br/>END;<br/>/********* End Procedure Script ************/  <br/></info>
+</message>
+<message>
+<status>OK</status>
+<info>Model deployment started: modelling/SALES_REPORT_CEFUNC timestamp: 2019-06-01,16:59:27.457</info>
+</message>
+<message>
+<status>OK</status>
+<info>Removing BIMC records for modelling/SALES_REPORT_CEFUNC timestamp: 2019-06-01,16:59:27.457</info>
+</message>
+<message>
+<status>OK</status>
+<info>Removing hierarchy views for modelling/SALES_REPORT_CEFUNC timestamp: 2019-06-01,16:59:27.461</info>
+</message>
+<message>
+<status>OK</status>
+<info>Start deployment of script-based calculation view, timestamp: 2019-06-01,16:59:27.468</info>
+</message>
+<message>
+<status>OK</status>
+<info>set schema &quot;SYSTEM&quot;</info>
+</message>
+<message>
+<status>OK</status>
+<info>Model deployment ended: modelling/SALES_REPORT_CEFUNC timestamp: 2019-06-01,16:59:27.479</info>
+</message>
+</message>
+<message>
+<status>INFORMATION</status>
+<info>Runtime &#039;BI-runtime&#039; finished activation of 1 object(s) in 25ms</info>
+</message>
+</message>
+</message>
+</executioninfo>
+<objectresults>
+<object result="Success"  type="Model Validation"  uri="newdb://IMI:LOCALHOST:04:P2001109445TRIAL-HDB:ACME/modelling/calculationviews/SALES_REPORT_CEFUNC.calculationview" />
+</objectresults>
+</modelerjob>

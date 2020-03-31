@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="JobLog-v1.0.xsl"?>
+<modelerjob id="IMI_ModelValidation_ACME_1559383944001" >
+<jobinfo>
+<Jobtype>Model Validation</Jobtype>
+<startdate>Sat Jun 01 15:42:24 IST 2019</startdate>
+<enddate>Sat Jun 01 15:42:31 IST 2019</enddate>
+<elapsedtime>7.324 Seconds</elapsedtime>
+<systemuri>newdb://IMI:LOCALHOST:04:P2001109445TRIAL-HDB:ACME</systemuri>
+<result>ERROR</result>
+</jobinfo>
+<executioninfo>
+<message>
+<status>OK</status>
+<info>Client-side validation</info>
+<message>
+<status>OK</status>
+<info>Validation of modelling::AT_PRODUCT </info>
+<message>
+<status>INFORMATION</status>
+<info>No rule selected</info>
+</message>
+</message>
+</message>
+<message>
+<status>WARNING</status>
+<info>Skipped Client Side Validation Rules</info>
+<message>
+<status>WARNING</status>
+<info>Decision Table Validation Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Decision Table Check Consistency Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Modeler View Input Parameter Existence Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Large object data type Check Rule </info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Table Validity Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Filter Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Measure Validation Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Stacked Counter Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Execute Engine Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Counter Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Currency Target Hidden Column Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Star Join Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Validate Data Sources with Right Outer Join Type</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Currency Stacking Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Floating Node Check Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Rank Node Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Join Validity Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Join column Data Type Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Variable and Input Parameter Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Hierarchy Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Hierarchy SQL Enable Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>ABAP Name Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Description Length Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>BI Virtual InfoProvider Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Unique Constraint Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Analytic Privilege Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>History view validation rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Table Function Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Calculation in Joins Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Calculation in Filter Expressions Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Partition Types in Join Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Validate Stacked Aggregations</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Spatial Join Validity Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Description Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Naming Convention Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Default Property Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Client Field Join Check</info>
+</message>
+</message>
+<message>
+<status>ERROR</status>
+<info>Server-side validation: Activation ID: 24</info>
+<message>
+<status>ERROR</status>
+<info>Repository: Activation failed for at least one object;At least one runtime reported an error during activation. Please see CheckResults for details</info>
+<message>
+<status>INFORMATION</status>
+<info>Activation is performed with activation mode Check only.</info>
+</message>
+<message>
+<status>INFORMATION</status>
+<info>Runtime &#039;sqlproc-runtime&#039; finished activation of 1 object(s) in 20ms</info>
+</message>
+<message>
+<status>ERROR</status>
+<info>modelling.AT_PRODUCT</info>
+<message>
+<status>ERROR</status>
+<info>Repository: Encountered an error in repository runtime extension; Deploy Attribute View: SQL: transaction rolled back by an internal error: insufficient privilege: Not authorized<br/>Create view DDL statement: CREATE COLUMN VIEW &quot;_SYS_BIC&quot;.&quot;modelling/AT_PRODUCT&quot; TYPE JOIN WITH PARAMETERS ( joinIndex = &quot;ACME&quot;.&quot;PRODUCT&quot;, joinIndexType = 0, joinIndex = &quot;ACME&quot;.&quot;PRODUCT_DESC&quot;, joinIndexType = 0, joinCondition = (&#039;JOIN_PRODUCT_PRODUCT_DESC_1&#039;, &quot;ACME&quot;.&quot;PRODUCT&quot;, &quot;PRODUCT_ID&quot;, &quot;ACME&quot;.&quot;PRODUCT_DESC&quot;, &quot;PRODUCT_ID&quot;, &#039;&#039;, 16, 0), joinPath = (&#039;PATH&#039;, &#039;JOIN_PRODUCT_PRODUCT_DESC_1&#039;), viewAttribute = (&#039;PRODUCT_ID&#039;, &quot;ACME&quot;.&quot;PRODUCT&quot;, &quot;PRODUCT_ID&quot;, &#039;PATH&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_PRODUCT$PRODUCT_ID&#039;), viewAttribute = (&#039;PRODUCT_ID_1&#039;, &quot;ACME&quot;.&quot;PRODUCT_DESC&quot;, &quot;PRODUCT_ID&quot;, &#039;PATH&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_PRODUCT$PRODUCT_ID_1&#039;), viewAttribute = (&#039;SUPPLIER_ID&#039;, &quot;ACME&quot;.&quot;PRODUCT&quot;, &quot;SUPPLIER_ID&quot;, &#039;PATH&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_PRODUCT$SUPPLIER_ID&#039;), viewAttribute = (&#039;CATEGORY&#039;, &quot;ACME&quot;.&quot;PRODUCT&quot;, &quot;CATEGORY&quot;, &#039;PATH&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_PRODUCT$CATEGORY&#039;), viewAttribute = (&#039;PRICE&#039;, &quot;ACME&quot;.&quot;PRODUCT&quot;, &quot;PRICE&quot;, &#039;PATH&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_PRODUCT$PRICE&#039;), viewAttribute = (&#039;PRODUCT_NAME&#039;, &quot;ACME&quot;.&quot;PRODUCT_DESC&quot;, &quot;PRODUCT_NAME&quot;, &#039;PATH&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_PRODUCT$PRODUCT_NAME&#039;), view = (&#039;V_PRODUCT&#039;, &quot;ACME&quot;.&quot;PRODUCT&quot;, &#039;PATH&#039;), defaultView = &#039;V_PRODUCT&#039;, &#039;REGISTERVIEWFORAPCHECK&#039; = &#039;1&#039; ) NO STRUCTURED PRIVILEGE CHECK<br/></info>
+</message>
+<message>
+<status>OK</status>
+<info>Attribute deployment started: modelling/AT_PRODUCT timestamp: 2019-06-01,10:14:10.384</info>
+</message>
+<message>
+<status>OK</status>
+<info>Removing BIMC records for modelling/AT_PRODUCT timestamp: 2019-06-01,10:14:10.384</info>
+</message>
+<message>
+<status>OK</status>
+<info>Removing hierarchy views for modelling/AT_PRODUCT timestamp: 2019-06-01,10:14:10.385</info>
+</message>
+<message>
+<status>OK</status>
+<info>Start deployment of attribute view, timestamp: 2019-06-01,10:14:10.390</info>
+</message>
+<message>
+<status>OK</status>
+<info>Create DDL: CREATE COLUMN VIEW &quot;_SYS_BIC&quot;.&quot;modelling/AT_PRODUCT&quot; TYPE JOIN WITH PARAMETERS ( joinIndex = &quot;ACME&quot;.&quot;PRODUCT&quot;, joinIndexType = 0, joinIndex = &quot;ACME&quot;.&quot;PRODUCT_DESC&quot;, joinIndexType = 0, joinCondition = (&#039;JOIN_PRODUCT_PRODUCT_DESC_1&#039;, &quot;ACME&quot;.&quot;PRODUCT&quot;, &quot;PRODUCT_ID&quot;, &quot;ACME&quot;.&quot;PRODUCT_DESC&quot;, &quot;PRODUCT_ID&quot;, &#039;&#039;, 16, 0), joinPath = (&#039;PATH&#039;, &#039;JOIN_PRODUCT_PRODUCT_DESC_1&#039;), viewAttribute = (&#039;PRODUCT_ID&#039;, &quot;ACME&quot;.&quot;PRODUCT&quot;, &quot;PRODUCT_ID&quot;, &#039;PATH&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_PRODUCT$PRODUCT_ID&#039;), viewAttribute = (&#039;PRODUCT_ID_1&#039;, &quot;ACME&quot;.&quot;PRODUCT_DESC&quot;, &quot;PRODUCT_ID&quot;, &#039;PATH&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_PRODUCT$PRODUCT_ID_1&#039;), viewAttribute = (&#039;SUPPLIER_ID&#039;, &quot;ACME&quot;.&quot;PRODUCT&quot;, &quot;SUPPLIER_ID&quot;, &#039;PATH&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_PRODUCT$SUPPLIER_ID&#039;), viewAttribute = (&#039;CATEGORY&#039;, &quot;ACME&quot;.&quot;PRODUCT&quot;, &quot;CATEGORY&quot;, &#039;PATH&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_PRODUCT$CATEGORY&#039;), viewAttribute = (&#039;PRICE&#039;, &quot;ACME&quot;.&quot;PRODUCT&quot;, &quot;PRICE&quot;, &#039;PATH&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_PRODUCT$PRICE&#039;), viewAttribute = (&#039;PRODUCT_NAME&#039;, &quot;ACME&quot;.&quot;PRODUCT_DESC&quot;, &quot;PRODUCT_NAME&quot;, &#039;PATH&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_PRODUCT$PRODUCT_NAME&#039;), view = (&#039;V_PRODUCT&#039;, &quot;ACME&quot;.&quot;PRODUCT&quot;, &#039;PATH&#039;), defaultView = &#039;V_PRODUCT&#039;, &#039;REGISTERVIEWFORAPCHECK&#039; = &#039;1&#039; ) NO STRUCTURED PRIVILEGE CHECK</info>
+</message>
+<message>
+<status>OK</status>
+<info>End deployment of attribute view, timestamp: 2019-06-01,10:14:10.400</info>
+</message>
+<message>
+<status>OK</status>
+<info>Attribute deployment ended: modelling/AT_PRODUCT timestamp: 2019-06-01,10:14:10.400</info>
+</message>
+</message>
+<message>
+<status>INFORMATION</status>
+<info>Runtime &#039;BI-runtime&#039; finished activation of 1 object(s) in 20ms</info>
+</message>
+</message>
+</message>
+</executioninfo>
+<objectresults>
+<object result="Success"  type="Model Validation"  uri="newdb://IMI:LOCALHOST:04:P2001109445TRIAL-HDB:ACME/modelling/attributeviews/AT_PRODUCT.attributeview" />
+</objectresults>
+</modelerjob>

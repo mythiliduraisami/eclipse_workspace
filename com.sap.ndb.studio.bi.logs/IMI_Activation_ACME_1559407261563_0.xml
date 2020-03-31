@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="JobLog-v1.0.xsl"?>
+<modelerjob id="IMI_Activation_ACME_1559407261563" >
+<jobinfo>
+<Jobtype>Activation</Jobtype>
+<startdate>Sat Jun 01 22:11:02 IST 2019</startdate>
+<enddate>Sat Jun 01 22:11:10 IST 2019</enddate>
+<elapsedtime>8.286 Seconds</elapsedtime>
+<systemuri>newdb://IMI:LOCALHOST:04:P2001109445TRIAL-HDB:ACME</systemuri>
+<result>OK</result>
+</jobinfo>
+<executioninfo>
+<message>
+<status>OK</status>
+<info>Execute validation rules</info>
+<message>
+<status>OK</status>
+<info>Validation of modelling::SALESREPORT </info>
+<message>
+<status>INFORMATION</status>
+<info>No rule selected</info>
+</message>
+</message>
+</message>
+<message>
+<status>OK</status>
+<info>Activation ID: 46 (No error)</info>
+<message>
+<status>INFORMATION</status>
+<info>Activation is performed with activation mode cascade two-phases.</info>
+</message>
+<message>
+<status>INFORMATION</status>
+<info>Runtime &#039;sqlproc-runtime&#039; finished activation of 1 object(s) in 83ms</info>
+</message>
+<message>
+<status>OK</status>
+<info>modelling::SALESREPORT</info>
+<message>
+<status>OK</status>
+<info>Model deployment started: modelling/SALESREPORT timestamp: 2019-06-01,16:42:49.733</info>
+</message>
+<message>
+<status>OK</status>
+<info>Removing BIMC records for modelling/SALESREPORT timestamp: 2019-06-01,16:42:49.733</info>
+</message>
+<message>
+<status>OK</status>
+<info>Removing hierarchy views for modelling/SALESREPORT timestamp: 2019-06-01,16:42:49.737</info>
+</message>
+<message>
+<status>OK</status>
+<info>Start deployment of graphical calculation view, timestamp: 2019-06-01,16:42:49.748</info>
+</message>
+<message>
+<status>OK</status>
+<info>Calculation Scenario XML: &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&lt;cubeSchema defaultLanguage=&quot;EN&quot; defaultSchema=&quot;_SYS_BIC&quot; operation=&quot;createCalculationScenario&quot; version=&quot;3&quot;&gt;&lt;calculationScenario name=&quot;modelling/SALESREPORT&quot; externalScenarioName=&quot;modelling::SALESREPORT&quot; schema=&quot;_SYS_BIC&quot;&gt;&lt;dataSources&gt;&lt;tableDataSource name=&quot;REGION&quot; schema=&quot;ACME&quot; table=&quot;REGION&quot;&gt;&lt;attributes&gt;&lt;allAttribute/&gt;&lt;/attributes&gt;&lt;/tableDataSource&gt;&lt;tableDataSource name=&quot;SALES&quot; schema=&quot;ACME&quot; table=&quot;SALES&quot;&gt;&lt;attributes&gt;&lt;allAttribute/&gt;&lt;/attributes&gt;&lt;/tableDataSource&gt;&lt;tableDataSource name=&quot;PRODUCTS&quot; schema=&quot;ACME&quot; table=&quot;PRODUCTS&quot;&gt;&lt;attributes&gt;&lt;allAttribute/&gt;&lt;/attributes&gt;&lt;/tableDataSource&gt;&lt;/dataSources&gt;&lt;calculationViews&gt;&lt;join name=&quot;Join_1&quot; type=&quot;inner&quot;&gt;&lt;debugInfo nodeName=&quot;Join_1&quot;/&gt;&lt;viewAttributes&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;REGION_ID&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;REGION_NAME&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;SUB_REGION_NAME&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;PRODUCT_ID&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;SALES_AMOUNT&quot;/&gt;&lt;/viewAttributes&gt;&lt;inputs&gt;&lt;input name=&quot;REGION&quot;&gt;&lt;mapping source=&quot;REGION_ID&quot; target=&quot;REGION_ID&quot;/&gt;&lt;mapping source=&quot;REGION_NAME&quot; target=&quot;REGION_NAME&quot;/&gt;&lt;mapping source=&quot;SUB_REGION_NAME&quot; target=&quot;SUB_REGION_NAME&quot;/&gt;&lt;/input&gt;&lt;input name=&quot;SALES&quot;&gt;&lt;mapping source=&quot;PRODUCT_ID&quot; target=&quot;PRODUCT_ID&quot;/&gt;&lt;mapping source=&quot;SALES_AMOUNT&quot; target=&quot;SALES_AMOUNT&quot;/&gt;&lt;mapping source=&quot;REGION_ID&quot; target=&quot;REGION_ID&quot;/&gt;&lt;/input&gt;&lt;/inputs&gt;&lt;joinAttributes&gt;&lt;joinAttribute excludeFlag=&quot;false&quot; name=&quot;REGION_ID&quot;/&gt;&lt;/joinAttributes&gt;&lt;/join&gt;&lt;join name=&quot;Join_2&quot; type=&quot;inner&quot;&gt;&lt;debugInfo nodeName=&quot;Join_2&quot;/&gt;&lt;viewAttributes&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;REGION_NAME&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;SUB_REGION_NAME&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;PRODUCT_ID&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;SALES_AMOUNT&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;PRODUCT_NAME&quot;/&gt;&lt;/viewAttributes&gt;&lt;inputs&gt;&lt;input name=&quot;Join_1&quot;&gt;&lt;mapping source=&quot;REGION_NAME&quot; target=&quot;REGION_NAME&quot;/&gt;&lt;mapping source=&quot;SUB_REGION_NAME&quot; target=&quot;SUB_REGION_NAME&quot;/&gt;&lt;mapping source=&quot;PRODUCT_ID&quot; target=&quot;PRODUCT_ID&quot;/&gt;&lt;mapping source=&quot;SALES_AMOUNT&quot; target=&quot;SALES_AMOUNT&quot;/&gt;&lt;/input&gt;&lt;input name=&quot;PRODUCTS&quot;&gt;&lt;mapping source=&quot;PRODUCT_NAME&quot; target=&quot;PRODUCT_NAME&quot;/&gt;&lt;mapping source=&quot;PRODUCT_ID&quot; target=&quot;PRODUCT_ID&quot;/&gt;&lt;/input&gt;&lt;/inputs&gt;&lt;joinAttributes&gt;&lt;joinAttribute excludeFlag=&quot;false&quot; name=&quot;PRODUCT_ID&quot;/&gt;&lt;/joinAttributes&gt;&lt;/join&gt;&lt;aggregation name=&quot;finalAggregation&quot; defaultViewFlag=&quot;true&quot;&gt;&lt;debugInfo nodeName=&quot;Aggregation&quot;/&gt;&lt;inputs&gt;&lt;input name=&quot;Join_2&quot;&gt;&lt;mapping source=&quot;REGION_NAME&quot; target=&quot;REGION_NAME&quot;/&gt;&lt;mapping source=&quot;SUB_REGION_NAME&quot; target=&quot;SUB_REGION_NAME&quot;/&gt;&lt;mapping source=&quot;PRODUCT_ID&quot; target=&quot;PRODUCT_ID&quot;/&gt;&lt;mapping source=&quot;PRODUCT_NAME&quot; target=&quot;PRODUCT_NAME&quot;/&gt;&lt;mapping source=&quot;SALES_AMOUNT&quot; target=&quot;SALES_AMOUNT&quot;/&gt;&lt;/input&gt;&lt;/inputs&gt;&lt;viewAttributes&gt;&lt;viewAttribute name=&quot;REGION_NAME&quot;&gt;&lt;descriptions&gt;&lt;description&gt;REGION_NAME&lt;/description&gt;&lt;/descriptions&gt;&lt;/viewAttribute&gt;&lt;viewAttribute name=&quot;SUB_REGION_NAME&quot;&gt;&lt;descriptions&gt;&lt;description&gt;SUB_REGION_NAME&lt;/description&gt;&lt;/descriptions&gt;&lt;/viewAttribute&gt;&lt;viewAttribute name=&quot;PRODUCT_ID&quot;&gt;&lt;descriptions&gt;&lt;description&gt;PRODUCT_ID&lt;/description&gt;&lt;/descriptions&gt;&lt;/viewAttribute&gt;&lt;viewAttribute name=&quot;PRODUCT_NAME&quot;&gt;&lt;descriptions&gt;&lt;description&gt;PRODUCT_NAME&lt;/description&gt;&lt;/descriptions&gt;&lt;/viewAttribute&gt;&lt;/viewAttributes&gt;&lt;keyfigures&gt;&lt;keyfigure name=&quot;SALES_AMOUNT&quot; aggregationType=&quot;sum&quot;&gt;&lt;descriptions&gt;&lt;description&gt;SALES_AMOUNT&lt;/description&gt;&lt;/descriptions&gt;&lt;/keyfigure&gt;&lt;keyfigure name=&quot;row.count&quot; datatype=&quot;fixed&quot; length=&quot;18&quot; isVisible=&quot;false&quot; aggregationType=&quot;count&quot;/&gt;&lt;/keyfigures&gt;&lt;unitConversionInfos/&gt;&lt;calculationNodeHints countStarAttribute=&quot;row.count&quot;/&gt;&lt;/aggregation&gt;&lt;/calculationViews&gt;&lt;variables&gt;&lt;variable name=&quot;$$language$$&quot; typeMask=&quot;512&quot; isGlobal=&quot;true&quot; usage=&quot;optional&quot;/&gt;&lt;variable name=&quot;$$client$$&quot; typeMask=&quot;512&quot; isGlobal=&quot;true&quot; usage=&quot;optional&quot;/&gt;&lt;/variables&gt;&lt;descriptions&gt;&lt;description&gt;SALESreport&lt;/description&gt;&lt;/descriptions&gt;&lt;/calculationScenario&gt;&lt;/cubeSchema&gt;</info>
+</message>
+<message>
+<status>OK</status>
+<info>End deployment of graphical calculation view, timestamp: 2019-06-01,16:42:49.761</info>
+</message>
+<message>
+<status>OK</status>
+<info>Create hierarchy view: CREATE COLUMN VIEW &quot;_SYS_BIC&quot;.&quot;modelling/SALESREPORT/Measures/hier/Measures&quot; TYPE hierarchy WITH PARAMETERS ( &#039;hierarchyDefinition&#039; = &#039;{ &quot;runtimeObjectType&quot;:&quot;blob&quot;,&quot;nodeType&quot;:&quot;string&quot;,&quot;nodeStyle&quot;:&quot;nameOnly&quot;,&quot;sourceType&quot;:&quot;leveled&quot;,&quot;sourceQuery&quot;:&quot;SELECT &#092;&quot;ALTERNATIVE_PROPERTY_NAME&#092;&quot; AS &#092;&quot;Measure&#092;&quot;,&#092;&quot;PROPERTY_ID&#092;&quot; as &#092;&quot;$!DUMMYSORTCOL!$0&#092;&quot; FROM &#092;&quot;_SYS_BI&#092;&quot;.&#092;&quot;BIMC_PROPERTIES&#092;&quot; WHERE &#092;&quot;CATALOG_NAME&#092;&quot; = &#039;&#039;modelling&#039;&#039; AND &#092;&quot;CUBE_NAME&#092;&quot; = &#039;&#039;SALESREPORT&#039;&#039; AND &#092;&quot;DIMENSION_UNIQUE_NAME&#092;&quot; =  &#039;&#039;[Measures]&#039;&#039; and &#092;&quot;COLUMN_FLAG&#092;&quot; = &#039;&#039;User Attribute&#039;&#039; ORDER BY &#092;&quot;PROPERTY_ID&#092;&quot;&quot; }&#039;) timestamp: 2019-06-01,16:42:49.765</info>
+</message>
+<message>
+<status>OK</status>
+<info>Create hierarchy view: CREATE COLUMN VIEW &quot;_SYS_BIC&quot;.&quot;modelling/SALESREPORT/REGION_NAME/hier/REGION_NAME&quot; TYPE hierarchy WITH PARAMETERS (&#039;hierarchyDefinition&#039;=&#039;{&quot;sourceType&quot;:&quot;leveled&quot;,&quot;nodeType&quot;:&quot;string&quot;,&quot;rootNode&quot;:&quot;(all)&quot;,&quot;runtimeObjectType&quot;:&quot;blob&quot;,&quot;nodeStyle&quot;:&quot;levelName&quot;,&quot;sources&quot;: [{&quot;type&quot;:&quot;leveled&quot;,&quot;schema&quot;:&quot;_SYS_BIC&quot;,&quot;name&quot;:&quot;modelling/SALESREPORT&quot;,&quot;levels&quot;:[&quot;REGION_NAME&quot;],&quot;orderBy&quot;:[&quot;REGION_NAME&quot;,true],&quot;attributeMapping&quot;:{&quot;REGION_NAME&quot;:&quot;REGION_NAME&quot;}}]}&#039;) timestamp: 2019-06-01,16:42:49.777</info>
+</message>
+<message>
+<status>OK</status>
+<info>Create hierarchy view: CREATE COLUMN VIEW &quot;_SYS_BIC&quot;.&quot;modelling/SALESREPORT/SUB_REGION_NAME/hier/SUB_REGION_NAME&quot; TYPE hierarchy WITH PARAMETERS (&#039;hierarchyDefinition&#039;=&#039;{&quot;sourceType&quot;:&quot;leveled&quot;,&quot;nodeType&quot;:&quot;string&quot;,&quot;rootNode&quot;:&quot;(all)&quot;,&quot;runtimeObjectType&quot;:&quot;blob&quot;,&quot;nodeStyle&quot;:&quot;levelName&quot;,&quot;sources&quot;: [{&quot;type&quot;:&quot;leveled&quot;,&quot;schema&quot;:&quot;_SYS_BIC&quot;,&quot;name&quot;:&quot;modelling/SALESREPORT&quot;,&quot;levels&quot;:[&quot;SUB_REGION_NAME&quot;],&quot;orderBy&quot;:[&quot;SUB_REGION_NAME&quot;,true],&quot;attributeMapping&quot;:{&quot;SUB_REGION_NAME&quot;:&quot;SUB_REGION_NAME&quot;}}]}&#039;) timestamp: 2019-06-01,16:42:49.782</info>
+</message>
+<message>
+<status>OK</status>
+<info>Create hierarchy view: CREATE COLUMN VIEW &quot;_SYS_BIC&quot;.&quot;modelling/SALESREPORT/PRODUCT_ID/hier/PRODUCT_ID&quot; TYPE hierarchy WITH PARAMETERS (&#039;hierarchyDefinition&#039;=&#039;{&quot;sourceType&quot;:&quot;leveled&quot;,&quot;nodeType&quot;:&quot;string&quot;,&quot;rootNode&quot;:&quot;(all)&quot;,&quot;runtimeObjectType&quot;:&quot;blob&quot;,&quot;nodeStyle&quot;:&quot;levelName&quot;,&quot;sources&quot;: [{&quot;type&quot;:&quot;leveled&quot;,&quot;schema&quot;:&quot;_SYS_BIC&quot;,&quot;name&quot;:&quot;modelling/SALESREPORT&quot;,&quot;levels&quot;:[&quot;PRODUCT_ID&quot;],&quot;orderBy&quot;:[&quot;PRODUCT_ID&quot;,true],&quot;attributeMapping&quot;:{&quot;PRODUCT_ID&quot;:&quot;PRODUCT_ID&quot;}}]}&#039;) timestamp: 2019-06-01,16:42:49.787</info>
+</message>
+<message>
+<status>OK</status>
+<info>Create hierarchy view: CREATE COLUMN VIEW &quot;_SYS_BIC&quot;.&quot;modelling/SALESREPORT/PRODUCT_NAME/hier/PRODUCT_NAME&quot; TYPE hierarchy WITH PARAMETERS (&#039;hierarchyDefinition&#039;=&#039;{&quot;sourceType&quot;:&quot;leveled&quot;,&quot;nodeType&quot;:&quot;string&quot;,&quot;rootNode&quot;:&quot;(all)&quot;,&quot;runtimeObjectType&quot;:&quot;blob&quot;,&quot;nodeStyle&quot;:&quot;levelName&quot;,&quot;sources&quot;: [{&quot;type&quot;:&quot;leveled&quot;,&quot;schema&quot;:&quot;_SYS_BIC&quot;,&quot;name&quot;:&quot;modelling/SALESREPORT&quot;,&quot;levels&quot;:[&quot;PRODUCT_NAME&quot;],&quot;orderBy&quot;:[&quot;PRODUCT_NAME&quot;,true],&quot;attributeMapping&quot;:{&quot;PRODUCT_NAME&quot;:&quot;PRODUCT_NAME&quot;}}]}&#039;) timestamp: 2019-06-01,16:42:49.792</info>
+</message>
+<message>
+<status>OK</status>
+<info>Post deploy processing started: modelling/SALESREPORT timestamp: 2019-06-01,16:42:49.807</info>
+</message>
+<message>
+<status>OK</status>
+<info>Model deployment ended: modelling/SALESREPORT timestamp: 2019-06-01,16:42:49.807</info>
+</message>
+</message>
+<message>
+<status>INFORMATION</status>
+<info>Runtime &#039;BI-runtime&#039; finished activation of 1 object(s) in 83ms</info>
+</message>
+<message>
+<status>INFORMATION</status>
+<info>Finished activation phase. Starting regeneration phase now.</info>
+</message>
+</message>
+</executioninfo>
+<objectresults>
+<object result="Success"  type="Activation"  uri="newdb://IMI:LOCALHOST:04:P2001109445TRIAL-HDB:ACME/modelling/calculationviews/SALESREPORT.calculationview" />
+</objectresults>
+</modelerjob>

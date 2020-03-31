@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="JobLog-v1.0.xsl"?>
+<modelerjob id="IMI_Generic_MYTHILI_SHINE_1558077400861" >
+<jobinfo>
+<Jobtype>Generic</Jobtype>
+<startdate>Fri May 17 12:46:42 IST 2019</startdate>
+<enddate>Fri May 17 12:47:38 IST 2019</enddate>
+<elapsedtime>56.077 Seconds</elapsedtime>
+<systemuri>newdb://IMI:LOCALHOST:03:P2001109445TRIAL-HDB:MYTHILI_SHINE</systemuri>
+<result>ERROR</result>
+</jobinfo>
+<executioninfo>
+<message>
+<status>INFORMATION</status>
+<info>User selections</info>
+<message>
+<status>INFORMATION</status>
+<info>Source</info>
+<message>
+<status>OK</status>
+<info>File:N:&#092;CloudStorage&#092;OneDrive&#092;2.SAP_Training&#092;software&#092;STS_FCTCUSTOMERORDER.csv</info>
+</message>
+<message>
+<status>OK</status>
+<info>Delimiter :COMMA</info>
+</message>
+<message>
+<status>OK</status>
+<info>Header Row :1</info>
+</message>
+</message>
+<message>
+<status>INFORMATION</status>
+<info>Target :</info>
+<message>
+<status>OK</status>
+<info>Table name :FCTCUSTOMERORDER</info>
+</message>
+<message>
+<status>OK</status>
+<info>Schema name :MYTHILI_SHINE</info>
+</message>
+<message>
+<status>OK</status>
+<info>Store Type :columnstore</info>
+</message>
+</message>
+</message>
+<message>
+<status>INFORMATION</status>
+<info>Table creation</info>
+<message>
+<status>OK</status>
+<info>Table created</info>
+</message>
+</message>
+<message>
+<status>ERROR</status>
+<info>Data load</info>
+<message>
+<status>INFORMATION</status>
+<info>Mapping Column List</info>
+<message>
+<status>OK</status>
+<info>ORDERID-&gt;ORDERID</info>
+</message>
+<message>
+<status>OK</status>
+<info>PRODUCTID-&gt;PRODUCTID</info>
+</message>
+<message>
+<status>OK</status>
+<info>CUSTOMERID-&gt;CUSTOMERID</info>
+</message>
+<message>
+<status>OK</status>
+<info>EMPLOYEEID-&gt;EMPLOYEEID</info>
+</message>
+<message>
+<status>OK</status>
+<info>PROMOTIONID-&gt;PROMOTIONID</info>
+</message>
+<message>
+<status>OK</status>
+<info>TERRITORYID-&gt;TERRITORYID</info>
+</message>
+<message>
+<status>OK</status>
+<info>ORDERPERIODID-&gt;ORDERPERIODID</info>
+</message>
+<message>
+<status>OK</status>
+<info>REQUIREDPERIODID-&gt;REQUIREDPERIODID</info>
+</message>
+<message>
+<status>OK</status>
+<info>SHIPPEDPERIODID-&gt;SHIPPEDPERIODID</info>
+</message>
+<message>
+<status>OK</status>
+<info>SHIPPERID-&gt;SHIPPERID</info>
+</message>
+<message>
+<status>OK</status>
+<info>UNITPRICE-&gt;UNITPRICE</info>
+</message>
+<message>
+<status>OK</status>
+<info>QUANTITY-&gt;QUANTITY</info>
+</message>
+<message>
+<status>OK</status>
+<info>DISCOUNT-&gt;DISCOUNT</info>
+</message>
+<message>
+<status>OK</status>
+<info>UNITSALES-&gt;UNITSALES</info>
+</message>
+<message>
+<status>OK</status>
+<info>NETSALES-&gt;NETSALES</info>
+</message>
+<message>
+<status>OK</status>
+<info>UNITCOST-&gt;UNITCOST</info>
+</message>
+<message>
+<status>OK</status>
+<info>FREIGHT-&gt;FREIGHT</info>
+</message>
+<message>
+<status>OK</status>
+<info>COST-&gt;COST</info>
+</message>
+<message>
+<status>OK</status>
+<info>QUANTITYORDERED-&gt;QUANTITYORDERED</info>
+</message>
+<message>
+<status>OK</status>
+<info>DELIVEREDPERIODID-&gt;DELIVEREDPERIODID</info>
+</message>
+</message>
+<message>
+<status>ERROR</status>
+<info>Data load - batch information</info>
+<message>
+<status>ERROR</status>
+<info>Batch from record 2 to 38652 failed: [301]: unique constraint violated(input position 2)</info>
+<error>com.sap.db.jdbc.exceptions.BatchUpdateExceptionSapDB: [301]: unique constraint violated(input position 2)<br/>	at com.sap.db.jdbc.PreparedStatementSapDB._executePreparedBatch(PreparedStatementSapDB.java:3366)<br/>	at com.sap.db.jdbc.PreparedStatementSapDB._executePreparedBatch(PreparedStatementSapDB.java:3208)<br/>	at com.sap.db.jdbc.PreparedStatementSapDB.executeBatch(PreparedStatementSapDB.java:256)<br/>	at com.sap.ndb.studio.bi.filedataupload.deploy.populate.PopulateSQLTable.populateTable(PopulateSQLTable.java:156)<br/>	at com.sap.ndb.studio.bi.filedataupload.ui.job.FileUploaderJob.uploadFlatFile(FileUploaderJob.java:200)<br/>	at com.sap.ndb.studio.bi.filedataupload.ui.job.FileUploaderJob.run(FileUploaderJob.java:61)<br/>	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)<br/></error>
+</message>
+</message>
+</message>
+<message>
+<status>INFORMATION</status>
+<info>Error Log File</info>
+<message>
+<status>INFORMATION</status>
+<info>C:&#092;eclipse&#092;eclipse_workspace&#092;com.sap.ndb.studio.bi.logs&#092;STS_FCTCUSTOMERORDER_FCTCUSTOMERORDER_1558077402128.csv</info>
+</message>
+</message>
+</executioninfo>
+<objectresults>
+<object result="Success"  name="MYTHILI_SHINE.FCTCUSTOMERORDER"  type="Generic" />
+<object result="Error"  name="Loading Data from STS_FCTCUSTOMERORDER.csv"  type="Generic" />
+</objectresults>
+</modelerjob>

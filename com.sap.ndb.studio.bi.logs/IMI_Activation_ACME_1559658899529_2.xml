@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="JobLog-v1.0.xsl"?>
+<modelerjob id="IMI_Activation_ACME_1559658899529" >
+<jobinfo>
+<Jobtype>Activation</Jobtype>
+<startdate>Tue Jun 04 20:04:55 IST 2019</startdate>
+<enddate>Tue Jun 04 20:04:59 IST 2019</enddate>
+<elapsedtime>3.484 Seconds</elapsedtime>
+<systemuri>newdb://IMI:LOCALHOST:04:P2001109445TRIAL-HDB:ACME</systemuri>
+<result>ERROR</result>
+</jobinfo>
+<executioninfo>
+<message>
+<status>ERROR</status>
+<info>Activation ID: 65 (Repository: Activation failed for at least one object;At least one error was encountered during activation. Please see the CheckResult information for  detailed information about the root cause. No objects have been activated.)</info>
+<message>
+<status>ERROR</status>
+<info>com::MyFirstCDSSourceFile</info>
+<message>
+<status>ERROR</status>
+<info>Annotation &quot;sap.cds::Catalog&quot; can only be used to annotate entity definitions</info>
+</message>
+</message>
+</message>
+</executioninfo>
+<objectresults>
+<object result="Error"  type="Activation"  uri="newdb://IMI:LOCALHOST:04:P2001109445TRIAL-HDB:ACME/com/hdbdd/MyFirstCDSSourceFile" />
+</objectresults>
+</modelerjob>

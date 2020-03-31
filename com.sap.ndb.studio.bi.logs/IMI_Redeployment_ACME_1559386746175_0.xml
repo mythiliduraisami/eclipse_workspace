@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="JobLog-v1.0.xsl"?>
+<modelerjob id="IMI_Redeployment_ACME_1559386746175" >
+<jobinfo>
+<Jobtype>Redeployment</Jobtype>
+<startdate>Sat Jun 01 16:29:06 IST 2019</startdate>
+<enddate>Sat Jun 01 16:29:11 IST 2019</enddate>
+<elapsedtime>4.98 Seconds</elapsedtime>
+<systemuri>newdb://IMI:LOCALHOST:04:P2001109445TRIAL-HDB:ACME</systemuri>
+<result>INFORMATION</result>
+</jobinfo>
+<executioninfo>
+<message>
+<status>INFORMATION</status>
+<info>Activation ID: 32 (No error)</info>
+<message>
+<status>INFORMATION</status>
+<info>Runtime &#039;sqlproc-runtime&#039; finished revalidation of 2 object(s) in 256ms</info>
+</message>
+<message>
+<status>OK</status>
+<info>modelling::AT_PRODUCT</info>
+<message>
+<status>OK</status>
+<info>Attribute deployment started: modelling/AT_PRODUCT timestamp: 2019-06-01,11:00:49.820</info>
+</message>
+<message>
+<status>OK</status>
+<info>Removing BIMC records for modelling/AT_PRODUCT timestamp: 2019-06-01,11:00:49.820</info>
+</message>
+<message>
+<status>OK</status>
+<info>Removing hierarchy views for modelling/AT_PRODUCT timestamp: 2019-06-01,11:00:49.822</info>
+</message>
+<message>
+<status>OK</status>
+<info>Start deployment of attribute view, timestamp: 2019-06-01,11:00:49.837</info>
+</message>
+<message>
+<status>OK</status>
+<info>Create DDL: CREATE COLUMN VIEW &quot;_SYS_BIC&quot;.&quot;modelling/AT_PRODUCT&quot; TYPE JOIN WITH PARAMETERS ( joinIndex = &quot;ACME&quot;.&quot;PRODUCT&quot;, joinIndexType = 0, joinIndex = &quot;ACME&quot;.&quot;PRODUCT_DESC&quot;, joinIndexType = 0, joinCondition = (&#039;JOIN_PRODUCT_PRODUCT_DESC_1&#039;, &quot;ACME&quot;.&quot;PRODUCT&quot;, &quot;PRODUCT_ID&quot;, &quot;ACME&quot;.&quot;PRODUCT_DESC&quot;, &quot;PRODUCT_ID&quot;, &#039;&#039;, 16, 0), joinPath = (&#039;PATH&#039;, &#039;JOIN_PRODUCT_PRODUCT_DESC_1&#039;), viewAttribute = (&#039;PRODUCT_ID&#039;, &quot;ACME&quot;.&quot;PRODUCT&quot;, &quot;PRODUCT_ID&quot;, &#039;PATH&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_PRODUCT$PRODUCT_ID&#039;), viewAttribute = (&#039;PRODUCT_ID_1&#039;, &quot;ACME&quot;.&quot;PRODUCT_DESC&quot;, &quot;PRODUCT_ID&quot;, &#039;PATH&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_PRODUCT$PRODUCT_ID_1&#039;), viewAttribute = (&#039;SUPPLIER_ID&#039;, &quot;ACME&quot;.&quot;PRODUCT&quot;, &quot;SUPPLIER_ID&quot;, &#039;PATH&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_PRODUCT$SUPPLIER_ID&#039;), viewAttribute = (&#039;CATEGORY&#039;, &quot;ACME&quot;.&quot;PRODUCT&quot;, &quot;CATEGORY&quot;, &#039;PATH&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_PRODUCT$CATEGORY&#039;), viewAttribute = (&#039;PRICE&#039;, &quot;ACME&quot;.&quot;PRODUCT&quot;, &quot;PRICE&quot;, &#039;PATH&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_PRODUCT$PRICE&#039;), viewAttribute = (&#039;PRODUCT_NAME&#039;, &quot;ACME&quot;.&quot;PRODUCT_DESC&quot;, &quot;PRODUCT_NAME&quot;, &#039;PATH&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_PRODUCT$PRODUCT_NAME&#039;), view = (&#039;V_PRODUCT&#039;, &quot;ACME&quot;.&quot;PRODUCT&quot;, &#039;PATH&#039;), defaultView = &#039;V_PRODUCT&#039;, &#039;REGISTERVIEWFORAPCHECK&#039; = &#039;1&#039; ) NO STRUCTURED PRIVILEGE CHECK</info>
+</message>
+<message>
+<status>OK</status>
+<info>End deployment of attribute view, timestamp: 2019-06-01,11:00:49.864</info>
+</message>
+<message>
+<status>OK</status>
+<info>Create hierarchy view: CREATE COLUMN VIEW &quot;_SYS_BIC&quot;.&quot;modelling/AT_PRODUCT/hier/AT_PRODUCT&quot; TYPE hierarchy WITH PARAMETERS (&#039;hierarchyDefinition&#039;=&#039;{&quot;sourceType&quot;:&quot;leveled&quot;,&quot;nodeType&quot;:&quot;string&quot;,&quot;rootNode&quot;:&quot;(all)&quot;,&quot;runtimeObjectType&quot;:&quot;blob&quot;,&quot;nodeStyle&quot;:&quot;levelName&quot;,&quot;sources&quot;: [{&quot;type&quot;:&quot;leveled&quot;,&quot;schema&quot;:&quot;_SYS_BIC&quot;,&quot;name&quot;:&quot;modelling/AT_PRODUCT&quot;,&quot;levels&quot;:[&quot;PRODUCT_ID&quot;],&quot;orderBy&quot;:[&quot;PRODUCT_ID&quot;,true],&quot;attributeMapping&quot;:{&quot;PRODUCT_ID&quot;:&quot;PRODUCT_ID&quot;}}]}&#039;) timestamp: 2019-06-01,11:00:49.865</info>
+</message>
+<message>
+<status>OK</status>
+<info>Attribute deployment ended: modelling/AT_PRODUCT timestamp: 2019-06-01,11:00:49.875</info>
+</message>
+</message>
+<message>
+<status>OK</status>
+<info>modelling::AN_PURCHASE_ORDERS</info>
+<message>
+<status>OK</status>
+<info>Model deployment started: modelling/AN_PURCHASE_ORDERS timestamp: 2019-06-01,11:00:49.881</info>
+</message>
+<message>
+<status>OK</status>
+<info>Removing BIMC records for modelling/AN_PURCHASE_ORDERS timestamp: 2019-06-01,11:00:49.881</info>
+</message>
+<message>
+<status>OK</status>
+<info>Removing hierarchy views for modelling/AN_PURCHASE_ORDERS timestamp: 2019-06-01,11:00:49.886</info>
+</message>
+<message>
+<status>OK</status>
+<info>Start deployment of analytic view, timestamp: 2019-06-01,11:00:49.939</info>
+</message>
+<message>
+<status>OK</status>
+<info>CREATE OLAP SCENARIO statement: CREATE OLAP SCENARIO &#039;&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&lt;cubeSchema version=&quot;3&quot; operation=&quot;createHanaCube&quot;&gt;&lt;cube name=&quot;_SYS_BIC:modelling/AN_PURCHASE_ORDERS&quot; registerCubeForApsFlag=&quot;true&quot; registerCubeForSqlApsFlag=&quot;false&quot;&gt;&lt;cubeTables&gt;&lt;cubeTable name=&quot;ACME:PRODUCT&quot; type=&quot;d-table&quot;/&gt;&lt;cubeTable name=&quot;ACME:PRODUCT_DESC&quot; type=&quot;d-table&quot;/&gt;&lt;cubeTable name=&quot;ACME:PURCHASE_DETAIL&quot; type=&quot;f-table&quot;/&gt;&lt;cubeTable name=&quot;ACME:PURCHASE_ORDER&quot; type=&quot;d-table&quot;/&gt;&lt;/cubeTables&gt;&lt;joinConditions&gt;&lt;joinCondition name=&quot;JOIN_PURCHASE_DETAIL_PURCHASE_ORDER_1&quot; cardinality=&quot;1:n&quot; referentialIntegrity=&quot;true&quot; joinType=&quot;inner&quot;&gt;&lt;partner1 table=&quot;ACME:PURCHASE_DETAIL&quot; column=&quot;PO_NUMBER&quot;/&gt;&lt;partner2 table=&quot;ACME:PURCHASE_ORDER&quot; column=&quot;PO_NUMBER&quot;/&gt;&lt;/joinCondition&gt;&lt;joinCondition name=&quot;JOIN_PURCHASE_DETAIL_PRODUCT_2&quot; cardinality=&quot;1:1&quot; referentialIntegrity=&quot;true&quot; joinType=&quot;inner&quot;&gt;&lt;partner1 table=&quot;ACME:PURCHASE_DETAIL&quot; column=&quot;PRODUCT_ID&quot;/&gt;&lt;partner2 table=&quot;ACME:PRODUCT&quot; column=&quot;PRODUCT_ID&quot;/&gt;&lt;/joinCondition&gt;&lt;joinCondition name=&quot;JOIN_PRODUCT_PRODUCT_DESC_3&quot; cardinality=&quot;1:1&quot; joinType=&quot;inner&quot;&gt;&lt;partner1 table=&quot;ACME:PRODUCT&quot; column=&quot;PRODUCT_ID&quot;/&gt;&lt;partner2 table=&quot;ACME:PRODUCT_DESC&quot; column=&quot;PRODUCT_ID&quot;/&gt;&lt;/joinCondition&gt;&lt;/joinConditions&gt;&lt;joinPaths&gt;&lt;joinPath name=&quot;PATH_PURCHASE_ORDER_1&quot;&gt;&lt;joins&gt;&lt;join name=&quot;JOIN_PURCHASE_DETAIL_PURCHASE_ORDER_1&quot;/&gt;&lt;/joins&gt;&lt;/joinPath&gt;&lt;joinPath name=&quot;PATH_PRODUCT_2&quot;&gt;&lt;joins&gt;&lt;join name=&quot;JOIN_PURCHASE_DETAIL_PRODUCT_2&quot;/&gt;&lt;/joins&gt;&lt;/joinPath&gt;&lt;joinPath name=&quot;PATH_PRODUCT_DESC_3&quot;&gt;&lt;joins&gt;&lt;join name=&quot;JOIN_PURCHASE_DETAIL_PRODUCT_2&quot;/&gt;&lt;join name=&quot;JOIN_PRODUCT_PRODUCT_DESC_3&quot;/&gt;&lt;/joins&gt;&lt;/joinPath&gt;&lt;/joinPaths&gt;&lt;dimensionAttributes&gt;&lt;dimensionAttribute name=&quot;modelling/AT_PRODUCT$PRODUCT_ID&quot;&gt;&lt;columnMappings&gt;&lt;columnMapping name=&quot;PRODUCT_ID&quot; technicalName=&quot;modelling/AT_PRODUCT$PRODUCT_ID&quot; type=&quot;key&quot; table=&quot;ACME:PRODUCT&quot; column=&quot;PRODUCT_ID&quot; joinPath=&quot;PATH_PRODUCT_2&quot; isVisible=&quot;true&quot;/&gt;&lt;/columnMappings&gt;&lt;/dimensionAttribute&gt;&lt;dimensionAttribute name=&quot;modelling/AT_PRODUCT$PRODUCT_ID_1&quot;&gt;&lt;columnMappings&gt;&lt;columnMapping name=&quot;PRODUCT_ID_1&quot; technicalName=&quot;modelling/AT_PRODUCT$PRODUCT_ID_1&quot; type=&quot;key&quot; table=&quot;ACME:PRODUCT_DESC&quot; column=&quot;PRODUCT_ID&quot; joinPath=&quot;PATH_PRODUCT_DESC_3&quot; isVisible=&quot;true&quot;/&gt;&lt;/columnMappings&gt;&lt;/dimensionAttribute&gt;&lt;dimensionAttribute name=&quot;modelling/AT_PRODUCT$SUPPLIER_ID&quot;&gt;&lt;columnMappings&gt;&lt;columnMapping name=&quot;SUPPLIER_ID&quot; technicalName=&quot;modelling/AT_PRODUCT$SUPPLIER_ID&quot; type=&quot;key&quot; table=&quot;ACME:PRODUCT&quot; column=&quot;SUPPLIER_ID&quot; joinPath=&quot;PATH_PRODUCT_2&quot; isVisible=&quot;true&quot;/&gt;&lt;/columnMappings&gt;&lt;/dimensionAttribute&gt;&lt;dimensionAttribute name=&quot;modelling/AT_PRODUCT$CATEGORY&quot;&gt;&lt;columnMappings&gt;&lt;columnMapping name=&quot;CATEGORY&quot; technicalName=&quot;modelling/AT_PRODUCT$CATEGORY&quot; type=&quot;key&quot; table=&quot;ACME:PRODUCT&quot; column=&quot;CATEGORY&quot; joinPath=&quot;PATH_PRODUCT_2&quot; isVisible=&quot;true&quot;/&gt;&lt;/columnMappings&gt;&lt;/dimensionAttribute&gt;&lt;dimensionAttribute name=&quot;modelling/AT_PRODUCT$PRICE&quot;&gt;&lt;columnMappings&gt;&lt;columnMapping name=&quot;PRICE&quot; technicalName=&quot;modelling/AT_PRODUCT$PRICE&quot; type=&quot;key&quot; table=&quot;ACME:PRODUCT&quot; column=&quot;PRICE&quot; joinPath=&quot;PATH_PRODUCT_2&quot; isVisible=&quot;true&quot;/&gt;&lt;/columnMappings&gt;&lt;/dimensionAttribute&gt;&lt;dimensionAttribute name=&quot;modelling/AT_PRODUCT$PRODUCT_NAME&quot;&gt;&lt;columnMappings&gt;&lt;columnMapping name=&quot;PRODUCT_NAME&quot; technicalName=&quot;modelling/AT_PRODUCT$PRODUCT_NAME&quot; type=&quot;key&quot; table=&quot;ACME:PRODUCT_DESC&quot; column=&quot;PRODUCT_NAME&quot; joinPath=&quot;PATH_PRODUCT_DESC_3&quot; isVisible=&quot;true&quot;/&gt;&lt;/columnMappings&gt;&lt;/dimensionAttribute&gt;&lt;dimensionAttribute name=&quot;PO_NUMBER&quot;&gt;&lt;columnMappings&gt;&lt;columnMapping name=&quot;PO_NUMBER&quot; technicalName=&quot;PO_NUMBER&quot; type=&quot;key&quot; table=&quot;ACME:PURCHASE_DETAIL&quot; column=&quot;PO_NUMBER&quot; isVisible=&quot;true&quot;/&gt;&lt;/columnMappings&gt;&lt;/dimensionAttribute&gt;&lt;dimensionAttribute name=&quot;COMPANY&quot;&gt;&lt;columnMappings&gt;&lt;columnMapping name=&quot;COMPANY&quot; technicalName=&quot;COMPANY&quot; type=&quot;key&quot; table=&quot;ACME:PURCHASE_DETAIL&quot; column=&quot;COMPANY&quot; isVisible=&quot;true&quot;/&gt;&lt;/columnMappings&gt;&lt;/dimensionAttribute&gt;&lt;dimensionAttribute name=&quot;PO_CATEGORY&quot;&gt;&lt;columnMappings&gt;&lt;columnMapping name=&quot;PO_CATEGORY&quot; technicalName=&quot;PO_CATEGORY&quot; type=&quot;key&quot; table=&quot;ACME:PURCHASE_DETAIL&quot; column=&quot;PO_CATEGORY&quot; isVisible=&quot;true&quot;/&gt;&lt;/columnMappings&gt;&lt;/dimensionAttribute&gt;&lt;dimensionAttribute name=&quot;PLANT&quot;&gt;&lt;columnMappings&gt;&lt;columnMapping name=&quot;PLANT&quot; technicalName=&quot;PLANT&quot; type=&quot;key&quot; table=&quot;ACME:PURCHASE_DETAIL&quot; column=&quot;PLANT&quot; isVisible=&quot;true&quot;/&gt;&lt;/columnMappings&gt;&lt;/dimensionAttribute&gt;&lt;dimensionAttribute name=&quot;STORAGE_LOC&quot;&gt;&lt;columnMappings&gt;&lt;columnMapping name=&quot;STORAGE_LOC&quot; technicalName=&quot;STORAGE_LOC&quot; type=&quot;key&quot; table=&quot;ACME:PURCHASE_DETAIL&quot; column=&quot;STORAGE_LOC&quot; isVisible=&quot;true&quot;/&gt;&lt;/columnMappings&gt;&lt;/dimensionAttribute&gt;&lt;dimensionAttribute name=&quot;CURRENCY&quot;&gt;&lt;columnMappings&gt;&lt;columnMapping name=&quot;CURRENCY&quot; technicalName=&quot;CURRENCY&quot; type=&quot;key&quot; table=&quot;ACME:PURCHASE_DETAIL&quot; column=&quot;CURRENCY&quot; isVisible=&quot;true&quot;/&gt;&lt;/columnMappings&gt;&lt;/dimensionAttribute&gt;&lt;dimensionAttribute name=&quot;TAX_AMOUNT&quot;&gt;&lt;columnMappings&gt;&lt;columnMapping name=&quot;TAX_AMOUNT&quot; technicalName=&quot;TAX_AMOUNT&quot; type=&quot;key&quot; table=&quot;ACME:PURCHASE_DETAIL&quot; column=&quot;TAX_AMOUNT&quot; isVisible=&quot;true&quot;/&gt;&lt;/columnMappings&gt;&lt;/dimensionAttribute&gt;&lt;dimensionAttribute name=&quot;PO_STATUS&quot;&gt;&lt;columnMappings&gt;&lt;columnMapping name=&quot;PO_STATUS&quot; technicalName=&quot;PO_STATUS&quot; type=&quot;key&quot; table=&quot;ACME:PURCHASE_ORDER&quot; column=&quot;PO_STATUS&quot; joinPath=&quot;PATH_PURCHASE_ORDER_1&quot; isVisible=&quot;true&quot;/&gt;&lt;/columnMappings&gt;&lt;/dimensionAttribute&gt;&lt;dimensionAttribute name=&quot;CREATED_BY&quot;&gt;&lt;columnMappings&gt;&lt;columnMapping name=&quot;CREATED_BY&quot; technicalName=&quot;CREATED_BY&quot; type=&quot;key&quot; table=&quot;ACME:PURCHASE_ORDER&quot; column=&quot;CREATED_BY&quot; joinPath=&quot;PATH_PURCHASE_ORDER_1&quot; isVisible=&quot;true&quot;/&gt;&lt;/columnMappings&gt;&lt;/dimensionAttribute&gt;&lt;dimensionAttribute name=&quot;CREATED_AT&quot;&gt;&lt;columnMappings&gt;&lt;columnMapping name=&quot;CREATED_AT&quot; technicalName=&quot;CREATED_AT&quot; type=&quot;key&quot; table=&quot;ACME:PURCHASE_ORDER&quot; column=&quot;CREATED_AT&quot; joinPath=&quot;PATH_PURCHASE_ORDER_1&quot; isVisible=&quot;true&quot;/&gt;&lt;/columnMappings&gt;&lt;/dimensionAttribute&gt;&lt;/dimensionAttributes&gt;&lt;measures&gt;&lt;measure name=&quot;GROSS_AMOUNT&quot; table=&quot;ACME:PURCHASE_DETAIL&quot; column=&quot;GROSS_AMOUNT&quot; aggregationType=&quot;sum&quot; isVisible=&quot;true&quot;/&gt;&lt;/measures&gt;&lt;constraints/&gt;&lt;/cube&gt;&lt;/cubeSchema&gt;&#039;</info>
+</message>
+<message>
+<status>OK</status>
+<info>timestamp: 2019-06-01,11:00:49.949</info>
+</message>
+<message>
+<status>OK</status>
+<info>CREATE OLAP SCENARIO statement executed, timestamp: 2019-06-01,11:00:49.979</info>
+</message>
+<message>
+<status>OK</status>
+<info>End deployment of analytic view, timestamp: 2019-06-01,11:00:49.983</info>
+</message>
+<message>
+<status>OK</status>
+<info>Create hierarchy view: CREATE COLUMN VIEW &quot;_SYS_BIC&quot;.&quot;modelling/AN_PURCHASE_ORDERS/Measures/hier/Measures&quot; TYPE hierarchy WITH PARAMETERS ( &#039;hierarchyDefinition&#039; = &#039;{ &quot;runtimeObjectType&quot;:&quot;blob&quot;,&quot;nodeType&quot;:&quot;string&quot;,&quot;nodeStyle&quot;:&quot;nameOnly&quot;,&quot;sourceType&quot;:&quot;leveled&quot;,&quot;sourceQuery&quot;:&quot;SELECT &#092;&quot;ALTERNATIVE_PROPERTY_NAME&#092;&quot; AS &#092;&quot;Measure&#092;&quot;,&#092;&quot;PROPERTY_ID&#092;&quot; as &#092;&quot;$!DUMMYSORTCOL!$0&#092;&quot; FROM &#092;&quot;_SYS_BI&#092;&quot;.&#092;&quot;BIMC_PROPERTIES&#092;&quot; WHERE &#092;&quot;CATALOG_NAME&#092;&quot; = &#039;&#039;modelling&#039;&#039; AND &#092;&quot;CUBE_NAME&#092;&quot; = &#039;&#039;AN_PURCHASE_ORDERS&#039;&#039; AND &#092;&quot;DIMENSION_UNIQUE_NAME&#092;&quot; =  &#039;&#039;[Measures]&#039;&#039; and &#092;&quot;COLUMN_FLAG&#092;&quot; = &#039;&#039;User Attribute&#039;&#039; ORDER BY &#092;&quot;PROPERTY_ID&#092;&quot;&quot; }&#039;) timestamp: 2019-06-01,11:00:49.985</info>
+</message>
+<message>
+<status>OK</status>
+<info>Create hierarchy view: CREATE COLUMN VIEW &quot;_SYS_BIC&quot;.&quot;modelling/AN_PURCHASE_ORDERS/PO_NUMBER/hier/PO_NUMBER&quot; TYPE hierarchy WITH PARAMETERS (&#039;hierarchyDefinition&#039;=&#039;{&quot;sourceType&quot;:&quot;leveled&quot;,&quot;nodeType&quot;:&quot;string&quot;,&quot;rootNode&quot;:&quot;(all)&quot;,&quot;runtimeObjectType&quot;:&quot;blob&quot;,&quot;nodeStyle&quot;:&quot;levelName&quot;,&quot;sources&quot;: [{&quot;type&quot;:&quot;leveled&quot;,&quot;schema&quot;:&quot;_SYS_BIC&quot;,&quot;name&quot;:&quot;modelling/AN_PURCHASE_ORDERS&quot;,&quot;levels&quot;:[&quot;PO_NUMBER&quot;],&quot;orderBy&quot;:[&quot;PO_NUMBER&quot;,true],&quot;attributeMapping&quot;:{&quot;PO_NUMBER&quot;:&quot;PO_NUMBER&quot;}}]}&#039;) timestamp: 2019-06-01,11:00:49.996</info>
+</message>
+<message>
+<status>OK</status>
+<info>Create hierarchy view: CREATE COLUMN VIEW &quot;_SYS_BIC&quot;.&quot;modelling/AN_PURCHASE_ORDERS/COMPANY/hier/COMPANY&quot; TYPE hierarchy WITH PARAMETERS (&#039;hierarchyDefinition&#039;=&#039;{&quot;sourceType&quot;:&quot;leveled&quot;,&quot;nodeType&quot;:&quot;string&quot;,&quot;rootNode&quot;:&quot;(all)&quot;,&quot;runtimeObjectType&quot;:&quot;blob&quot;,&quot;nodeStyle&quot;:&quot;levelName&quot;,&quot;sources&quot;: [{&quot;type&quot;:&quot;leveled&quot;,&quot;schema&quot;:&quot;_SYS_BIC&quot;,&quot;name&quot;:&quot;modelling/AN_PURCHASE_ORDERS&quot;,&quot;levels&quot;:[&quot;COMPANY&quot;],&quot;orderBy&quot;:[&quot;COMPANY&quot;,true],&quot;attributeMapping&quot;:{&quot;COMPANY&quot;:&quot;COMPANY&quot;}}]}&#039;) timestamp: 2019-06-01,11:00:50.002</info>
+</message>
+<message>
+<status>OK</status>
+<info>Create hierarchy view: CREATE COLUMN VIEW &quot;_SYS_BIC&quot;.&quot;modelling/AN_PURCHASE_ORDERS/PO_CATEGORY/hier/PO_CATEGORY&quot; TYPE hierarchy WITH PARAMETERS (&#039;hierarchyDefinition&#039;=&#039;{&quot;sourceType&quot;:&quot;leveled&quot;,&quot;nodeType&quot;:&quot;string&quot;,&quot;rootNode&quot;:&quot;(all)&quot;,&quot;runtimeObjectType&quot;:&quot;blob&quot;,&quot;nodeStyle&quot;:&quot;levelName&quot;,&quot;sources&quot;: [{&quot;type&quot;:&quot;leveled&quot;,&quot;schema&quot;:&quot;_SYS_BIC&quot;,&quot;name&quot;:&quot;modelling/AN_PURCHASE_ORDERS&quot;,&quot;levels&quot;:[&quot;PO_CATEGORY&quot;],&quot;orderBy&quot;:[&quot;PO_CATEGORY&quot;,true],&quot;attributeMapping&quot;:{&quot;PO_CATEGORY&quot;:&quot;PO_CATEGORY&quot;}}]}&#039;) timestamp: 2019-06-01,11:00:50.008</info>
+</message>
+<message>
+<status>OK</status>
+<info>Create hierarchy view: CREATE COLUMN VIEW &quot;_SYS_BIC&quot;.&quot;modelling/AN_PURCHASE_ORDERS/PLANT/hier/PLANT&quot; TYPE hierarchy WITH PARAMETERS (&#039;hierarchyDefinition&#039;=&#039;{&quot;sourceType&quot;:&quot;leveled&quot;,&quot;nodeType&quot;:&quot;string&quot;,&quot;rootNode&quot;:&quot;(all)&quot;,&quot;runtimeObjectType&quot;:&quot;blob&quot;,&quot;nodeStyle&quot;:&quot;levelName&quot;,&quot;sources&quot;: [{&quot;type&quot;:&quot;leveled&quot;,&quot;schema&quot;:&quot;_SYS_BIC&quot;,&quot;name&quot;:&quot;modelling/AN_PURCHASE_ORDERS&quot;,&quot;levels&quot;:[&quot;PLANT&quot;],&quot;orderBy&quot;:[&quot;PLANT&quot;,true],&quot;attributeMapping&quot;:{&quot;PLANT&quot;:&quot;PLANT&quot;}}]}&#039;) timestamp: 2019-06-01,11:00:50.013</info>
+</message>
+<message>
+<status>OK</status>
+<info>Create hierarchy view: CREATE COLUMN VIEW &quot;_SYS_BIC&quot;.&quot;modelling/AN_PURCHASE_ORDERS/STORAGE_LOC/hier/STORAGE_LOC&quot; TYPE hierarchy WITH PARAMETERS (&#039;hierarchyDefinition&#039;=&#039;{&quot;sourceType&quot;:&quot;leveled&quot;,&quot;nodeType&quot;:&quot;string&quot;,&quot;rootNode&quot;:&quot;(all)&quot;,&quot;runtimeObjectType&quot;:&quot;blob&quot;,&quot;nodeStyle&quot;:&quot;levelName&quot;,&quot;sources&quot;: [{&quot;type&quot;:&quot;leveled&quot;,&quot;schema&quot;:&quot;_SYS_BIC&quot;,&quot;name&quot;:&quot;modelling/AN_PURCHASE_ORDERS&quot;,&quot;levels&quot;:[&quot;STORAGE_LOC&quot;],&quot;orderBy&quot;:[&quot;STORAGE_LOC&quot;,true],&quot;attributeMapping&quot;:{&quot;STORAGE_LOC&quot;:&quot;STORAGE_LOC&quot;}}]}&#039;) timestamp: 2019-06-01,11:00:50.018</info>
+</message>
+<message>
+<status>OK</status>
+<info>Create hierarchy view: CREATE COLUMN VIEW &quot;_SYS_BIC&quot;.&quot;modelling/AN_PURCHASE_ORDERS/CURRENCY/hier/CURRENCY&quot; TYPE hierarchy WITH PARAMETERS (&#039;hierarchyDefinition&#039;=&#039;{&quot;sourceType&quot;:&quot;leveled&quot;,&quot;nodeType&quot;:&quot;string&quot;,&quot;rootNode&quot;:&quot;(all)&quot;,&quot;runtimeObjectType&quot;:&quot;blob&quot;,&quot;nodeStyle&quot;:&quot;levelName&quot;,&quot;sources&quot;: [{&quot;type&quot;:&quot;leveled&quot;,&quot;schema&quot;:&quot;_SYS_BIC&quot;,&quot;name&quot;:&quot;modelling/AN_PURCHASE_ORDERS&quot;,&quot;levels&quot;:[&quot;CURRENCY&quot;],&quot;orderBy&quot;:[&quot;CURRENCY&quot;,true],&quot;attributeMapping&quot;:{&quot;CURRENCY&quot;:&quot;CURRENCY&quot;}}]}&#039;) timestamp: 2019-06-01,11:00:50.023</info>
+</message>
+<message>
+<status>OK</status>
+<info>Create hierarchy view: CREATE COLUMN VIEW &quot;_SYS_BIC&quot;.&quot;modelling/AN_PURCHASE_ORDERS/TAX_AMOUNT/hier/TAX_AMOUNT&quot; TYPE hierarchy WITH PARAMETERS (&#039;hierarchyDefinition&#039;=&#039;{&quot;sourceType&quot;:&quot;leveled&quot;,&quot;nodeType&quot;:&quot;string&quot;,&quot;rootNode&quot;:&quot;(all)&quot;,&quot;runtimeObjectType&quot;:&quot;blob&quot;,&quot;nodeStyle&quot;:&quot;levelName&quot;,&quot;sources&quot;: [{&quot;type&quot;:&quot;leveled&quot;,&quot;schema&quot;:&quot;_SYS_BIC&quot;,&quot;name&quot;:&quot;modelling/AN_PURCHASE_ORDERS&quot;,&quot;levels&quot;:[&quot;TAX_AMOUNT&quot;],&quot;orderBy&quot;:[&quot;TAX_AMOUNT&quot;,true],&quot;attributeMapping&quot;:{&quot;TAX_AMOUNT&quot;:&quot;TAX_AMOUNT&quot;}}]}&#039;) timestamp: 2019-06-01,11:00:50.029</info>
+</message>
+<message>
+<status>OK</status>
+<info>Create hierarchy view: CREATE COLUMN VIEW &quot;_SYS_BIC&quot;.&quot;modelling/AN_PURCHASE_ORDERS/PO_STATUS/hier/PO_STATUS&quot; TYPE hierarchy WITH PARAMETERS (&#039;hierarchyDefinition&#039;=&#039;{&quot;sourceType&quot;:&quot;leveled&quot;,&quot;nodeType&quot;:&quot;string&quot;,&quot;rootNode&quot;:&quot;(all)&quot;,&quot;runtimeObjectType&quot;:&quot;blob&quot;,&quot;nodeStyle&quot;:&quot;levelName&quot;,&quot;sources&quot;: [{&quot;type&quot;:&quot;leveled&quot;,&quot;schema&quot;:&quot;_SYS_BIC&quot;,&quot;name&quot;:&quot;modelling/AN_PURCHASE_ORDERS&quot;,&quot;levels&quot;:[&quot;PO_STATUS&quot;],&quot;orderBy&quot;:[&quot;PO_STATUS&quot;,true],&quot;attributeMapping&quot;:{&quot;PO_STATUS&quot;:&quot;PO_STATUS&quot;}}]}&#039;) timestamp: 2019-06-01,11:00:50.034</info>
+</message>
+<message>
+<status>OK</status>
+<info>Create hierarchy view: CREATE COLUMN VIEW &quot;_SYS_BIC&quot;.&quot;modelling/AN_PURCHASE_ORDERS/CREATED_BY/hier/CREATED_BY&quot; TYPE hierarchy WITH PARAMETERS (&#039;hierarchyDefinition&#039;=&#039;{&quot;sourceType&quot;:&quot;leveled&quot;,&quot;nodeType&quot;:&quot;string&quot;,&quot;rootNode&quot;:&quot;(all)&quot;,&quot;runtimeObjectType&quot;:&quot;blob&quot;,&quot;nodeStyle&quot;:&quot;levelName&quot;,&quot;sources&quot;: [{&quot;type&quot;:&quot;leveled&quot;,&quot;schema&quot;:&quot;_SYS_BIC&quot;,&quot;name&quot;:&quot;modelling/AN_PURCHASE_ORDERS&quot;,&quot;levels&quot;:[&quot;CREATED_BY&quot;],&quot;orderBy&quot;:[&quot;CREATED_BY&quot;,true],&quot;attributeMapping&quot;:{&quot;CREATED_BY&quot;:&quot;CREATED_BY&quot;}}]}&#039;) timestamp: 2019-06-01,11:00:50.039</info>
+</message>
+<message>
+<status>OK</status>
+<info>Create hierarchy view: CREATE COLUMN VIEW &quot;_SYS_BIC&quot;.&quot;modelling/AN_PURCHASE_ORDERS/CREATED_AT/hier/CREATED_AT&quot; TYPE hierarchy WITH PARAMETERS (&#039;hierarchyDefinition&#039;=&#039;{&quot;sourceType&quot;:&quot;leveled&quot;,&quot;nodeType&quot;:&quot;string&quot;,&quot;rootNode&quot;:&quot;(all)&quot;,&quot;runtimeObjectType&quot;:&quot;blob&quot;,&quot;nodeStyle&quot;:&quot;levelName&quot;,&quot;sources&quot;: [{&quot;type&quot;:&quot;leveled&quot;,&quot;schema&quot;:&quot;_SYS_BIC&quot;,&quot;name&quot;:&quot;modelling/AN_PURCHASE_ORDERS&quot;,&quot;levels&quot;:[&quot;CREATED_AT&quot;],&quot;orderBy&quot;:[&quot;CREATED_AT&quot;,true],&quot;attributeMapping&quot;:{&quot;CREATED_AT&quot;:&quot;CREATED_AT&quot;}}]}&#039;) timestamp: 2019-06-01,11:00:50.045</info>
+</message>
+<message>
+<status>OK</status>
+<info>Post deploy processing started: modelling/AN_PURCHASE_ORDERS timestamp: 2019-06-01,11:00:50.062</info>
+</message>
+<message>
+<status>OK</status>
+<info>Model deployment ended: modelling/AN_PURCHASE_ORDERS timestamp: 2019-06-01,11:00:50.062</info>
+</message>
+</message>
+<message>
+<status>INFORMATION</status>
+<info>Runtime &#039;BI-runtime&#039; finished activation of 2 object(s) in 256ms</info>
+</message>
+</message>
+</executioninfo>
+<objectresults>
+<object result="Success"  type="Redeployment"  uri="newdb://IMI:LOCALHOST:04:P2001109445TRIAL-HDB:ACME/modelling/attributeviews/AT_PRODUCT.attributeview" />
+</objectresults>
+</modelerjob>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="JobLog-v1.0.xsl"?>
+<modelerjob id="IMI_ModelValidation_MYTHILI_SHINE_1558079377339" >
+<jobinfo>
+<Jobtype>Model Validation</Jobtype>
+<startdate>Fri May 17 13:19:39 IST 2019</startdate>
+<enddate>Fri May 17 13:19:47 IST 2019</enddate>
+<elapsedtime>8.347 Seconds</elapsedtime>
+<systemuri>newdb://IMI:LOCALHOST:03:P2001109445TRIAL-HDB:MYTHILI_SHINE</systemuri>
+<result>ERROR</result>
+</jobinfo>
+<executioninfo>
+<message>
+<status>OK</status>
+<info>Client-side validation</info>
+<message>
+<status>OK</status>
+<info>Validation of Model_Test::MODEL_VIEW </info>
+<message>
+<status>INFORMATION</status>
+<info>No rule selected</info>
+</message>
+</message>
+</message>
+<message>
+<status>WARNING</status>
+<info>Skipped Client Side Validation Rules</info>
+<message>
+<status>WARNING</status>
+<info>Decision Table Validation Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Decision Table Check Consistency Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Modeler View Input Parameter Existence Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Large object data type Check Rule </info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Table Validity Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Filter Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Measure Validation Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Stacked Counter Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Execute Engine Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Counter Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Currency Target Hidden Column Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Star Join Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Validate Data Sources with Right Outer Join Type</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Currency Stacking Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Floating Node Check Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Rank Node Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Join Validity Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Join column Data Type Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Variable and Input Parameter Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Hierarchy Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Hierarchy SQL Enable Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>ABAP Name Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Description Length Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>BI Virtual InfoProvider Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Unique Constraint Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Analytic Privilege Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>History view validation rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Table Function Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Calculation in Joins Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Calculation in Filter Expressions Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Partition Types in Join Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Validate Stacked Aggregations</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Spatial Join Validity Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Description Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Naming Convention Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Default Property Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Client Field Join Check</info>
+</message>
+</message>
+<message>
+<status>ERROR</status>
+<info>Server-side validation: Activation ID: 7</info>
+<message>
+<status>ERROR</status>
+<info>Repository: Activation failed for at least one object;At least one runtime reported an error during activation. Please see CheckResults for details</info>
+<message>
+<status>INFORMATION</status>
+<info>Activation is performed with activation mode Check only.</info>
+</message>
+<message>
+<status>INFORMATION</status>
+<info>Runtime &#039;sqlproc-runtime&#039; finished activation of 1 object(s) in 229ms</info>
+</message>
+<message>
+<status>ERROR</status>
+<info>Model_Test.MODEL_VIEW</info>
+<message>
+<status>ERROR</status>
+<info>Repository: Encountered an error in repository runtime extension;Model inconsistency. Deploy Analytic View: <br/><br/>transaction rolled back by an internal error: insufficient privilege: Not authorized(46)<br/><br/>SQL: transaction rolled back by an internal error: column store error: &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&lt;createCubeResult version=&quot;1.0&quot;&gt;&lt;status&gt;&lt;message&gt;Error during executing SQL statement&lt;/message&gt;&lt;errorCode&gt;2116&lt;/errorCode&gt;&lt;/status&gt;&lt;details&gt;&lt;errors&gt;&lt;detail&gt;&lt;element&gt;CREATE COLUMN VIEW &quot;_SYS_BIC&quot;.&quot;Model_Test/MODEL_VIEW&quot; WITH PARAMETERS (DESCRIPTION=&#039;&#039;, INDEXTYPE=5, JOININDEX = &quot;MYTHILI_SHINE&quot;.&quot;DIMCUSTOMER&quot;, JOININDEXTYPE = 2, JOININDEX = &quot;MYTHILI_SHINE&quot;.&quot;DIMPRODUCT&quot;, JOININDEXTYPE = 2, JOININDEX = &quot;MYTHILI_SHINE&quot;.&quot;FCTCUSTOMERORDER&quot;, JOININDEXTYPE = 1, JOINCONDITION = (&#039;JOIN_FCTCUSTOMERORDER_DIMCUSTOMER_1&#039;, &quot;MYTHILI_SHINE&quot;.&quot;FCTCUSTOMERORDER&quot;, &quot;CUSTOMERID&quot;, &quot;MYTHILI_SHINE&quot;.&quot;DIMCUSTOMER&quot;, &quot;CUSTOMERID&quot;, &#039;&#039;, 0, 2), JOINCONDITION = (&#039;JOIN_FCTCUSTOMERORDER_DIMPRODUCT_2&#039;, &quot;MYTHILI_SHINE&quot;.&quot;FCTCUSTOMERORDER&quot;, &quot;PRODUCTID&quot;, &quot;MYTHILI_SHINE&quot;.&quot;DIMPRODUCT&quot;, &quot;PRODUCTID&quot;, &#039;&#039;, 0, 1), JOINPATH = (&#039;PATH_DIMCUSTOMER_1&#039;, &#039;JOIN_FCTCUSTOMERORDER_DIMCUSTOMER_1&#039;), JOINPATH = (&#039;PATH_DIMPRODUCT_2&#039;, &#039;JOIN_FCTCUSTOMERORDER_DIMPRODUCT_2&#039;), VIEWATTRIBUTE = (&#039;CUSTOMER&#039;, &quot;MYTHILI_SHINE&quot;.&quot;DIMCUSTOMER&quot;, &quot;CUSTOMER&quot;, &#039;PATH_DIMCUSTOMER_1&#039;, &#039;&#039;, &#039;&#039;, &#039;&#039;, &#039;CUSTOMER&#039;), VIEWATTRIBUTE = (&#039;CITYNAME&#039;, &quot;MYTHILI_SHINE&quot;.&quot;DIMCUSTOMER&quot;, &quot;CITYNAME&quot;, &#039;PATH_DIMCUSTOMER_1&#039;, &#039;&#039;, &#039;&#039;, &#039;&#039;, &#039;CITYNAME&#039;), VIEWATTRIBUTE = (&#039;COUNTRYNAME&#039;, &quot;MYTHILI_SHINE&quot;.&quot;DIMCUSTOMER&quot;, &quot;COUNTRYNAME&quot;, &#039;PATH_DIMCUSTOMER_1&#039;, &#039;&#039;, &#039;&#039;, &#039;&#039;, &#039;COUNTRYNAME&#039;), VIEWATTRIBUTE = (&#039;PRODUCTNAME&#039;, &quot;MYTHILI_SHINE&quot;.&quot;DIMPRODUCT&quot;, &quot;PRODUCTNAME&quot;, &#039;PATH_DIMPRODUCT_2&#039;, &#039;&#039;, &#039;&#039;, &#039;&#039;, &#039;PRODUCTNAME&#039;), VIEWATTRIBUTE = (&#039;CATEGORYNAME&#039;, &quot;MYTHILI_SHINE&quot;.&quot;DIMPRODUCT&quot;, &quot;CATEGORYNAME&quot;, &#039;PATH_DIMPRODUCT_2&#039;, &#039;&#039;, &#039;&#039;, &#039;&#039;, &#039;CATEGORYNAME&#039;), VIEWATTRIBUTE = (&#039;LINENAME&#039;, &quot;MYTHILI_SHINE&quot;.&quot;DIMPRODUCT&quot;, &quot;LINENAME&quot;, &#039;PATH_DIMPRODUCT_2&#039;, &#039;&#039;, &#039;&#039;, &#039;&#039;, &#039;LINENAME&#039;), VIEWATTRIBUTE = (&#039;CAPACITY&#039;, &quot;MYTHILI_SHINE&quot;.&quot;DIMPRODUCT&quot;, &quot;CAPACITY&quot;, &#039;PATH_DIMPRODUCT_2&#039;, &#039;&#039;, &#039;&#039;, &#039;&#039;, &#039;CAPACITY&#039;), VIEWATTRIBUTE = (&#039;SCREENSIZE&#039;, &quot;MYTHILI_SHINE&quot;.&quot;DIMPRODUCT&quot;, &quot;SCREENSIZE&quot;, &#039;PATH_DIMPRODUCT_2&#039;, &#039;&#039;, &#039;&#039;, &#039;&#039;, &#039;SCREENSIZE&#039;), VIEWATTRIBUTE = (&#039;REGIONNAME&#039;, &quot;MYTHILI_SHINE&quot;.&quot;DIMCUSTOMER&quot;, &quot;REGIONNAME&quot;, &#039;PATH_DIMCUSTOMER_1&#039;, &#039;&#039;, &#039;&#039;, &#039;&#039;, &#039;REGIONNAME&#039;), KEYFIGURE = (&quot;QUANTITY&quot;, 1, FORMULA=&#039;&#039;, DESCRIPTION=&#039;&#039;, UNITCONVERSIONNAME=&#039;&#039;, EXPRESSION=&#039;&#039;, EXPRESSIONFLAGS=0, INDEXID=&quot;MYTHILI_SHINE&quot;.&quot;FCTCUSTOMERORDER&quot;, ATTRIBUTE=&quot;QUANTITY&quot;), KEYFIGURE = (&quot;DISCOUNT&quot;, 1, FORMULA=&#039;&#039;, DESCRIPTION=&#039;&#039;, UNITCONVERSIONNAME=&#039;&#039;, EXPRESSION=&#039;&#039;, EXPRESSIONFLAGS=0, INDEXID=&quot;MYTHILI_SHINE&quot;.&quot;FCTCUSTOMERORDER&quot;, ATTRIBUTE=&quot;DISCOUNT&quot;), KEYFIGURE = (&quot;NETSALES&quot;, 1, FORMULA=&#039;&#039;, DESCRIPTION=&#039;&#039;, UNITCONVERSIONNAME=&#039;&#039;, EXPRESSION=&#039;&#039;, EXPRESSIONFLAGS=0, INDEXID=&quot;MYTHILI_SHINE&quot;.&quot;FCTCUSTOMERORDER&quot;, ATTRIBUTE=&quot;NETSALES&quot;), KEYFIGURE = (&quot;QUANTITYORDERED&quot;, 8, FORMULA=&#039;&#039;, DESCRIPTION=&#039;&#039;, UNITCONVERSIONNAME=&#039;&#039;, EXPRESSION=&#039;&#039;, EXPRESSIONFLAGS=0, INDEXID=&quot;MYTHILI_SHINE&quot;.&quot;FCTCUSTOMERORDER&quot;, ATTRIBUTE=&quot;QUANTITYORDERED&quot;), CHARACTERISTIC=(&#039;CUSTOMER&#039;, KEYATTRIBUTE=&quot;CUSTOMER&quot;), CHARACTERISTIC=(&#039;CITYNAME&#039;, KEYATTRIBUTE=&quot;CITYNAME&quot;), CHARACTERISTIC=(&#039;COUNTRYNAME&#039;, KEYATTRIBUTE=&quot;COUNTRYNAME&quot;), CHARACTERISTIC=(&#039;PRODUCTNAME&#039;, KEYATTRIBUTE=&quot;PRODUCTNAME&quot;), CHARACTERISTIC=(&#039;CATEGORYNAME&#039;, KEYATTRIBUTE=&quot;CATEGORYNAME&quot;), CHARACTERISTIC=(&#039;LINENAME&#039;, KEYATTRIBUTE=&quot;LINENAME&quot;), CHARACTERISTIC=(&#039;CAPACITY&#039;, KEYATTRIBUTE=&quot;CAPACITY&quot;), CHARACTERISTIC=(&#039;SCREENSIZE&#039;, KEYATTRIBUTE=&quot;SCREENSIZE&quot;), CHARACTERISTIC=(&#039;REGIONNAME&#039;, KEYATTRIBUTE=&quot;REGIONNAME&quot;), &#039;REGISTERVIEWFORAPCHECK&#039;=&#039;1&#039;)&lt;/element&gt;&lt;code&gt;46&lt;/code&gt;&lt;message&gt;transaction rolled back by an internal error: insufficient privilege: Not authorized&lt;/message&gt;&lt;/detail&gt;&lt;/errors&gt;&lt;/details&gt;&lt;/createCubeResult&gt;<br/><br/>Create OLAP Scenario statement: CREATE OLAP SCENARIO &#039;&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&lt;cubeSchema version=&quot;3&quot; operation=&quot;createHanaCube&quot;&gt;&lt;cube name=&quot;_SYS_BIC:Model_Test/MODEL_VIEW&quot; registerCubeForApsFlag=&quot;true&quot; registerCubeForSqlApsFlag=&quot;false&quot;&gt;&lt;cubeTables&gt;&lt;cubeTable name=&quot;MYTHILI_SHINE:DIMCUSTOMER&quot; type=&quot;d-table&quot;/&gt;&lt;cubeTable name=&quot;MYTHILI_SHINE:DIMPRODUCT&quot; type=&quot;d-table&quot;/&gt;&lt;cubeTable name=&quot;MYTHILI_SHINE:FCTCUSTOMERORDER&quot; type=&quot;f-table&quot;/&gt;&lt;/cubeTables&gt;&lt;joinConditions&gt;&lt;joinCondition name=&quot;JOIN_FCTCUSTOMERORDER_DIMCUSTOMER_1&quot; referentialIntegrity=&quot;true&quot; joinType=&quot;inner&quot;&gt;&lt;partner1 table=&quot;MYTHILI_SHINE:FCTCUSTOMERORDER&quot; column=&quot;CUSTOMERID&quot;/&gt;&lt;partner2 table=&quot;MYTHILI_SHINE:DIMCUSTOMER&quot; column=&quot;CUSTOMERID&quot;/&gt;&lt;/joinCondition&gt;&lt;joinCondition name=&quot;JOIN_FCTCUSTOMERORDER_DIMPRODUCT_2&quot; referentialIntegrity=&quot;true&quot; joinType=&quot;inner&quot;&gt;&lt;partner1 table=&quot;MYTHILI_SHINE:FCTCUSTOMERORDER&quot; column=&quot;PRODUCTID&quot;/&gt;&lt;partner2 table=&quot;MYTHILI_SHINE:DIMPRODUCT&quot; column=&quot;PRODUCTID&quot;/&gt;&lt;/joinCondition&gt;&lt;/joinConditions&gt;&lt;joinPaths&gt;&lt;joinPath name=&quot;PATH_DIMCUSTOMER_1&quot;&gt;&lt;joins&gt;&lt;join name=&quot;JOIN_FCTCUSTOMERORDER_DIMCUSTOMER_1&quot;/&gt;&lt;/joins&gt;&lt;/joinPath&gt;&lt;joinPath name=&quot;PATH_DIMPRODUCT_2&quot;&gt;&lt;joins&gt;&lt;join name=&quot;JOIN_FCTCUSTOMERORDER_DIMPRODUCT_2&quot;/&gt;&lt;/joins&gt;&lt;/joinPath&gt;&lt;/joinPaths&gt;&lt;dimensionAttributes&gt;&lt;dimensionAttribute name=&quot;CUSTOMER&quot;&gt;&lt;columnMappings&gt;&lt;columnMapping name=&quot;CUSTOMER&quot; technicalName=&quot;CUSTOMER&quot; type=&quot;key&quot; table=&quot;MYTHILI_SHINE:DIMCUSTOMER&quot; column=&quot;CUSTOMER&quot; joinPath=&quot;PATH_DIMCUSTOMER_1&quot; isVisible=&quot;true&quot;/&gt;&lt;/columnMappings&gt;&lt;/dimensionAttribute&gt;&lt;dimensionAttribute name=&quot;CITYNAME&quot;&gt;&lt;columnMappings&gt;&lt;columnMapping name=&quot;CITYNAME&quot; technicalName=&quot;CITYNAME&quot; type=&quot;key&quot; table=&quot;MYTHILI_SHINE:DIMCUSTOMER&quot; column=&quot;CITYNAME&quot; joinPath=&quot;PATH_DIMCUSTOMER_1&quot; isVisible=&quot;true&quot;/&gt;&lt;/columnMappings&gt;&lt;/dimensionAttribute&gt;&lt;dimensionAttribute name=&quot;COUNTRYNAME&quot;&gt;&lt;columnMappings&gt;&lt;columnMapping name=&quot;COUNTRYNAME&quot; technicalName=&quot;COUNTRYNAME&quot; type=&quot;key&quot; table=&quot;MYTHILI_SHINE:DIMCUSTOMER&quot; column=&quot;COUNTRYNAME&quot; joinPath=&quot;PATH_DIMCUSTOMER_1&quot; isVisible=&quot;true&quot;/&gt;&lt;/columnMappings&gt;&lt;/dimensionAttribute&gt;&lt;dimensionAttribute name=&quot;PRODUCTNAME&quot;&gt;&lt;columnMappings&gt;&lt;columnMapping name=&quot;PRODUCTNAME&quot; technicalName=&quot;PRODUCTNAME&quot; type=&quot;key&quot; table=&quot;MYTHILI_SHINE:DIMPRODUCT&quot; column=&quot;PRODUCTNAME&quot; joinPath=&quot;PATH_DIMPRODUCT_2&quot; isVisible=&quot;true&quot;/&gt;&lt;/columnMappings&gt;&lt;/dimensionAttribute&gt;&lt;dimensionAttribute name=&quot;CATEGORYNAME&quot;&gt;&lt;columnMappings&gt;&lt;columnMapping name=&quot;CATEGORYNAME&quot; technicalName=&quot;CATEGORYNAME&quot; type=&quot;key&quot; table=&quot;MYTHILI_SHINE:DIMPRODUCT&quot; column=&quot;CATEGORYNAME&quot; joinPath=&quot;PATH_DIMPRODUCT_2&quot; isVisible=&quot;true&quot;/&gt;&lt;/columnMappings&gt;&lt;/dimensionAttribute&gt;&lt;dimensionAttribute name=&quot;LINENAME&quot;&gt;&lt;columnMappings&gt;&lt;columnMapping name=&quot;LINENAME&quot; technicalName=&quot;LINENAME&quot; type=&quot;key&quot; table=&quot;MYTHILI_SHINE:DIMPRODUCT&quot; column=&quot;LINENAME&quot; joinPath=&quot;PATH_DIMPRODUCT_2&quot; isVisible=&quot;true&quot;/&gt;&lt;/columnMappings&gt;&lt;/dimensionAttribute&gt;&lt;dimensionAttribute name=&quot;CAPACITY&quot;&gt;&lt;columnMappings&gt;&lt;columnMapping name=&quot;CAPACITY&quot; technicalName=&quot;CAPACITY&quot; type=&quot;key&quot; table=&quot;MYTHILI_SHINE:DIMPRODUCT&quot; column=&quot;CAPACITY&quot; joinPath=&quot;PATH_DIMPRODUCT_2&quot; isVisible=&quot;true&quot;/&gt;&lt;/columnMappings&gt;&lt;/dimensionAttribute&gt;&lt;dimensionAttribute name=&quot;SCREENSIZE&quot;&gt;&lt;columnMappings&gt;&lt;columnMapping name=&quot;SCREENSIZE&quot; technicalName=&quot;SCREENSIZE&quot; type=&quot;key&quot; table=&quot;MYTHILI_SHINE:DIMPRODUCT&quot; column=&quot;SCREENSIZE&quot; joinPath=&quot;PATH_DIMPRODUCT_2&quot; isVisible=&quot;true&quot;/&gt;&lt;/columnMappings&gt;&lt;/dimensionAttribute&gt;&lt;dimensionAttribute name=&quot;REGIONNAME&quot;&gt;&lt;columnMappings&gt;&lt;columnMapping name=&quot;REGIONNAME&quot; technicalName=&quot;REGIONNAME&quot; type=&quot;key&quot; table=&quot;MYTHILI_SHINE:DIMCUSTOMER&quot; column=&quot;REGIONNAME&quot; joinPath=&quot;PATH_DIMCUSTOMER_1&quot; isVisible=&quot;true&quot;/&gt;&lt;/columnMappings&gt;&lt;/dimensionAttribute&gt;&lt;/dimensionAttributes&gt;&lt;measures&gt;&lt;measure name=&quot;QUANTITY&quot; table=&quot;MYTHILI_SHINE:FCTCUSTOMERORDER&quot; column=&quot;QUANTITY&quot; aggregationType=&quot;sum&quot; isVisible=&quot;true&quot;/&gt;&lt;measure name=&quot;DISCOUNT&quot; table=&quot;MYTHILI_SHINE:FCTCUSTOMERORDER&quot; column=&quot;DISCOUNT&quot; aggregationType=&quot;sum&quot; isVisible=&quot;true&quot;/&gt;&lt;measure name=&quot;NETSALES&quot; table=&quot;MYTHILI_SHINE:FCTCUSTOMERORDER&quot; column=&quot;NETSALES&quot; aggregationType=&quot;sum&quot; isVisible=&quot;true&quot;/&gt;&lt;measure name=&quot;QUANTITYORDERED&quot; table=&quot;MYTHILI_SHINE:FCTCUSTOMERORDER&quot; column=&quot;QUANTITYORDERED&quot; aggregationType=&quot;max&quot; isVisible=&quot;true&quot;/&gt;&lt;/measures&gt;&lt;constraints/&gt;&lt;/cube&gt;&lt;/cubeSchema&gt;&#039;<br/></info>
+</message>
+<message>
+<status>OK</status>
+<info>Model deployment started: Model_Test/MODEL_VIEW timestamp: 2019-05-17,07:49:52.115</info>
+</message>
+<message>
+<status>OK</status>
+<info>Removing BIMC records for Model_Test/MODEL_VIEW timestamp: 2019-05-17,07:49:52.115</info>
+</message>
+<message>
+<status>OK</status>
+<info>Removing hierarchy views for Model_Test/MODEL_VIEW timestamp: 2019-05-17,07:49:52.119</info>
+</message>
+<message>
+<status>OK</status>
+<info>Start deployment of analytic view, timestamp: 2019-05-17,07:49:52.263</info>
+</message>
+<message>
+<status>OK</status>
+<info>CREATE OLAP SCENARIO statement: CREATE OLAP SCENARIO &#039;&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&lt;cubeSchema version=&quot;3&quot; operation=&quot;createHanaCube&quot;&gt;&lt;cube name=&quot;_SYS_BIC:Model_Test/MODEL_VIEW&quot; registerCubeForApsFlag=&quot;true&quot; registerCubeForSqlApsFlag=&quot;false&quot;&gt;&lt;cubeTables&gt;&lt;cubeTable name=&quot;MYTHILI_SHINE:DIMCUSTOMER&quot; type=&quot;d-table&quot;/&gt;&lt;cubeTable name=&quot;MYTHILI_SHINE:DIMPRODUCT&quot; type=&quot;d-table&quot;/&gt;&lt;cubeTable name=&quot;MYTHILI_SHINE:FCTCUSTOMERORDER&quot; type=&quot;f-table&quot;/&gt;&lt;/cubeTables&gt;&lt;joinConditions&gt;&lt;joinCondition name=&quot;JOIN_FCTCUSTOMERORDER_DIMCUSTOMER_1&quot; referentialIntegrity=&quot;true&quot; joinType=&quot;inner&quot;&gt;&lt;partner1 table=&quot;MYTHILI_SHINE:FCTCUSTOMERORDER&quot; column=&quot;CUSTOMERID&quot;/&gt;&lt;partner2 table=&quot;MYTHILI_SHINE:DIMCUSTOMER&quot; column=&quot;CUSTOMERID&quot;/&gt;&lt;/joinCondition&gt;&lt;joinCondition name=&quot;JOIN_FCTCUSTOMERORDER_DIMPRODUCT_2&quot; referentialIntegrity=&quot;true&quot; joinType=&quot;inner&quot;&gt;&lt;partner1 table=&quot;MYTHILI_SHINE:FCTCUSTOMERORDER&quot; column=&quot;PRODUCTID&quot;/&gt;&lt;partner2 table=&quot;MYTHILI_SHINE:DIMPRODUCT&quot; column=&quot;PRODUCTID&quot;/&gt;&lt;/joinCondition&gt;&lt;/joinConditions&gt;&lt;joinPaths&gt;&lt;joinPath name=&quot;PATH_DIMCUSTOMER_1&quot;&gt;&lt;joins&gt;&lt;join name=&quot;JOIN_FCTCUSTOMERORDER_DIMCUSTOMER_1&quot;/&gt;&lt;/joins&gt;&lt;/joinPath&gt;&lt;joinPath name=&quot;PATH_DIMPRODUCT_2&quot;&gt;&lt;joins&gt;&lt;join name=&quot;JOIN_FCTCUSTOMERORDER_DIMPRODUCT_2&quot;/&gt;&lt;/joins&gt;&lt;/joinPath&gt;&lt;/joinPaths&gt;&lt;dimensionAttributes&gt;&lt;dimensionAttribute name=&quot;CUSTOMER&quot;&gt;&lt;columnMappings&gt;&lt;columnMapping name=&quot;CUSTOMER&quot; technicalName=&quot;CUSTOMER&quot; type=&quot;key&quot; table=&quot;MYTHILI_SHINE:DIMCUSTOMER&quot; column=&quot;CUSTOMER&quot; joinPath=&quot;PATH_DIMCUSTOMER_1&quot; isVisible=&quot;true&quot;/&gt;&lt;/columnMappings&gt;&lt;/dimensionAttribute&gt;&lt;dimensionAttribute name=&quot;CITYNAME&quot;&gt;&lt;columnMappings&gt;&lt;columnMapping name=&quot;CITYNAME&quot; technicalName=&quot;CITYNAME&quot; type=&quot;key&quot; table=&quot;MYTHILI_SHINE:DIMCUSTOMER&quot; column=&quot;CITYNAME&quot; joinPath=&quot;PATH_DIMCUSTOMER_1&quot; isVisible=&quot;true&quot;/&gt;&lt;/columnMappings&gt;&lt;/dimensionAttribute&gt;&lt;dimensionAttribute name=&quot;COUNTRYNAME&quot;&gt;&lt;columnMappings&gt;&lt;columnMapping name=&quot;COUNTRYNAME&quot; technicalName=&quot;COUNTRYNAME&quot; type=&quot;key&quot; table=&quot;MYTHILI_SHINE:DIMCUSTOMER&quot; column=&quot;COUNTRYNAME&quot; joinPath=&quot;PATH_DIMCUSTOMER_1&quot; isVisible=&quot;true&quot;/&gt;&lt;/columnMappings&gt;&lt;/dimensionAttribute&gt;&lt;dimensionAttribute name=&quot;PRODUCTNAME&quot;&gt;&lt;columnMappings&gt;&lt;columnMapping name=&quot;PRODUCTNAME&quot; technicalName=&quot;PRODUCTNAME&quot; type=&quot;key&quot; table=&quot;MYTHILI_SHINE:DIMPRODUCT&quot; column=&quot;PRODUCTNAME&quot; joinPath=&quot;PATH_DIMPRODUCT_2&quot; isVisible=&quot;true&quot;/&gt;&lt;/columnMappings&gt;&lt;/dimensionAttribute&gt;&lt;dimensionAttribute name=&quot;CATEGORYNAME&quot;&gt;&lt;columnMappings&gt;&lt;columnMapping name=&quot;CATEGORYNAME&quot; technicalName=&quot;CATEGORYNAME&quot; type=&quot;key&quot; table=&quot;MYTHILI_SHINE:DIMPRODUCT&quot; column=&quot;CATEGORYNAME&quot; joinPath=&quot;PATH_DIMPRODUCT_2&quot; isVisible=&quot;true&quot;/&gt;&lt;/columnMappings&gt;&lt;/dimensionAttribute&gt;&lt;dimensionAttribute name=&quot;LINENAME&quot;&gt;&lt;columnMappings&gt;&lt;columnMapping name=&quot;LINENAME&quot; technicalName=&quot;LINENAME&quot; type=&quot;key&quot; table=&quot;MYTHILI_SHINE:DIMPRODUCT&quot; column=&quot;LINENAME&quot; joinPath=&quot;PATH_DIMPRODUCT_2&quot; isVisible=&quot;true&quot;/&gt;&lt;/columnMappings&gt;&lt;/dimensionAttribute&gt;&lt;dimensionAttribute name=&quot;CAPACITY&quot;&gt;&lt;columnMappings&gt;&lt;columnMapping name=&quot;CAPACITY&quot; technicalName=&quot;CAPACITY&quot; type=&quot;key&quot; table=&quot;MYTHILI_SHINE:DIMPRODUCT&quot; column=&quot;CAPACITY&quot; joinPath=&quot;PATH_DIMPRODUCT_2&quot; isVisible=&quot;true&quot;/&gt;&lt;/columnMappings&gt;&lt;/dimensionAttribute&gt;&lt;dimensionAttribute name=&quot;SCREENSIZE&quot;&gt;&lt;columnMappings&gt;&lt;columnMapping name=&quot;SCREENSIZE&quot; technicalName=&quot;SCREENSIZE&quot; type=&quot;key&quot; table=&quot;MYTHILI_SHINE:DIMPRODUCT&quot; column=&quot;SCREENSIZE&quot; joinPath=&quot;PATH_DIMPRODUCT_2&quot; isVisible=&quot;true&quot;/&gt;&lt;/columnMappings&gt;&lt;/dimensionAttribute&gt;&lt;dimensionAttribute name=&quot;REGIONNAME&quot;&gt;&lt;columnMappings&gt;&lt;columnMapping name=&quot;REGIONNAME&quot; technicalName=&quot;REGIONNAME&quot; type=&quot;key&quot; table=&quot;MYTHILI_SHINE:DIMCUSTOMER&quot; column=&quot;REGIONNAME&quot; joinPath=&quot;PATH_DIMCUSTOMER_1&quot; isVisible=&quot;true&quot;/&gt;&lt;/columnMappings&gt;&lt;/dimensionAttribute&gt;&lt;/dimensionAttributes&gt;&lt;measures&gt;&lt;measure name=&quot;QUANTITY&quot; table=&quot;MYTHILI_SHINE:FCTCUSTOMERORDER&quot; column=&quot;QUANTITY&quot; aggregationType=&quot;sum&quot; isVisible=&quot;true&quot;/&gt;&lt;measure name=&quot;DISCOUNT&quot; table=&quot;MYTHILI_SHINE:FCTCUSTOMERORDER&quot; column=&quot;DISCOUNT&quot; aggregationType=&quot;sum&quot; isVisible=&quot;true&quot;/&gt;&lt;measure name=&quot;NETSALES&quot; table=&quot;MYTHILI_SHINE:FCTCUSTOMERORDER&quot; column=&quot;NETSALES&quot; aggregationType=&quot;sum&quot; isVisible=&quot;true&quot;/&gt;&lt;measure name=&quot;QUANTITYORDERED&quot; table=&quot;MYTHILI_SHINE:FCTCUSTOMERORDER&quot; column=&quot;QUANTITYORDERED&quot; aggregationType=&quot;max&quot; isVisible=&quot;true&quot;/&gt;&lt;/measures&gt;&lt;constraints/&gt;&lt;/cube&gt;&lt;/cubeSchema&gt;&#039;</info>
+</message>
+<message>
+<status>OK</status>
+<info>timestamp: 2019-05-17,07:49:52.329</info>
+</message>
+<message>
+<status>OK</status>
+<info>CREATE OLAP SCENARIO statement executed, timestamp: 2019-05-17,07:49:52.339</info>
+</message>
+<message>
+<status>OK</status>
+<info>Create Analytic View failed: SQL: transaction rolled back by an internal error: column store error: &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&lt;createCubeResult version=&quot;1.0&quot;&gt;&lt;status&gt;&lt;message&gt;Error during executing SQL statement&lt;/message&gt;&lt;errorCode&gt;2116&lt;/errorCode&gt;&lt;/status&gt;&lt;details&gt;&lt;errors&gt;&lt;detail&gt;&lt;element&gt;CREATE COLUMN VIEW &quot;_SYS_BIC&quot;.&quot;Model_Test/MODEL_VIEW&quot; WITH PARAMETERS (DESCRIPTION=&#039;&#039;, INDEXTYPE=5, JOININDEX = &quot;MYTHILI_SHINE&quot;.&quot;DIMCUSTOMER&quot;, JOININDEXTYPE = 2, JOININDEX = &quot;MYTHILI_SHINE&quot;.&quot;DIMPRODUCT&quot;, JOININDEXTYPE = 2, JOININDEX = &quot;MYTHILI_SHINE&quot;.&quot;FCTCUSTOMERORDER&quot;, JOININDEXTYPE = 1, JOINCONDITION = (&#039;JOIN_FCTCUSTOMERORDER_DIMCUSTOMER_1&#039;, &quot;MYTHILI_SHINE&quot;.&quot;FCTCUSTOMERORDER&quot;, &quot;CUSTOMERID&quot;, &quot;MYTHILI_SHINE&quot;.&quot;DIMCUSTOMER&quot;, &quot;CUSTOMERID&quot;, &#039;&#039;, 0, 2), JOINCONDITION = (&#039;JOIN_FCTCUSTOMERORDER_DIMPRODUCT_2&#039;, &quot;MYTHILI_SHINE&quot;.&quot;FCTCUSTOMERORDER&quot;, &quot;PRODUCTID&quot;, &quot;MYTHILI_SHINE&quot;.&quot;DIMPRODUCT&quot;, &quot;PRODUCTID&quot;, &#039;&#039;, 0, 1), JOINPATH = (&#039;PATH_DIMCUSTOMER_1&#039;, &#039;JOIN_FCTCUSTOMERORDER_DIMCUSTOMER_1&#039;), JOINPATH = (&#039;PATH_DIMPRODUCT_2&#039;, &#039;JOIN_FCTCUSTOMERORDER_DIMPRODUCT_2&#039;), VIEWATTRIBUTE = (&#039;CUSTOMER&#039;, &quot;MYTHILI_SHINE&quot;.&quot;DIMCUSTOMER&quot;, &quot;CUSTOMER&quot;, &#039;PATH_DIMCUSTOMER_1&#039;, &#039;&#039;, &#039;&#039;, &#039;&#039;, &#039;CUSTOMER&#039;), VIEWATTRIBUTE = (&#039;CITYNAME&#039;, &quot;MYTHILI_SHINE&quot;.&quot;DIMCUSTOMER&quot;, &quot;CITYNAME&quot;, &#039;PATH_DIMCUSTOMER_1&#039;, &#039;&#039;, &#039;&#039;, &#039;&#039;, &#039;CITYNAME&#039;), VIEWATTRIBUTE = (&#039;COUNTRYNAME&#039;, &quot;MYTHILI_SHINE&quot;.&quot;DIMCUSTOMER&quot;, &quot;COUNTRYNAME&quot;, &#039;PATH_DIMCUSTOMER_1&#039;, &#039;&#039;, &#039;&#039;, &#039;&#039;, &#039;COUNTRYNAME&#039;), VIEWATTRIBUTE = (&#039;PRODUCTNAME&#039;, &quot;MYTHILI_SHINE&quot;.&quot;DIMPRODUCT&quot;, &quot;PRODUCTNAME&quot;, &#039;PATH_DIMPRODUCT_2&#039;, &#039;&#039;, &#039;&#039;, &#039;&#039;, &#039;PRODUCTNAME&#039;), VIEWATTRIBUTE = (&#039;CATEGORYNAME&#039;, &quot;MYTHILI_SHINE&quot;.&quot;DIMPRODUCT&quot;, &quot;CATEGORYNAME&quot;, &#039;PATH_DIMPRODUCT_2&#039;, &#039;&#039;, &#039;&#039;, &#039;&#039;, &#039;CATEGORYNAME&#039;), VIEWATTRIBUTE = (&#039;LINENAME&#039;, &quot;MYTHILI_SHINE&quot;.&quot;DIMPRODUCT&quot;, &quot;LINENAME&quot;, &#039;PATH_DIMPRODUCT_2&#039;, &#039;&#039;, &#039;&#039;, &#039;&#039;, &#039;LINENAME&#039;), VIEWATTRIBUTE = (&#039;CAPACITY&#039;, &quot;MYTHILI_SHINE&quot;.&quot;DIMPRODUCT&quot;, &quot;CAPACITY&quot;, &#039;PATH_DIMPRODUCT_2&#039;, &#039;&#039;, &#039;&#039;, &#039;&#039;, &#039;CAPACITY&#039;), VIEWATTRIBUTE = (&#039;SCREENSIZE&#039;, &quot;MYTHILI_SHINE&quot;.&quot;DIMPRODUCT&quot;, &quot;SCREENSIZE&quot;, &#039;PATH_DIMPRODUCT_2&#039;, &#039;&#039;, &#039;&#039;, &#039;&#039;, &#039;SCREENSIZE&#039;), VIEWATTRIBUTE = (&#039;REGIONNAME&#039;, &quot;MYTHILI_SHINE&quot;.&quot;DIMCUSTOMER&quot;, &quot;REGIONNAME&quot;, &#039;PATH_DIMCUSTOMER_1&#039;, &#039;&#039;, &#039;&#039;, &#039;&#039;, &#039;REGIONNAME&#039;), KEYFIGURE = (&quot;QUANTITY&quot;, 1, FORMULA=&#039;&#039;, DESCRIPTION=&#039;&#039;, UNITCONVERSIONNAME=&#039;&#039;, EXPRESSION=&#039;&#039;, EXPRESSIONFLAGS=0, INDEXID=&quot;MYTHILI_SHINE&quot;.&quot;FCTCUSTOMERORDER&quot;, ATTRIBUTE=&quot;QUANTITY&quot;), KEYFIGURE = (&quot;DISCOUNT&quot;, 1, FORMULA=&#039;&#039;, DESCRIPTION=&#039;&#039;, UNITCONVERSIONNAME=&#039;&#039;, EXPRESSION=&#039;&#039;, EXPRESSIONFLAGS=0, INDEXID=&quot;MYTHILI_SHINE&quot;.&quot;FCTCUSTOMERORDER&quot;, ATTRIBUTE=&quot;DISCOUNT&quot;), KEYFIGURE = (&quot;NETSALES&quot;, 1, FORMULA=&#039;&#039;, DESCRIPTION=&#039;&#039;, UNITCONVERSIONNAME=&#039;&#039;, EXPRESSION=&#039;&#039;, EXPRESSIONFLAGS=0, INDEXID=&quot;MYTHILI_SHINE&quot;.&quot;FCTCUSTOMERORDER&quot;, ATTRIBUTE=&quot;NETSALES&quot;), KEYFIGURE = (&quot;QUANTITYORDERED&quot;, 8, FORMULA=&#039;&#039;, DESCRIPTION=&#039;&#039;, UNITCONVERSIONNAME=&#039;&#039;, EXPRESSION=&#039;&#039;, EXPRESSIONFLAGS=0, INDEXID=&quot;MYTHILI_SHINE&quot;.&quot;FCTCUSTOMERORDER&quot;, ATTRIBUTE=&quot;QUANTITYORDERED&quot;), CHARACTERISTIC=(&#039;CUSTOMER&#039;, KEYATTRIBUTE=&quot;CUSTOMER&quot;), CHARACTERISTIC=(&#039;CITYNAME&#039;, KEYATTRIBUTE=&quot;CITYNAME&quot;), CHARACTERISTIC=(&#039;COUNTRYNAME&#039;, KEYATTRIBUTE=&quot;COUNTRYNAME&quot;), CHARACTERISTIC=(&#039;PRODUCTNAME&#039;, KEYATTRIBUTE=&quot;PRODUCTNAME&quot;), CHARACTERISTIC=(&#039;CATEGORYNAME&#039;, KEYATTRIBUTE=&quot;CATEGORYNAME&quot;), CHARACTERISTIC=(&#039;LINENAME&#039;, KEYATTRIBUTE=&quot;LINENAME&quot;), CHARACTERISTIC=(&#039;CAPACITY&#039;, KEYATTRIBUTE=&quot;CAPACITY&quot;), CHARACTERISTIC=(&#039;SCREENSIZE&#039;, KEYATTRIBUTE=&quot;SCREENSIZE&quot;), CHARACTERISTIC=(&#039;REGIONNAME&#039;, KEYATTRIBUTE=&quot;REGIONNAME&quot;), &#039;REGISTERVIEWFORAPCHECK&#039;=&#039;1&#039;)&lt;/element&gt;&lt;code&gt;46&lt;/code&gt;&lt;message&gt;transaction rolled back by an internal error: insufficient privilege: Not authorized&lt;/message&gt;&lt;/detail&gt;&lt;/errors&gt;&lt;/details&gt;&lt;/createCubeResult&gt;2019-05-17,07:49:52.339</info>
+</message>
+<message>
+<status>OK</status>
+<info>End deployment of analytic view, timestamp: 2019-05-17,07:49:52.339</info>
+</message>
+<message>
+<status>OK</status>
+<info>Model deployment ended: Model_Test/MODEL_VIEW timestamp: 2019-05-17,07:49:52.339</info>
+</message>
+</message>
+<message>
+<status>INFORMATION</status>
+<info>Runtime &#039;BI-runtime&#039; finished activation of 1 object(s) in 229ms</info>
+</message>
+</message>
+</message>
+</executioninfo>
+<objectresults>
+<object result="Success"  type="Model Validation"  uri="newdb://IMI:LOCALHOST:03:P2001109445TRIAL-HDB:MYTHILI_SHINE/Model_Test/analyticviews/MODEL_VIEW.analyticview" />
+</objectresults>
+</modelerjob>

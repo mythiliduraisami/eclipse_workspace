@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="JobLog-v1.0.xsl"?>
+<modelerjob id="IMI_Generic_MYTHILI_SHINE_1558077627370" >
+<jobinfo>
+<Jobtype>Generic</Jobtype>
+<startdate>Fri May 17 12:50:28 IST 2019</startdate>
+<enddate>Fri May 17 12:50:33 IST 2019</enddate>
+<elapsedtime>5.875 Seconds</elapsedtime>
+<systemuri>newdb://IMI:LOCALHOST:03:P2001109445TRIAL-HDB:MYTHILI_SHINE</systemuri>
+<result>INFORMATION</result>
+</jobinfo>
+<executioninfo>
+<message>
+<status>INFORMATION</status>
+<info>User selections</info>
+<message>
+<status>INFORMATION</status>
+<info>Source</info>
+<message>
+<status>OK</status>
+<info>File:N:&#092;CloudStorage&#092;OneDrive&#092;2.SAP_Training&#092;software&#092;STS_DIMCUSTOMER.csv</info>
+</message>
+<message>
+<status>OK</status>
+<info>Delimiter :COMMA</info>
+</message>
+<message>
+<status>OK</status>
+<info>Header Row :1</info>
+</message>
+</message>
+<message>
+<status>INFORMATION</status>
+<info>Target :</info>
+<message>
+<status>OK</status>
+<info>Table name :DIMCUSTOMER</info>
+</message>
+<message>
+<status>OK</status>
+<info>Schema name :MYTHILI_SHINE</info>
+</message>
+<message>
+<status>OK</status>
+<info>Store Type :columnstore</info>
+</message>
+</message>
+</message>
+<message>
+<status>INFORMATION</status>
+<info>Table creation</info>
+<message>
+<status>OK</status>
+<info>Table created</info>
+</message>
+</message>
+<message>
+<status>INFORMATION</status>
+<info>Data load</info>
+<message>
+<status>INFORMATION</status>
+<info>Mapping Column List</info>
+<message>
+<status>OK</status>
+<info>CUSTOMERID-&gt;CUSTOMERID</info>
+</message>
+<message>
+<status>OK</status>
+<info>CITYID-&gt;CITYID</info>
+</message>
+<message>
+<status>OK</status>
+<info>COUNTRYID-&gt;COUNTRYID</info>
+</message>
+<message>
+<status>OK</status>
+<info>REGIONID-&gt;REGIONID</info>
+</message>
+<message>
+<status>OK</status>
+<info>CUSTOMER-&gt;CUSTOMER</info>
+</message>
+<message>
+<status>OK</status>
+<info>COLUMN_6-&gt;COLUMN_6</info>
+</message>
+<message>
+<status>OK</status>
+<info>CITYNAME-&gt;CITYNAME</info>
+</message>
+<message>
+<status>OK</status>
+<info>COUNTRYNAME-&gt;COUNTRYNAME</info>
+</message>
+<message>
+<status>OK</status>
+<info>REGIONNAME-&gt;REGIONNAME</info>
+</message>
+</message>
+<message>
+<status>INFORMATION</status>
+<info>Data load - batch information</info>
+<message>
+<status>OK</status>
+<info>Batch from record 2 to 122 inserted</info>
+</message>
+</message>
+</message>
+</executioninfo>
+<objectresults>
+<object result="Success"  name="MYTHILI_SHINE.DIMCUSTOMER"  type="Generic" />
+<object result="Success"  name="Loading Data from STS_DIMCUSTOMER.csv"  type="Generic" />
+</objectresults>
+</modelerjob>

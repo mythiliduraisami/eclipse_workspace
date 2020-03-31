@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="JobLog-v1.0.xsl"?>
+<modelerjob id="IMI_Deletion_ACME_1559392553479" >
+<jobinfo>
+<Jobtype>Deletion</Jobtype>
+<startdate>Sat Jun 01 18:05:53 IST 2019</startdate>
+<enddate>Sat Jun 01 18:05:59 IST 2019</enddate>
+<elapsedtime>5.348 Seconds</elapsedtime>
+<systemuri>newdb://IMI:LOCALHOST:04:P2001109445TRIAL-HDB:ACME/modelling/calculationviews/EMP_DAT_CAL_ST</systemuri>
+<result>OK</result>
+</jobinfo>
+<executioninfo>
+<message>
+<status>OK</status>
+<info>Deleting object...modelling::EMP_DAT_CAL_ST</info>
+<message>
+<status>OK</status>
+<info>Files deleted</info>
+</message>
+</message>
+</executioninfo>
+<objectresults>
+<object result="Completed"  type="Deletion"  uri="newdb://IMI:LOCALHOST:04:P2001109445TRIAL-HDB:ACME/modelling/calculationviews/EMP_DAT_CAL_ST" />
+</objectresults>
+</modelerjob>

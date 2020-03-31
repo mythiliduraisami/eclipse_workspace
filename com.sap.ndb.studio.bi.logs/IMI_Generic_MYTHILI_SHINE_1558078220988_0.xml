@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="JobLog-v1.0.xsl"?>
+<modelerjob id="IMI_Generic_MYTHILI_SHINE_1558078220988" >
+<jobinfo>
+<Jobtype>Generic</Jobtype>
+<startdate>Fri May 17 13:00:21 IST 2019</startdate>
+<enddate>Fri May 17 13:00:51 IST 2019</enddate>
+<elapsedtime>29.689 Seconds</elapsedtime>
+<systemuri>newdb://IMI:LOCALHOST:03:P2001109445TRIAL-HDB:MYTHILI_SHINE</systemuri>
+<result>INFORMATION</result>
+</jobinfo>
+<executioninfo>
+<message>
+<status>INFORMATION</status>
+<info>User selections</info>
+<message>
+<status>INFORMATION</status>
+<info>Source</info>
+<message>
+<status>OK</status>
+<info>File:N:&#092;CloudStorage&#092;OneDrive&#092;2.SAP_Training&#092;software&#092;STS_FCTCUSTOMERORDER.csv</info>
+</message>
+<message>
+<status>OK</status>
+<info>Delimiter :COMMA</info>
+</message>
+<message>
+<status>OK</status>
+<info>Header Row :1</info>
+</message>
+</message>
+<message>
+<status>INFORMATION</status>
+<info>Target :</info>
+<message>
+<status>OK</status>
+<info>Table name :FCTCUSTOMERORDER</info>
+</message>
+<message>
+<status>OK</status>
+<info>Schema name :MYTHILI_SHINE</info>
+</message>
+<message>
+<status>OK</status>
+<info>Store Type :columnstore</info>
+</message>
+</message>
+</message>
+<message>
+<status>INFORMATION</status>
+<info>Table creation</info>
+<message>
+<status>OK</status>
+<info>Table created</info>
+</message>
+</message>
+<message>
+<status>INFORMATION</status>
+<info>Data load</info>
+<message>
+<status>INFORMATION</status>
+<info>Mapping Column List</info>
+<message>
+<status>OK</status>
+<info>ORDERID-&gt;ORDERID</info>
+</message>
+<message>
+<status>OK</status>
+<info>PRODUCTID-&gt;PRODUCTID</info>
+</message>
+<message>
+<status>OK</status>
+<info>CUSTOMERID-&gt;CUSTOMERID</info>
+</message>
+<message>
+<status>OK</status>
+<info>EMPLOYEEID-&gt;EMPLOYEEID</info>
+</message>
+<message>
+<status>OK</status>
+<info>PROMOTIONID-&gt;PROMOTIONID</info>
+</message>
+<message>
+<status>OK</status>
+<info>TERRITORYID-&gt;TERRITORYID</info>
+</message>
+<message>
+<status>OK</status>
+<info>ORDERPERIODID-&gt;ORDERPERIODID</info>
+</message>
+<message>
+<status>OK</status>
+<info>REQUIREDPERIODID-&gt;REQUIREDPERIODID</info>
+</message>
+<message>
+<status>OK</status>
+<info>SHIPPEDPERIODID-&gt;SHIPPEDPERIODID</info>
+</message>
+<message>
+<status>OK</status>
+<info>SHIPPERID-&gt;SHIPPERID</info>
+</message>
+<message>
+<status>OK</status>
+<info>UNITPRICE-&gt;UNITPRICE</info>
+</message>
+<message>
+<status>OK</status>
+<info>QUANTITY-&gt;QUANTITY</info>
+</message>
+<message>
+<status>OK</status>
+<info>DISCOUNT-&gt;DISCOUNT</info>
+</message>
+<message>
+<status>OK</status>
+<info>UNITSALES-&gt;UNITSALES</info>
+</message>
+<message>
+<status>OK</status>
+<info>NETSALES-&gt;NETSALES</info>
+</message>
+<message>
+<status>OK</status>
+<info>UNITCOST-&gt;UNITCOST</info>
+</message>
+<message>
+<status>OK</status>
+<info>FREIGHT-&gt;FREIGHT</info>
+</message>
+<message>
+<status>OK</status>
+<info>COST-&gt;COST</info>
+</message>
+<message>
+<status>OK</status>
+<info>QUANTITYORDERED-&gt;QUANTITYORDERED</info>
+</message>
+<message>
+<status>OK</status>
+<info>DELIVEREDPERIODID-&gt;DELIVEREDPERIODID</info>
+</message>
+</message>
+<message>
+<status>INFORMATION</status>
+<info>Data load - batch information</info>
+<message>
+<status>OK</status>
+<info>Batch from record 2 to 38652 inserted</info>
+</message>
+</message>
+</message>
+</executioninfo>
+<objectresults>
+<object result="Success"  name="MYTHILI_SHINE.FCTCUSTOMERORDER"  type="Generic" />
+<object result="Success"  name="Loading Data from STS_FCTCUSTOMERORDER.csv"  type="Generic" />
+</objectresults>
+</modelerjob>

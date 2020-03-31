@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="JobLog-v1.0.xsl"?>
+<modelerjob id="IMI_ModelValidation_ACME_1559491056544" >
+<jobinfo>
+<Jobtype>Model Validation</Jobtype>
+<startdate>Sun Jun 02 21:27:39 IST 2019</startdate>
+<enddate>Sun Jun 02 21:27:52 IST 2019</enddate>
+<elapsedtime>12.727 Seconds</elapsedtime>
+<systemuri>newdb://IMI:LOCALHOST:04:P2001109445TRIAL-HDB:ACME</systemuri>
+<result>WARNING</result>
+</jobinfo>
+<executioninfo>
+<message>
+<status>OK</status>
+<info>Client-side validation</info>
+<message>
+<status>OK</status>
+<info>Validation of modelling::AT_CUSTOMER </info>
+<message>
+<status>INFORMATION</status>
+<info>No rule selected</info>
+</message>
+</message>
+</message>
+<message>
+<status>WARNING</status>
+<info>Skipped Client Side Validation Rules</info>
+<message>
+<status>WARNING</status>
+<info>Decision Table Validation Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Decision Table Check Consistency Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Modeler View Input Parameter Existence Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Large object data type Check Rule </info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Table Validity Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Filter Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Measure Validation Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Stacked Counter Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Execute Engine Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Counter Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Currency Target Hidden Column Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Star Join Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Validate Data Sources with Right Outer Join Type</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Currency Stacking Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Floating Node Check Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Rank Node Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Join Validity Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Join column Data Type Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Variable and Input Parameter Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Hierarchy Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Hierarchy SQL Enable Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>ABAP Name Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Description Length Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>BI Virtual InfoProvider Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Unique Constraint Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Analytic Privilege Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>History view validation rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Table Function Validate Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Calculation in Joins Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Calculation in Filter Expressions Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Partition Types in Join Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Validate Stacked Aggregations</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Spatial Join Validity Rule</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Description Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Naming Convention Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Default Property Check</info>
+</message>
+<message>
+<status>WARNING</status>
+<info>Client Field Join Check</info>
+</message>
+</message>
+<message>
+<status>INFORMATION</status>
+<info>Server-side validation: Activation ID: 52</info>
+<message>
+<status>INFORMATION</status>
+<info>No error</info>
+<message>
+<status>INFORMATION</status>
+<info>Activation is performed with activation mode Check only.</info>
+</message>
+<message>
+<status>INFORMATION</status>
+<info>Runtime &#039;sqlproc-runtime&#039; finished activation of 1 object(s) in 586ms</info>
+</message>
+<message>
+<status>OK</status>
+<info>modelling.AT_CUSTOMER</info>
+<message>
+<status>OK</status>
+<info>Attribute deployment started: modelling/AT_CUSTOMER timestamp: 2019-06-02,15:59:31.190</info>
+</message>
+<message>
+<status>OK</status>
+<info>Removing BIMC records for modelling/AT_CUSTOMER timestamp: 2019-06-02,15:59:31.193</info>
+</message>
+<message>
+<status>OK</status>
+<info>Removing hierarchy views for modelling/AT_CUSTOMER timestamp: 2019-06-02,15:59:31.292</info>
+</message>
+<message>
+<status>OK</status>
+<info>Start deployment of attribute view, timestamp: 2019-06-02,15:59:31.485</info>
+</message>
+<message>
+<status>OK</status>
+<info>Create DDL: CREATE COLUMN VIEW &quot;_SYS_BIC&quot;.&quot;modelling/AT_CUSTOMER&quot; TYPE JOIN WITH PARAMETERS ( joinIndex = &quot;ACME&quot;.&quot;customers&quot;, joinIndexType = 0, viewAttribute = (&#039;customerNumber&#039;, &quot;ACME&quot;.&quot;customers&quot;, &quot;customerNumber&quot;, &#039;&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_CUSTOMER$customerNumber&#039;), viewAttribute = (&#039;customerName&#039;, &quot;ACME&quot;.&quot;customers&quot;, &quot;customerName&quot;, &#039;&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_CUSTOMER$customerName&#039;), viewAttribute = (&#039;contactLastName&#039;, &quot;ACME&quot;.&quot;customers&quot;, &quot;contactLastName&quot;, &#039;&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_CUSTOMER$contactLastName&#039;), viewAttribute = (&#039;contactFirstName&#039;, &quot;ACME&quot;.&quot;customers&quot;, &quot;contactFirstName&quot;, &#039;&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_CUSTOMER$contactFirstName&#039;), viewAttribute = (&#039;phone&#039;, &quot;ACME&quot;.&quot;customers&quot;, &quot;phone&quot;, &#039;&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_CUSTOMER$phone&#039;), viewAttribute = (&#039;addressLine1&#039;, &quot;ACME&quot;.&quot;customers&quot;, &quot;addressLine1&quot;, &#039;&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_CUSTOMER$addressLine1&#039;), viewAttribute = (&#039;addressLine2&#039;, &quot;ACME&quot;.&quot;customers&quot;, &quot;addressLine2&quot;, &#039;&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_CUSTOMER$addressLine2&#039;), viewAttribute = (&#039;city&#039;, &quot;ACME&quot;.&quot;customers&quot;, &quot;city&quot;, &#039;&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_CUSTOMER$city&#039;), viewAttribute = (&#039;state&#039;, &quot;ACME&quot;.&quot;customers&quot;, &quot;state&quot;, &#039;&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_CUSTOMER$state&#039;), viewAttribute = (&#039;postalCode&#039;, &quot;ACME&quot;.&quot;customers&quot;, &quot;postalCode&quot;, &#039;&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_CUSTOMER$postalCode&#039;), viewAttribute = (&#039;country&#039;, &quot;ACME&quot;.&quot;customers&quot;, &quot;country&quot;, &#039;&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_CUSTOMER$country&#039;), viewAttribute = (&#039;salesRepEmployeeNumber&#039;, &quot;ACME&quot;.&quot;customers&quot;, &quot;salesRepEmployeeNumber&quot;, &#039;&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_CUSTOMER$salesRepEmployeeNumber&#039;), viewAttribute = (&#039;creditLimit&#039;, &quot;ACME&quot;.&quot;customers&quot;, &quot;creditLimit&quot;, &#039;&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_CUSTOMER$creditLimit&#039;), view = (&#039;V_customers&#039;, &quot;ACME&quot;.&quot;customers&quot;), defaultView = &#039;V_customers&#039;, &#039;REGISTERVIEWFORAPCHECK&#039; = &#039;1&#039; ) NO STRUCTURED PRIVILEGE CHECK</info>
+</message>
+<message>
+<status>OK</status>
+<info>End deployment of attribute view, timestamp: 2019-06-02,15:59:31.571</info>
+</message>
+<message>
+<status>OK</status>
+<info>Create hierarchy view: CREATE COLUMN VIEW &quot;_SYS_BIC&quot;.&quot;modelling/AT_CUSTOMER/hier/AT_CUSTOMER&quot; TYPE hierarchy WITH PARAMETERS (&#039;hierarchyDefinition&#039;=&#039;{&quot;sourceType&quot;:&quot;leveled&quot;,&quot;nodeType&quot;:&quot;string&quot;,&quot;rootNode&quot;:&quot;(all)&quot;,&quot;runtimeObjectType&quot;:&quot;blob&quot;,&quot;nodeStyle&quot;:&quot;levelName&quot;,&quot;sources&quot;: [{&quot;type&quot;:&quot;leveled&quot;,&quot;schema&quot;:&quot;_SYS_BIC&quot;,&quot;name&quot;:&quot;modelling/AT_CUSTOMER&quot;,&quot;levels&quot;:[&quot;customerNumber&quot;],&quot;orderBy&quot;:[&quot;customerNumber&quot;,true],&quot;attributeMapping&quot;:{&quot;customerNumber&quot;:&quot;customerNumber&quot;}}]}&#039;) timestamp: 2019-06-02,15:59:31.572</info>
+</message>
+<message>
+<status>OK</status>
+<info>Attribute deployment ended: modelling/AT_CUSTOMER timestamp: 2019-06-02,15:59:31.624</info>
+</message>
+</message>
+<message>
+<status>INFORMATION</status>
+<info>Runtime &#039;BI-runtime&#039; finished activation of 1 object(s) in 586ms</info>
+</message>
+</message>
+</message>
+</executioninfo>
+<objectresults>
+<object result="Success"  type="Model Validation"  uri="newdb://IMI:LOCALHOST:04:P2001109445TRIAL-HDB:ACME/modelling/attributeviews/AT_CUSTOMER.attributeview" />
+</objectresults>
+</modelerjob>

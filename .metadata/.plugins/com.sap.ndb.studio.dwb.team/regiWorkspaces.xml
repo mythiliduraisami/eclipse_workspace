@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RegiWorkspaces version="1.0">
+<RegiWorkspace path="C:\eclipse\hana_work\workspace_sapui5_1" uniqueSystemId="IMI:LOCALHOST:03:P2001109445TRIAL-HDB:MYTHILI_SHINE" workspaceName="workspace_sapui5_1"/>
+<RegiWorkspace path="C:\eclipse\hana_work\IMI_04_p2001109445trial-hdb_ACME\mythili_workspace" uniqueSystemId="IMI:LOCALHOST:04:P2001109445TRIAL-HDB:ACME" workspaceName="mythili_workspace"/>
+</RegiWorkspaces>

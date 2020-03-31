@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="JobLog-v1.0.xsl"?>
+<modelerjob id="IMI_Activation_ACME_1559383363466" >
+<jobinfo>
+<Jobtype>Activation</Jobtype>
+<startdate>Sat Jun 01 15:32:44 IST 2019</startdate>
+<enddate>Sat Jun 01 15:32:51 IST 2019</enddate>
+<elapsedtime>7.708 Seconds</elapsedtime>
+<systemuri>newdb://IMI:LOCALHOST:04:P2001109445TRIAL-HDB:ACME</systemuri>
+<result>ERROR</result>
+</jobinfo>
+<executioninfo>
+<message>
+<status>OK</status>
+<info>Execute validation rules</info>
+<message>
+<status>OK</status>
+<info>Validation of modelling::AT_PRODUCT </info>
+<message>
+<status>INFORMATION</status>
+<info>No rule selected</info>
+</message>
+</message>
+</message>
+<message>
+<status>ERROR</status>
+<info>Activation ID: 21 (Repository: Activation failed for at least one object;At least one runtime reported an error during activation. Please see CheckResults for details)</info>
+<message>
+<status>INFORMATION</status>
+<info>Activation is performed with activation mode cascade two-phases.</info>
+</message>
+<message>
+<status>INFORMATION</status>
+<info>Runtime &#039;sqlproc-runtime&#039; finished activation of 1 object(s) in 21ms</info>
+</message>
+<message>
+<status>ERROR</status>
+<info>modelling::AT_PRODUCT</info>
+<message>
+<status>ERROR</status>
+<info>Repository: Encountered an error in repository runtime extension; Deploy Attribute View: SQL: transaction rolled back by an internal error: insufficient privilege: Not authorized<br/>Create view DDL statement: CREATE COLUMN VIEW &quot;_SYS_BIC&quot;.&quot;modelling/AT_PRODUCT&quot; TYPE JOIN WITH PARAMETERS ( joinIndex = &quot;ACME&quot;.&quot;PRODUCT&quot;, joinIndexType = 0, joinIndex = &quot;ACME&quot;.&quot;PRODUCT_DESC&quot;, joinIndexType = 0, joinCondition = (&#039;JOIN_PRODUCT_PRODUCT_DESC_1&#039;, &quot;ACME&quot;.&quot;PRODUCT&quot;, &quot;PRODUCT_ID&quot;, &quot;ACME&quot;.&quot;PRODUCT_DESC&quot;, &quot;PRODUCT_ID&quot;, &#039;&#039;, 16, 0), joinPath = (&#039;PATH&#039;, &#039;JOIN_PRODUCT_PRODUCT_DESC_1&#039;), viewAttribute = (&#039;PRODUCT_ID&#039;, &quot;ACME&quot;.&quot;PRODUCT&quot;, &quot;PRODUCT_ID&quot;, &#039;PATH&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_PRODUCT$PRODUCT_ID&#039;), viewAttribute = (&#039;PRODUCT_ID_1&#039;, &quot;ACME&quot;.&quot;PRODUCT_DESC&quot;, &quot;PRODUCT_ID&quot;, &#039;PATH&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_PRODUCT$PRODUCT_ID_1&#039;), viewAttribute = (&#039;SUPPLIER_ID&#039;, &quot;ACME&quot;.&quot;PRODUCT&quot;, &quot;SUPPLIER_ID&quot;, &#039;PATH&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_PRODUCT$SUPPLIER_ID&#039;), viewAttribute = (&#039;CATEGORY&#039;, &quot;ACME&quot;.&quot;PRODUCT&quot;, &quot;CATEGORY&quot;, &#039;PATH&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_PRODUCT$CATEGORY&#039;), viewAttribute = (&#039;PRICE&#039;, &quot;ACME&quot;.&quot;PRODUCT&quot;, &quot;PRICE&quot;, &#039;PATH&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_PRODUCT$PRICE&#039;), viewAttribute = (&#039;PRODUCT_NAME&#039;, &quot;ACME&quot;.&quot;PRODUCT_DESC&quot;, &quot;PRODUCT_NAME&quot;, &#039;PATH&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_PRODUCT$PRODUCT_NAME&#039;), view = (&#039;V_PRODUCT&#039;, &quot;ACME&quot;.&quot;PRODUCT&quot;, &#039;PATH&#039;), defaultView = &#039;V_PRODUCT&#039;, &#039;REGISTERVIEWFORAPCHECK&#039; = &#039;1&#039; ) NO STRUCTURED PRIVILEGE CHECK<br/></info>
+</message>
+<message>
+<status>OK</status>
+<info>Attribute deployment started: modelling/AT_PRODUCT timestamp: 2019-06-01,10:04:30.512</info>
+</message>
+<message>
+<status>OK</status>
+<info>Removing BIMC records for modelling/AT_PRODUCT timestamp: 2019-06-01,10:04:30.512</info>
+</message>
+<message>
+<status>OK</status>
+<info>Removing hierarchy views for modelling/AT_PRODUCT timestamp: 2019-06-01,10:04:30.513</info>
+</message>
+<message>
+<status>OK</status>
+<info>Start deployment of attribute view, timestamp: 2019-06-01,10:04:30.518</info>
+</message>
+<message>
+<status>OK</status>
+<info>Create DDL: CREATE COLUMN VIEW &quot;_SYS_BIC&quot;.&quot;modelling/AT_PRODUCT&quot; TYPE JOIN WITH PARAMETERS ( joinIndex = &quot;ACME&quot;.&quot;PRODUCT&quot;, joinIndexType = 0, joinIndex = &quot;ACME&quot;.&quot;PRODUCT_DESC&quot;, joinIndexType = 0, joinCondition = (&#039;JOIN_PRODUCT_PRODUCT_DESC_1&#039;, &quot;ACME&quot;.&quot;PRODUCT&quot;, &quot;PRODUCT_ID&quot;, &quot;ACME&quot;.&quot;PRODUCT_DESC&quot;, &quot;PRODUCT_ID&quot;, &#039;&#039;, 16, 0), joinPath = (&#039;PATH&#039;, &#039;JOIN_PRODUCT_PRODUCT_DESC_1&#039;), viewAttribute = (&#039;PRODUCT_ID&#039;, &quot;ACME&quot;.&quot;PRODUCT&quot;, &quot;PRODUCT_ID&quot;, &#039;PATH&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_PRODUCT$PRODUCT_ID&#039;), viewAttribute = (&#039;PRODUCT_ID_1&#039;, &quot;ACME&quot;.&quot;PRODUCT_DESC&quot;, &quot;PRODUCT_ID&quot;, &#039;PATH&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_PRODUCT$PRODUCT_ID_1&#039;), viewAttribute = (&#039;SUPPLIER_ID&#039;, &quot;ACME&quot;.&quot;PRODUCT&quot;, &quot;SUPPLIER_ID&quot;, &#039;PATH&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_PRODUCT$SUPPLIER_ID&#039;), viewAttribute = (&#039;CATEGORY&#039;, &quot;ACME&quot;.&quot;PRODUCT&quot;, &quot;CATEGORY&quot;, &#039;PATH&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_PRODUCT$CATEGORY&#039;), viewAttribute = (&#039;PRICE&#039;, &quot;ACME&quot;.&quot;PRODUCT&quot;, &quot;PRICE&quot;, &#039;PATH&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_PRODUCT$PRICE&#039;), viewAttribute = (&#039;PRODUCT_NAME&#039;, &quot;ACME&quot;.&quot;PRODUCT_DESC&quot;, &quot;PRODUCT_NAME&quot;, &#039;PATH&#039;, &#039;default&#039;, &#039;attribute&#039;, &#039;&#039;, &#039;modelling/AT_PRODUCT$PRODUCT_NAME&#039;), view = (&#039;V_PRODUCT&#039;, &quot;ACME&quot;.&quot;PRODUCT&quot;, &#039;PATH&#039;), defaultView = &#039;V_PRODUCT&#039;, &#039;REGISTERVIEWFORAPCHECK&#039; = &#039;1&#039; ) NO STRUCTURED PRIVILEGE CHECK</info>
+</message>
+<message>
+<status>OK</status>
+<info>End deployment of attribute view, timestamp: 2019-06-01,10:04:30.528</info>
+</message>
+<message>
+<status>OK</status>
+<info>Attribute deployment ended: modelling/AT_PRODUCT timestamp: 2019-06-01,10:04:30.528</info>
+</message>
+</message>
+<message>
+<status>INFORMATION</status>
+<info>Runtime &#039;BI-runtime&#039; finished activation of 1 object(s) in 21ms</info>
+</message>
+</message>
+</executioninfo>
+<objectresults>
+<object result="Error"  type="Activation"  uri="newdb://IMI:LOCALHOST:04:P2001109445TRIAL-HDB:ACME/modelling/attributeviews/AT_PRODUCT.attributeview" />
+</objectresults>
+</modelerjob>

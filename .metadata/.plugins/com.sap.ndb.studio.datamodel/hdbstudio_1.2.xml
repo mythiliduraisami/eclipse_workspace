@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hdbstudio version="1.2">
+<tree>
+<sapsystem name="I3B:LOCALHOST:02:P1941902245TRIAL-HANADB1:ACME"/>
+<sapsystem name="I3B:LOCALHOST:00:P1941902245TRIAL-HANADB1:SYSTEM"/>
+<sapsystem name="IMI:LOCALHOST:01:P2001109445TRIAL-HDB:SYSTEM"/>
+<sapsystem name="IMI:LOCALHOST:03:P2001109445TRIAL-HDB:MYTHILI_SHINE"/>
+<sapsystem name="IMI:LOCALHOST:04:P2001109445TRIAL-HDB:ACME"/>
+</tree>
+<sapsystems>
+<sapsystem cloudAccount="p1941902245trial" cloudDedicatedDb="hanadb1" cloudHost="hanatrial.ondemand.com" cloudSystemName="p1941902245trial-hanadb1" cloudUser="p1941902245" databasename="p1941902245trial-hanadb1" databasetype="USERDB" hostname="localhost" instancenumber="2" open="false" secure="false" secure_xs="true" ssl="false" systemname="I3B" tunneled="tunneled" username="ACME" xs_host="hanadb1p1941902245trial.hanatrial.ondemand.com:443">
+<sapcontrol state="DISABLED"/>
+</sapsystem>
+<sapsystem cloudAccount="p1941902245trial" cloudDedicatedDb="hanadb1" cloudHost="hanatrial.ondemand.com" cloudSystemName="p1941902245trial-hanadb1" cloudUser="p1941902245" databasename="p1941902245trial-hanadb1" databasetype="USERDB" hostname="localhost" instancenumber="0" open="false" secure="false" secure_xs="true" ssl="false" systemname="I3B" tunneled="tunneled" username="SYSTEM" xs_host="hanadb1p1941902245trial.hanatrial.ondemand.com:443">
+<hostrole hostname="localhost" publicname="localhost" role="CLIENT" sqlport="30015"/>
+<hostrole hostname="vsa960828.nwtrial.od.sap.biz" publicname="10.117.96.102" role="MASTER" sqlport="0"/>
+<sapcontrol state="DISABLED"/>
+</sapsystem>
+<sapsystem cloudAccount="p2001109445trial" cloudDedicatedDb="hdb" cloudHost="hanatrial.ondemand.com" cloudSystemName="p2001109445trial-hdb" cloudUser="P2001109445" databasename="p2001109445trial-hdb" databasetype="USERDB" hostname="localhost" instancenumber="1" open="false" secure="false" secure_xs="true" ssl="false" systemname="IMI" tunneled="tunneled" username="SYSTEM" xs_host="hdbp2001109445trial.hanatrial.ondemand.com:443">
+<hostrole hostname="localhost" publicname="localhost" role="CLIENT" sqlport="30115"/>
+<hostrole hostname="vsa2136207.nwtrial.od.sap.biz" publicname="10.117.96.173" role="MASTER" sqlport="0"/>
+<sapcontrol state="DISABLED"/>
+</sapsystem>
+<sapsystem cloudAccount="p2001109445trial" cloudDedicatedDb="hdb" cloudHost="hanatrial.ondemand.com" cloudSystemName="p2001109445trial-hdb" cloudUser="P2001109445" databasename="p2001109445trial-hdb" databasetype="USERDB" hostname="localhost" instancenumber="3" open="false" secure="false" secure_xs="true" ssl="false" systemname="IMI" tunneled="tunneled" username="MYTHILI_SHINE" xs_host="hdbp2001109445trial.hanatrial.ondemand.com:443">
+<hostrole hostname="localhost" publicname="localhost" role="CLIENT" sqlport="30315"/>
+<hostrole hostname="vsa2136207.nwtrial.od.sap.biz" publicname="10.117.96.173" role="MASTER" sqlport="0"/>
+<sapcontrol state="DISABLED"/>
+</sapsystem>
+<sapsystem cloudAccount="p2001109445trial" cloudDedicatedDb="hdb" cloudHost="hanatrial.ondemand.com" cloudSystemName="p2001109445trial-hdb" cloudUser="P2001109445" databasename="p2001109445trial-hdb" databasetype="USERDB" hostname="localhost" instancenumber="4" open="false" secure="false" secure_xs="true" ssl="false" systemname="IMI" tunneled="tunneled" username="ACME" xs_host="hdbp2001109445trial.hanatrial.ondemand.com:443">
+<hostrole hostname="localhost" publicname="localhost" role="CLIENT" sqlport="30415"/>
+<hostrole hostname="vsa2136207.nwtrial.od.sap.biz" publicname="10.117.96.173" role="MASTER" sqlport="0"/>
+<sapcontrol state="DISABLED"/>
+</sapsystem>
+</sapsystems>
+</hdbstudio>

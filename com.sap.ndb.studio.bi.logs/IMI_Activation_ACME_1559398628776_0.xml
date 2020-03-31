@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="JobLog-v1.0.xsl"?>
+<modelerjob id="IMI_Activation_ACME_1559398628776" >
+<jobinfo>
+<Jobtype>Activation</Jobtype>
+<startdate>Sat Jun 01 19:47:09 IST 2019</startdate>
+<enddate>Sat Jun 01 19:47:17 IST 2019</enddate>
+<elapsedtime>7.845 Seconds</elapsedtime>
+<systemuri>newdb://IMI:LOCALHOST:04:P2001109445TRIAL-HDB:ACME</systemuri>
+<result>OK</result>
+</jobinfo>
+<executioninfo>
+<message>
+<status>OK</status>
+<info>Execute validation rules</info>
+<message>
+<status>OK</status>
+<info>Validation of modelling::CV_PURCHASE_ORDERS </info>
+<message>
+<status>INFORMATION</status>
+<info>No rule selected</info>
+</message>
+</message>
+</message>
+<message>
+<status>OK</status>
+<info>Activation ID: 37 (No error)</info>
+<message>
+<status>INFORMATION</status>
+<info>Activation is performed with activation mode cascade two-phases.</info>
+</message>
+<message>
+<status>INFORMATION</status>
+<info>Runtime &#039;sqlproc-runtime&#039; finished activation of 1 object(s) in 67ms</info>
+</message>
+<message>
+<status>OK</status>
+<info>modelling::CV_PURCHASE_ORDERS</info>
+<message>
+<status>OK</status>
+<info>Model deployment started: modelling/CV_PURCHASE_ORDERS timestamp: 2019-06-01,14:18:55.933</info>
+</message>
+<message>
+<status>OK</status>
+<info>Removing BIMC records for modelling/CV_PURCHASE_ORDERS timestamp: 2019-06-01,14:18:55.934</info>
+</message>
+<message>
+<status>OK</status>
+<info>Removing hierarchy views for modelling/CV_PURCHASE_ORDERS timestamp: 2019-06-01,14:18:55.938</info>
+</message>
+<message>
+<status>OK</status>
+<info>Start deployment of graphical calculation view, timestamp: 2019-06-01,14:18:55.948</info>
+</message>
+<message>
+<status>OK</status>
+<info>Calculation Scenario XML: &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&lt;cubeSchema defaultLanguage=&quot;EN&quot; defaultSchema=&quot;_SYS_BIC&quot; operation=&quot;createCalculationScenario&quot; version=&quot;3&quot;&gt;&lt;calculationScenario name=&quot;modelling/CV_PURCHASE_ORDERS&quot; externalScenarioName=&quot;modelling::CV_PURCHASE_ORDERS&quot; schema=&quot;_SYS_BIC&quot;&gt;&lt;dataSources&gt;&lt;tableDataSource name=&quot;PurchaseOrders&quot; schema=&quot;ACME&quot; table=&quot;PurchaseOrders&quot;&gt;&lt;attributes&gt;&lt;allAttribute/&gt;&lt;/attributes&gt;&lt;/tableDataSource&gt;&lt;tableDataSource name=&quot;Vendors&quot; schema=&quot;ACME&quot; table=&quot;Vendors&quot;&gt;&lt;attributes&gt;&lt;allAttribute/&gt;&lt;/attributes&gt;&lt;/tableDataSource&gt;&lt;/dataSources&gt;&lt;calculationViews&gt;&lt;projection name=&quot;PurchaseOrder&quot;&gt;&lt;debugInfo nodeName=&quot;PurchaseOrder&quot;/&gt;&lt;viewAttributes&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;POID&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;EMPLOYEEID&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;VENDORID&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;ORDERDATE&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;ITEMID&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;QUANTITY&quot;/&gt;&lt;calculatedViewAttribute name=&quot;OrderCount&quot; datatype=&quot;int&quot;&gt;&lt;formula&gt;1&lt;/formula&gt;&lt;/calculatedViewAttribute&gt;&lt;/viewAttributes&gt;&lt;inputs&gt;&lt;input name=&quot;PurchaseOrders&quot;&gt;&lt;mapping source=&quot;POID&quot; target=&quot;POID&quot;/&gt;&lt;mapping source=&quot;EMPLOYEEID&quot; target=&quot;EMPLOYEEID&quot;/&gt;&lt;mapping source=&quot;VENDORID&quot; target=&quot;VENDORID&quot;/&gt;&lt;mapping source=&quot;ORDERDATE&quot; target=&quot;ORDERDATE&quot;/&gt;&lt;mapping source=&quot;ITEMID&quot; target=&quot;ITEMID&quot;/&gt;&lt;mapping source=&quot;QUANTITY&quot; target=&quot;QUANTITY&quot;/&gt;&lt;/input&gt;&lt;/inputs&gt;&lt;/projection&gt;&lt;projection name=&quot;Vendor&quot;&gt;&lt;debugInfo nodeName=&quot;Vendor&quot;/&gt;&lt;viewAttributes&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;VENDORID&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;VENDORNAME&quot;/&gt;&lt;/viewAttributes&gt;&lt;inputs&gt;&lt;input name=&quot;Vendors&quot;&gt;&lt;mapping source=&quot;VENDORID&quot; target=&quot;VENDORID&quot;/&gt;&lt;mapping source=&quot;VENDORNAME&quot; target=&quot;VENDORNAME&quot;/&gt;&lt;/input&gt;&lt;/inputs&gt;&lt;/projection&gt;&lt;join name=&quot;PurchaseOder_Vendor_Join&quot; type=&quot;inner&quot;&gt;&lt;debugInfo nodeName=&quot;PurchaseOder_Vendor_Join&quot;/&gt;&lt;viewAttributes&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;POID&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;EMPLOYEEID&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;VENDORID&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;VENDORNAME&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;ORDERDATE&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;ITEMID&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;QUANTITY&quot;/&gt;&lt;viewAttribute ignoreFromInputsFlag=&quot;false&quot; isVisible=&quot;true&quot; name=&quot;OrderCount&quot;/&gt;&lt;/viewAttributes&gt;&lt;inputs&gt;&lt;input name=&quot;PurchaseOrder&quot;&gt;&lt;mapping source=&quot;POID&quot; target=&quot;POID&quot;/&gt;&lt;mapping source=&quot;EMPLOYEEID&quot; target=&quot;EMPLOYEEID&quot;/&gt;&lt;mapping source=&quot;VENDORID&quot; target=&quot;VENDORID&quot;/&gt;&lt;mapping source=&quot;ORDERDATE&quot; target=&quot;ORDERDATE&quot;/&gt;&lt;mapping source=&quot;ITEMID&quot; target=&quot;ITEMID&quot;/&gt;&lt;mapping source=&quot;QUANTITY&quot; target=&quot;QUANTITY&quot;/&gt;&lt;mapping source=&quot;OrderCount&quot; target=&quot;OrderCount&quot;/&gt;&lt;/input&gt;&lt;input name=&quot;Vendor&quot;&gt;&lt;mapping source=&quot;VENDORNAME&quot; target=&quot;VENDORNAME&quot;/&gt;&lt;mapping source=&quot;VENDORID&quot; target=&quot;VENDORID&quot;/&gt;&lt;/input&gt;&lt;/inputs&gt;&lt;joinAttributes&gt;&lt;joinAttribute excludeFlag=&quot;false&quot; name=&quot;VENDORID&quot;/&gt;&lt;/joinAttributes&gt;&lt;/join&gt;&lt;aggregation name=&quot;finalAggregation&quot; defaultViewFlag=&quot;true&quot;&gt;&lt;debugInfo nodeName=&quot;Aggregation&quot;/&gt;&lt;inputs&gt;&lt;input name=&quot;PurchaseOder_Vendor_Join&quot;&gt;&lt;mapping source=&quot;EMPLOYEEID&quot; target=&quot;EMPLOYEEID&quot;/&gt;&lt;mapping source=&quot;VENDORNAME&quot; target=&quot;VENDORNAME&quot;/&gt;&lt;mapping source=&quot;POID&quot; target=&quot;POID&quot;/&gt;&lt;/input&gt;&lt;/inputs&gt;&lt;viewAttributes&gt;&lt;viewAttribute name=&quot;EMPLOYEEID&quot;&gt;&lt;descriptions&gt;&lt;description&gt;EMPLOYEEID&lt;/description&gt;&lt;/descriptions&gt;&lt;/viewAttribute&gt;&lt;viewAttribute name=&quot;VENDORNAME&quot;&gt;&lt;descriptions&gt;&lt;description&gt;VENDORNAME&lt;/description&gt;&lt;/descriptions&gt;&lt;/viewAttribute&gt;&lt;/viewAttributes&gt;&lt;keyfigures&gt;&lt;keyfigure name=&quot;POID&quot; aggregationType=&quot;count&quot;&gt;&lt;descriptions&gt;&lt;description&gt;POID&lt;/description&gt;&lt;/descriptions&gt;&lt;/keyfigure&gt;&lt;keyfigure name=&quot;row.count&quot; datatype=&quot;fixed&quot; length=&quot;18&quot; isVisible=&quot;false&quot; aggregationType=&quot;count&quot;/&gt;&lt;/keyfigures&gt;&lt;unitConversionInfos/&gt;&lt;calculationNodeHints countStarAttribute=&quot;row.count&quot;/&gt;&lt;/aggregation&gt;&lt;/calculationViews&gt;&lt;variables&gt;&lt;variable name=&quot;$$language$$&quot; typeMask=&quot;512&quot; isGlobal=&quot;true&quot; usage=&quot;optional&quot;/&gt;&lt;variable name=&quot;$$client$$&quot; typeMask=&quot;512&quot; isGlobal=&quot;true&quot; usage=&quot;optional&quot;/&gt;&lt;/variables&gt;&lt;descriptions&gt;&lt;description&gt;CV_PURCHASE_ORDERS&lt;/description&gt;&lt;/descriptions&gt;&lt;/calculationScenario&gt;&lt;/cubeSchema&gt;</info>
+</message>
+<message>
+<status>OK</status>
+<info>End deployment of graphical calculation view, timestamp: 2019-06-01,14:18:55.959</info>
+</message>
+<message>
+<status>OK</status>
+<info>Create hierarchy view: CREATE COLUMN VIEW &quot;_SYS_BIC&quot;.&quot;modelling/CV_PURCHASE_ORDERS/Measures/hier/Measures&quot; TYPE hierarchy WITH PARAMETERS ( &#039;hierarchyDefinition&#039; = &#039;{ &quot;runtimeObjectType&quot;:&quot;blob&quot;,&quot;nodeType&quot;:&quot;string&quot;,&quot;nodeStyle&quot;:&quot;nameOnly&quot;,&quot;sourceType&quot;:&quot;leveled&quot;,&quot;sourceQuery&quot;:&quot;SELECT &#092;&quot;ALTERNATIVE_PROPERTY_NAME&#092;&quot; AS &#092;&quot;Measure&#092;&quot;,&#092;&quot;PROPERTY_ID&#092;&quot; as &#092;&quot;$!DUMMYSORTCOL!$0&#092;&quot; FROM &#092;&quot;_SYS_BI&#092;&quot;.&#092;&quot;BIMC_PROPERTIES&#092;&quot; WHERE &#092;&quot;CATALOG_NAME&#092;&quot; = &#039;&#039;modelling&#039;&#039; AND &#092;&quot;CUBE_NAME&#092;&quot; = &#039;&#039;CV_PURCHASE_ORDERS&#039;&#039; AND &#092;&quot;DIMENSION_UNIQUE_NAME&#092;&quot; =  &#039;&#039;[Measures]&#039;&#039; and &#092;&quot;COLUMN_FLAG&#092;&quot; = &#039;&#039;User Attribute&#039;&#039; ORDER BY &#092;&quot;PROPERTY_ID&#092;&quot;&quot; }&#039;) timestamp: 2019-06-01,14:18:55.963</info>
+</message>
+<message>
+<status>OK</status>
+<info>Create hierarchy view: CREATE COLUMN VIEW &quot;_SYS_BIC&quot;.&quot;modelling/CV_PURCHASE_ORDERS/EMPLOYEEID/hier/EMPLOYEEID&quot; TYPE hierarchy WITH PARAMETERS (&#039;hierarchyDefinition&#039;=&#039;{&quot;sourceType&quot;:&quot;leveled&quot;,&quot;nodeType&quot;:&quot;string&quot;,&quot;rootNode&quot;:&quot;(all)&quot;,&quot;runtimeObjectType&quot;:&quot;blob&quot;,&quot;nodeStyle&quot;:&quot;levelName&quot;,&quot;sources&quot;: [{&quot;type&quot;:&quot;leveled&quot;,&quot;schema&quot;:&quot;_SYS_BIC&quot;,&quot;name&quot;:&quot;modelling/CV_PURCHASE_ORDERS&quot;,&quot;levels&quot;:[&quot;EMPLOYEEID&quot;],&quot;orderBy&quot;:[&quot;EMPLOYEEID&quot;,true],&quot;attributeMapping&quot;:{&quot;EMPLOYEEID&quot;:&quot;EMPLOYEEID&quot;}}]}&#039;) timestamp: 2019-06-01,14:18:55.976</info>
+</message>
+<message>
+<status>OK</status>
+<info>Create hierarchy view: CREATE COLUMN VIEW &quot;_SYS_BIC&quot;.&quot;modelling/CV_PURCHASE_ORDERS/VENDORNAME/hier/VENDORNAME&quot; TYPE hierarchy WITH PARAMETERS (&#039;hierarchyDefinition&#039;=&#039;{&quot;sourceType&quot;:&quot;leveled&quot;,&quot;nodeType&quot;:&quot;string&quot;,&quot;rootNode&quot;:&quot;(all)&quot;,&quot;runtimeObjectType&quot;:&quot;blob&quot;,&quot;nodeStyle&quot;:&quot;levelName&quot;,&quot;sources&quot;: [{&quot;type&quot;:&quot;leveled&quot;,&quot;schema&quot;:&quot;_SYS_BIC&quot;,&quot;name&quot;:&quot;modelling/CV_PURCHASE_ORDERS&quot;,&quot;levels&quot;:[&quot;VENDORNAME&quot;],&quot;orderBy&quot;:[&quot;VENDORNAME&quot;,true],&quot;attributeMapping&quot;:{&quot;VENDORNAME&quot;:&quot;VENDORNAME&quot;}}]}&#039;) timestamp: 2019-06-01,14:18:55.981</info>
+</message>
+<message>
+<status>OK</status>
+<info>Post deploy processing started: modelling/CV_PURCHASE_ORDERS timestamp: 2019-06-01,14:18:55.993</info>
+</message>
+<message>
+<status>OK</status>
+<info>Model deployment ended: modelling/CV_PURCHASE_ORDERS timestamp: 2019-06-01,14:18:55.993</info>
+</message>
+</message>
+<message>
+<status>INFORMATION</status>
+<info>Runtime &#039;BI-runtime&#039; finished activation of 1 object(s) in 67ms</info>
+</message>
+<message>
+<status>INFORMATION</status>
+<info>Finished activation phase. Starting regeneration phase now.</info>
+</message>
+</message>
+</executioninfo>
+<objectresults>
+<object result="Success"  type="Activation"  uri="newdb://IMI:LOCALHOST:04:P2001109445TRIAL-HDB:ACME/modelling/calculationviews/CV_PURCHASE_ORDERS.calculationview" />
+</objectresults>
+</modelerjob>

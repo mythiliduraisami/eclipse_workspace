@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="JobLog-v1.0.xsl"?>
+<modelerjob id="IMI_Activation_ACME_1559374928065" >
+<jobinfo>
+<Jobtype>Activation</Jobtype>
+<startdate>Sat Jun 01 13:12:04 IST 2019</startdate>
+<enddate>Sat Jun 01 13:12:07 IST 2019</enddate>
+<elapsedtime>2.843 Seconds</elapsedtime>
+<systemuri>newdb://IMI:LOCALHOST:04:P2001109445TRIAL-HDB:ACME</systemuri>
+<result>ERROR</result>
+</jobinfo>
+<executioninfo>
+<message>
+<status>ERROR</status>
+<info>Activation ID: 18 (Repository: Activation failed for at least one object;At least one error was encountered during activation. Please see the CheckResult information for  detailed information about the root cause. No objects have been activated.)</info>
+<message>
+<status>ERROR</status>
+<info>com.acme.s4ext::acme</info>
+<message>
+<status>ERROR</status>
+<info>Syntax error in procedure object: incorrect syntax near &quot;“REGION”&quot;: line 10 col 34 (at pos 287)</info>
+</message>
+<message>
+<status>ERROR</status>
+<info>Syntax error in procedure object: incorrect syntax near &quot;“REGION”&quot;: line 10 col 34 (at pos 287)</info>
+</message>
+</message>
+</message>
+</executioninfo>
+<objectresults>
+<object result="Error"  type="Activation"  uri="newdb://IMI:LOCALHOST:04:P2001109445TRIAL-HDB:ACME/com.acme.s4ext/hdbprocedure/acme" />
+</objectresults>
+</modelerjob>

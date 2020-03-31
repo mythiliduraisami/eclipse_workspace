@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="JobLog-v1.0.xsl"?>
+<modelerjob id="IMI_Activation_MYTHILI_SHINE_1558600628989" >
+<jobinfo>
+<Jobtype>Activation</Jobtype>
+<startdate>Thu May 23 14:07:06 IST 2019</startdate>
+<enddate>Thu May 23 14:07:08 IST 2019</enddate>
+<elapsedtime>2.209 Seconds</elapsedtime>
+<systemuri>newdb://IMI:LOCALHOST:03:P2001109445TRIAL-HDB:MYTHILI_SHINE</systemuri>
+<result>INFORMATION</result>
+</jobinfo>
+<executioninfo>
+<message>
+<status>INFORMATION</status>
+<info>Activation ID: 8 (No error)</info>
+<message>
+<status>OK</status>
+<info>com.acme.s4ext.analytics::</info>
+</message>
+</message>
+</executioninfo>
+<objectresults>
+<object result="Success"  type="Activation"  uri="newdb://IMI:LOCALHOST:03:P2001109445TRIAL-HDB:MYTHILI_SHINE/com.acme.s4ext.analytics/xsaccess/.xsaccess" />
+</objectresults>
+</modelerjob>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SynchronizeViewSettings">
+		<item key="linkWithEditor" value="false"/>
+		<item key="lastactiveparticipant_id" value="com.sap.ndb.studio.dwb.team.ui.hana_sync_participant"/>
+		<item key="lastactiveparticipant_sec_id" value="HANA_TP"/>
+		<section name="com.sap.ndb.studio.dwb.team.ui.hana_sync_participant.HANA_TP">
+			<item key="org.eclipse.team.ui.P_LAST_MODELPROVIDER" value="org.eclipse.team.ui.modelprovider_compressedfolders"/>
+		</section>
+	</section>
+	<section name="ConfigureProjectWizard">
+	</section>
+	<section name="SynchronizeWizard">
+	</section>
+</section>
