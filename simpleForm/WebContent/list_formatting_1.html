@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Title</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+		
+	<script src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m"
+				data-sap-ui-theme="sap_bluecrystal"
+				 data-sap-ui-xx-bindingSyntax="complex">
+		
+	</script>
+	<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+	<script>
+	
+		var oData1 = {
+				names:[
+						{
+							Name:"Dinosaur", Place:"Mountain" },
+						{
+							Name:"Elephant", Place:"Forest" },
+						{
+							Name:"Whale", Place:"Sea" },
+						{
+							Name:"Duck", Place:"Water" },
+						{ Name:"Monkey", Place:"Tree" }									
+					]
+		};
+		var oModel2 = new sap.ui.model.json.JSONModel();
+		oModel2.setData(oData1);
+		
+		var oList2 = new sap.m.List({
+			headerText:"Animal Names",
+			items: []
+		});
+		
+		oList2.bindItems({
+			path:"/names",
+			sorter : new sap.ui.model.Sorter("Name"),
+			template:new sap.m.StandardListItem({
+				title:({
+					parts:[{
+						path:"Name", type:new sap.ui.model.type.String
+					}, {
+						path:"Place", type:new sap.ui.model.type.String	}
+					,], 
+					formatter : function(sName,sPlace){
+						return sName.toUpperCase() + " : " + sPlace;
+					}				
+				})
+			})
+		});
+		
+		oList2.setModel(oModel2);
+		//console.log("formatter status")
+		//console.log("oList2="+oList2.getModel().getData().names);
+		
+		var oPage2 = new sap.m.Page({
+			title: "List Binding Formatter Page",
+			content: [ oList2 ]
+		});
+		
+ 		var oApp = new sap.m.App({
+ 			pages:[oPage2]
+ 		}).placeAt("content");
+ 		oList2.setModel(oModel2);
+ 		
+ 		//console.log("oList2 B4 script end ="+oList2.getModel().getData().names);
+	</script>
+
+</head>
+<body class="sapUiBody" role="application">
+		<div id="content"></div>
+	</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Title</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+		
+	<script src="resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m"
+				data-sap-ui-theme="sap_bluecrystal">
+		
+	</script>
+	<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+	<script>
+	
+		var oData1 = {
+				Name:"Dinosaur",
+				Place:"Mountain"
+		};
+		var oModel1 = new sap.ui.model.json.JSONModel();
+		oModel1.setData(oData1);
+		var oItem1 = new sap.m.StandardListItem({
+			title:"{/Name}",
+			description:"{/Place}"
+		});
+		var oList1 = new sap.m.List({
+			headerText:"Animals",
+			items:[oItem1]
+		});
+		oList1.setModel(oModel1);
+		var oPage1 = new sap.m.Page({
+			title: "List Page",
+			content: [
+				oList1
+			
+			]
+		});
+ 		var oApp = new sap.m.App({
+ 			pages:[oPage1]
+ 		}).placeAt("content");
+ 		//return oPage1;
+	</script>
+
+</head>
+<body class="sapUiBody" role="application">
+		<div id="content"></div>
+	</body>
+</html>

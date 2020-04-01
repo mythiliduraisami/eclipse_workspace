@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Data binding Demo - Basic</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+		<title>Elements</title>
+<!-- 		<link rel="stylesheet" 
+		  href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+		<link rel="stylesheet" 
+		 href="https://jqueryui.com/resources/demos/style.css">
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->		
+				<script src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-bindingSyntax="complex"
+				data-sap-ui-compatVersion="edge" 
+  				
+				data-sap-ui-libs="sap.m"
+				data-sap-ui-theme="sap_bluecrystal">
+		
+		</script>
+		<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+		<script>
+
+			jQuery.sap.require("sap.ui.model.json.JSONModel");
+	
+			var oLabel1 = new sap.m.Label({text:"{/key1}"});
+			
+			var oLabel2 = new sap.m.Label({text:"{/key2}" });
+			
+			var oData = {
+					"key1":"some value",
+					"key2":"some more value"
+			};
+			
+			var oModel1 = new sap.ui.model.json.JSONModel();
+			oModel1.setData(oData);
+			sap.ui.getCore().setModel(oModel1);
+			
+			oLabel1.setModel(oModel1);
+			oLabel2.setModel(oModel1);
+			
+			oLabel1.placeAt("content1");
+			oLabel2.placeAt("content2");
+		</script>
+		
+
+</head>
+<body class="sapUiBody" role="application">
+		<div id="content1"></div>
+		<div id="content2"></div>
+	</body>
+</html>
