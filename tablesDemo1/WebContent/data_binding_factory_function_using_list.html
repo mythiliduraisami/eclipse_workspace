@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+
+		<script src="resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m"
+				data-sap-ui-theme="sap_bluecrystal">
+		</script>
+		<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+
+		<script>
+		var oData3 = {
+				names:[
+						{	icon:"sap-icon://sap-ui5", Name:"Dinosaur", Place:"Mountain" },
+						{	icon:"sap-icon://general-leave-request",Name:"Elephant", Place:"Forest" },
+						{	con:"sap-icon://map-2",Name:"Whale", Place:"Sea" },
+						{	icon:"sap-icon://travel-expense",Name:"Duck", Place:"Water" }
+					]
+		};
+		var oModel3 = new sap.ui.model.json.JSONModel(oData3);
+		sap.ui.getCore().setModel(oModel3);
+		
+		var oList1 = new sap.m.List({
+			headerText:"Animal Names"
+		});
+		oList1.bindAggregation(
+			"items",
+			"/names",
+			function(sId,oContext){
+				//debugger;
+				var sValue = oContext.getProperty("Name");
+				var sDesc1 = "Are still roaming around";
+				var sDesc2 = "Are extinct";
+				if(sValue == "Dinosaur"){
+					return new sap.m.StandardListItem({
+						title:sValue,
+						description:sDesc2
+					});
+				}else{
+					return new sap.m.StandardListItem({
+						title:sValue,
+						description:sDesc1
+					});
+				}
+					
+			}
+		);
+		
+		var oPage3 = new sap.m.Page({
+			title: "Data Binding Factory Function using List",
+			content: [
+				oList1
+			]
+		}); 
+		var oApp3 = new sap.m.App({
+ 			pages:[oPage3]
+ 		}).placeAt("content");		
+ 		
+		</script>
+
+	</head>
+	<body class="sapUiBody" role="application">
+		<div id="content"></div>
+	</body>
+</html>

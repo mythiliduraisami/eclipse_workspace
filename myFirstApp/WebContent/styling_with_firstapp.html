@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+		<link rel="stylesheet" type="text/css" href="css/new.css">
+		<script src="resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m"
+				data-sap-ui-theme="sap_bluecrystal">
+		
+		</script>
+		<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+		<script>
+		var oSimpleInput1 = new sap.m.Input({
+			placeholder: "Enter Name"
+		}).addStyleClass("inputCss");
+		
+		var oButton1 = new sap.m.Button({
+			text: "Submit"
+		}).addStyleClass("buttonCss");
+		var oPage1 = new sap.m.Page({
+			title: "Styling Simple App",
+			content: [
+						oSimpleInput1, 
+						oButton1
+			]
+		});
+		
+		
+ 		var oApp1 = new sap.m.App({
+ 			pages:[oPage1]
+ 		}).placeAt("content");
+ 		
+		</script>
+
+</head>
+<body class="sapUiBody" role="application">
+		<div id="content"></div>
+	</body>
+</html>
