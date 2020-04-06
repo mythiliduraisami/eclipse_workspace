@@ -1,0 +1,28 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="expressionbinding.expbind" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		<content>
+			<VBox>
+			  <Text text="There are {= ${/}.length} people."/>
+			  <Text text="There are {path: '/', formatter: '.filterPeopleByAge'} people, whose older than 15."/>
+			</VBox>
+			<Table items="{/}">
+			  <columns>
+			    <Column>
+			      <Label text="Name"/>
+			    </Column>
+			    <Column>
+			      <Label text="Age"/>
+			    </Column>
+			  </columns>
+			  
+			    <items>
+			      <ColumnListItem>
+			        <Text text="{name}"/>
+			        <Input value="{age}" change="onAgeChange"/>
+			      </ColumnListItem>
+			    </items>
+			</Table>
+		</content>
+	</Page>
+</core:View>
