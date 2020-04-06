@@ -1,0 +1,38 @@
+.simpleFormCss{
+	width: 70% !important;
+    padding-left: 30% !important;
+    padding-top: 10% !important;
+}
+
+.hBoxForm{
+	padding-left: 20%;
+}
+.vBoxForm{
+		padding-left: 30%;
+
+	}
+
+.sapUiRFLContainer {
+    width: 100% !important;
+}
+
+/*.hBoxForm>.sapMFlexItem>.sapMBtn>.sapMBtnInner {
+    background: green;
+}*/
+.newBtnGreen>.sapMBtnInner {
+    background: green;
+}
+.newBtnBlue>.sapMBtnInner {
+    background: blue;
+}
+@media screen and (max-width:600px){
+	.hBoxForm{
+	padding-left: 0%;
+}
+.vBoxForm{
+		padding-left: 18%;
+
+	}
+	
+	
+}
