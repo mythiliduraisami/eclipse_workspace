@@ -4,22 +4,22 @@
 	<title>Title</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
-		
+
 <!-- 	<script src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
 				id="sap-ui-bootstrap"
 				data-sap-ui-libs="sap.m"
 				data-sap-ui-theme="sap_bluecrystal"
-				 data-sap-ui-xx-bindingSyntax="complex"> 
+				 data-sap-ui-xx-bindingSyntax="complex">
 		</script> -->
-	<script id="sap-ui-bootstrap" 
-				src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js" 
-				data-sap-ui-theme="sap_bluecrystal" 
-				data-sap-ui-xx-bindingSyntax="complex" 
-				data-sap-ui-libs="sap.m, sap.ui.commons"></script>		
-	
+	<script id="sap-ui-bootstrap"
+				src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+				data-sap-ui-theme="sap_bluecrystal"
+				data-sap-ui-xx-bindingSyntax="complex"
+				data-sap-ui-libs="sap.m, sap.ui.commons"></script>
+
 	<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
 	<script>
-		
+
 		var oProdData1 = {
 				ProductCollection: [
 					{
@@ -132,12 +132,12 @@
 					}
 					]
 		};
-		
+
 		var oProdModel1 = new sap.ui.model.json.JSONModel();
 		oProdModel1.setData(oProdData1);
 		sap.ui.getCore().setModel(oProdModel1);
-		
-			
+
+
 		var oCol1 = new sap.m.Column({
 			header:new sap.m.Label({
 				text:"Product"
@@ -167,7 +167,7 @@
 			text:"Add Row",
 			type:"Emphasized",
 			icon:"sap-icon://add",
-			press: function(){                
+			press: function(){
         		var oNewObject = {
         				"ProductId": "KUZ-12012.V2",
         				"Name": "Deskjet Super A Speed",
@@ -188,9 +188,9 @@
         				};
         		oProdModel1.oData.ProductCollection.push(oNewObject);
         		oProdData1.ProductCollection.sort();
-        		oProdModel1.refresh();        		
+        		oProdModel1.refresh();
         		oResponTable1.setModel(oProdModel1);
-        		
+
         		alert("Successfully added");
 			}
 		});
@@ -203,29 +203,29 @@
 				var oSelectedItems = oResponTable1.getSelectedItems();
 				var nSelected = oSelectedItems.length;
 				var sProducts = "";
-				
+
 				alert("selcted="+nSelected);
-				
-			
+
+
 				if (nRows > 0 && nSelected > 0) {
 					// Remove last items---
-					//var oDelObject = oProdModel1.oData.ProductCollection.pop();					
-					//oProdModel1.refresh();  
+					//var oDelObject = oProdModel1.oData.ProductCollection.pop();
+					//oProdModel1.refresh();
 					//----
 					/* Working code but cannot add item*/
-					for ( var i = 0; i < oSelectedItems.length; i++) {							
-						var oSelectedRow = oSelectedItems[i];							
-						oResponTable1.removeItem(oSelectedRow);							
+					for ( var i = 0; i < oSelectedItems.length; i++) {
+						var oSelectedRow = oSelectedItems[i];
+						oResponTable1.removeItem(oSelectedRow);
 					}
 					oProdData1.ProductCollection.sort();
-	        		oProdModel1.refresh();        			        		
+	        		oProdModel1.refresh();
 	        		oResponTable1.setModel(oProdModel1);
 	        		oResponTable1.removeSelections(true);
-	        		
+
 	        		/*
 	        		Working but not working for index0
 	        		var oTempModel = oResponTable1.getModel();
-					var oTableData = oTempModel.getData();            
+					var oTableData = oTempModel.getData();
 				      var aContexts = oResponTable1.getSelectedContexts();
 				      for (var i=aContexts.length -1; i>=0; i--) {
 				        var oThisObj = aContexts[i].getObject();
@@ -237,11 +237,11 @@
 				        alert("index="+index)
 				        oTableData.ProductCollection.splice(index, 1);
 				      }
-				    
-				      oTempModel.setData(oTableData); 
+
+				      oTempModel.setData(oTableData);
 				      oResponTable1.removeSelections(true);
 				      */
-				    
+
 	        		alert("Successfully deleted");
 				}
 				else if (nSelected <=0 && nRows >0) {
@@ -250,18 +250,18 @@
 				else if (nRows <= 0) {
 					alert("No Rows to Delete");
 				}
-                
+
 			}
 		});
 		var oTableTitle1 = new sap.m.Title({
 			text:"Responsive Table - Products Table"
 		});
 		var oToolBarSpacer1 = new sap.m.ToolbarSpacer({width:""});
-		
+
 		var oResponTable1 = new sap.m.Table({
 			//headerText:"Responsive Table - Products Table",
 			headerToolbar:({
-				
+
 				active:true,
 				content:[oTableTitle1,oToolBarSpacer1,oAddButton1,oDeleteButton1]
 			}),
@@ -275,8 +275,8 @@
 				 oCol5
 			 ]
 		});
-		
-		
+
+
 		oResponTable1.setModel(oProdModel1);
 		//debugger;
 		oResponTable1.bindAggregation(
@@ -294,7 +294,7 @@
 						}),
 						new sap.m.Text({
 							text:"{Width} x {Depth} x {Height} {DimUnit}"
-						}),						
+						}),
 						new sap.m.ObjectNumber({
 							number:"{WeightMeasure}",
 							unit:"{WeightUnit}",
@@ -316,8 +316,8 @@
 										return "None";
 										}
 								}
-								
-							}								
+
+							}
 						}),
 						new sap.ui.unified.Currency({
 							currency:"{CurrencyCode}",
@@ -325,27 +325,27 @@
 							useSymbol:true,
 							value:"{Price}"
 						})
-						
+
 	            	  ]
 				})
 			});
-			
-		
+
+
 		//console.log("formatter status")
 		//console.log("oList2="+oList2.getModel().getData().names);
-		
+
 		var oPage2 = new sap.m.Page({
 			title: "Responsive Table Example",
 			content: [
 				oResponTable1
 			]
-		}); 
-		
+		});
+
  		var oResApp = new sap.m.App({
  			pages:[oPage2]
  		}).placeAt("content");
- 		
- 		
+
+
  		//console.log("oList2 B4 script end ="+oList2.getModel().getData().names);
 	</script>
 

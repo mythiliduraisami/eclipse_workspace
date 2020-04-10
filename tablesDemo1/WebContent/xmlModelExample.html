@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+		
+		<!-- <script src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m,sap.ui.commons,sap.ui.model"
+				data-sap-ui-theme="sap_bluecrystal">
+		
+		</script> -->
+<!-- 		<script type="text/javascript" 
+	      id="sap-ui-bootstrap" 
+	      src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js" 
+	      data-sap-ui-theme="sap_bluecrystal" 
+	      data-sap-ui-libs="sap.m,sap.ui.model" 
+	      data-sap-ui-compatVersion="edge"
+	      data-sap-ui-preload="async"
+	      data-sap-ui-resourceroots='{ "ui" : "./ui" }'
+	      data-sap-ui-rootcomponent="ui" 
+	      data-sap-ui-xx-rootcomponentnode="root">
+	    </script> -->
+	    	<script id="sap-ui-bootstrap"
+				src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+				data-sap-ui-theme="sap_bluecrystal"
+				data-sap-ui-xx-bindingSyntax="complex"
+				data-sap-ui-libs="sap.m, sap.ui.commons"></script>
+	    
+		<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+		<script>
+		var oJsonData ={
+				items:
+					[
+						{ text1: "text 1.1", text2: "text 1.2" },
+						{ text2: "text 2.2" }
+					]
+		};
+		var oJsonModel = new sap.ui.model.json.JSONModel();
+		this.oJsonModel.setData(oJsonData);		
+		
+	    this.oXmlModel = new sap.ui.model.xml.XMLModel();
+		//oXmlModel.setData(oXMLDocument);
+		/*oXmlModel.setXML("<"?xml version='1.0'><data>
+		          <items><item><text1>text 1.1</text1><text2>text 1.2</text2></item>
+	            <item><text2>text 2.2</text2></item>
+	          </items>
+	        </data>");*/
+	        this.oXmlModel.setXML('\
+	                <data>\
+	                  <items>\
+	                    <item><text1>text 1.1</text1><text2>text 1.2</text2></item>\
+	                    <item><text1>text 1.2</text1></item>\
+	                  </items>\
+	                </data>\
+	              ');
+		//oXmlModel.loadData("xmlSampleData1.xml");
+		var result0 = this.oJsonModel.getProperty("/items");
+		var result1 = this.oXmlModel.getProperty("/items");
+		var result2 = this.oXmlModel.getProperty("/items/item");
+		console.log(result0);
+		console.log(result1);
+		console.log(result2);
+		
+		var oCol1 = new sap.m.Column({
+			header:new sap.m.Label({
+				text:"Text1"
+			})
+		});
+		var oCol2 = new sap.m.Column({
+			header:new sap.m.Label({
+				text:"Text2"
+			})
+		});
+		var oCol3 = new sap.m.Column({
+			header:new sap.m.Label({
+				text:"Text1"
+			})
+		});
+		var oCol4 = new sap.m.Column({
+			header:new sap.m.Label({
+				text:"Text2"
+			})
+		});
+		var oJsonTable = new sap.m.Table({
+			headerText:"JSON Table",
+			 columns:[
+				 oCol1,
+				 oCol2
+			 ]
+		});
+
+		var oXmlTable = new sap.m.Table({
+			headerText:"XML Table",
+			 columns:[
+				 oCol3,
+				 oCol4
+			 ]
+		});
+
+		//this.oJsonTable = this.getView().byId("jsonTable");
+	      //this.oXmlTable = this.getView().byId("xmlTable");
+	      this.oJsonTable.setModel(this.oJsonModel);
+	      this.oXmlTable.setModel(this.oXmlModel);
+	      
+	      var oTemplate = new sap.m.ColumnListItem({
+	                cells: [
+	                    new sap.m.Input({
+	                        value: "{text1}"
+	                    }), new sap.m.Input({
+	                        value: "{text2}"
+	                    })
+	                ]
+	            });
+	      
+	      oJsonTable.bindItems({
+	                path: "/items",
+	                template: oTemplate
+	            });
+	      oXmlTable.bindItems({
+	                path: "/items/item",
+	                template: oTemplate
+	            });
+	      console.log(this.oJsonModel.getJSON());
+	      console.log(this.oXmlModel.getXML());
+	      var oPage2 = new sap.m.Page({
+				title: "XMLModel Example using 2 Tables",
+				content: [
+					oJsonTable, oXmlTable
+				]
+			});
+
+	 		var oResApp = new sap.m.App({
+	 			pages:[oPage2]
+	 		}).placeAt("content");
+	</script>
+
+</head>
+<body class="sapUiBody" role="application">
+		<div id="content"></div>
+	</body>
+</html>
