@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\eclipse\eclipse_workspace\Expression Binding"/>
+		<item value="C:\eclipse\eclipse_workspace\i18nDemo"/>
+		<item value="C:\eclipse\eclipse_workspace\eventDemo4_Advance"/>
+		<item value="C:\eclipse\eclipse_workspace"/>
 		<item value="C:\eclipse\eclipse_workspace\DemoApp2"/>
 	</list>
 	<section name="ChooseWorkspaceDialogSettings">
@@ -14,5 +18,7 @@
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
 			<item value="com.sap.ide.ui5.app.wizards.category1"/>
 		</list>
+	</section>
+	<section name="ExternalProjectImportWizard">
 	</section>
 </section>

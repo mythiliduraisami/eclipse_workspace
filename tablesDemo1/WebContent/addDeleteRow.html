@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Add Rows Dynamically in Table</title>
+<script src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+	id="sap-ui-bootstrap" data-sap-ui-theme="sap_bluecrystal"
+	data-sap-ui-xx-bindingSyntax="complex" data-sap-ui-libs="sap.m"></script>
+<script>
+	var data = [ {
+		name : "Y",
+		id : "Yes"
+	}, {
+		name : "N",
+		id : "No"
+	} ];
+	var oModel = new sap.ui.model.json.JSONModel(data);
+	var oTable = new sap.m.Table({
+		columns : [ new sap.m.Column({
+			header : new sap.m.Text({
+				text : "Name"
+			})
+		}), new sap.m.Column({
+			header : new sap.m.Text({
+				text : "ID"
+			})
+		}), new sap.m.Column({
+			header : new sap.m.Text({
+				text : "DELETE"
+			})
+		}), new sap.m.Column({
+			header : new sap.m.Text({
+				text : "Add"
+			})
+		}) ]
+	});
+	oTable.setModel(oModel);
+	var mytemplate = new sap.m.ColumnListItem({
+		type : "Navigation",
+		cells : [
+				new sap.m.Text({
+					text : "{name}"
+				}),
+				new sap.m.Text({
+					text : "{id}"
+				}),
+				new sap.m.Button({
+												icon : "sap-icon://sys-cancel",
+							press : function(evt) {
+								console.log("press")
+								if (evt.getSource().getParent().getParent()
+										.getItems().length > 0) {
+									row = evt.getSource().getParent().getId();
+									evt.getSource().getParent().getParent()
+											.removeItem(row);
+								}
+							},
+						}), new sap.m.Button({
+					icon : "sap-icon://sys-add",
+					press : function(evt) {
+						var data = {
+							name : "dummyName",
+							id : "d"
+						};
+						var getDataModel = this.getModel().getData();
+						getDataModel.push(data)
+						this.getModel().setData(getDataModel)
+					}
+				}) ]
+	});
+	oTable.bindAggregation("items", {
+		path : "/",
+		template : mytemplate
+	});
+	oTable.placeAt("content")
+</script>
+</head>
+<body class="sapUiBody">
+	<div id='content'></div>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Title</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+		
+<!-- 	<script src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m"
+				data-sap-ui-theme="sap_bluecrystal"
+				 data-sap-ui-xx-bindingSyntax="complex"> 
+		</script> -->
+	<script id="sap-ui-bootstrap" 
+				src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js" 
+				data-sap-ui-theme="sap_bluecrystal" 
+				data-sap-ui-xx-bindingSyntax="complex" 
+				data-sap-ui-libs="sap.m, sap.ui.commons"></script>		
+	
+	<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+	<script>
+		
+		var oProdData1 = {
+				ProductCollection: [
+					{
+						"ProductId": "1239102",
+						"Name": "Power Projector 4713",
+						"Category": "Projector",
+						"SupplierName": "Titanium",
+						"Description": "A very powerful projector",
+						"WeightMeasure": 1467,
+						"WeightUnit": "g",
+						"Price": 856.49,
+						"CurrencyCode": "EUR",
+						"Status": "Available",
+						"Quantity": 3,
+						"UoM": "PC",
+						"Width": 51,
+						"Depth": 42,
+						"Height": 18,
+						"DimUnit": "cm"
+					},
+					{
+						"ProductId": "22134T",
+						"Name": "Webcam",
+						"Category": "Accessory",
+						"SupplierName": "Technocom",
+						"Description": "Web camera, color, High-Speed USB",
+						"WeightMeasure": 700,
+						"WeightUnit": "g",
+						"Price": 59,
+						"CurrencyCode": "USD",
+						"Status": "Available",
+						"Quantity": 22,
+						"UoM": "PC",
+						"Width": 18,
+						"Depth": 19,
+						"Height": 21,
+						"DimUnit": "cm"
+						},
+						{
+						"ProductId": "P1239823",
+						"Name": "Monitor Locking Cable",
+						"Category": "Accessory",
+						"SupplierName": "Technocom",
+						"Description": "Lock for Monitor",
+						"WeightMeasure": 40,
+						"WeightUnit": "g",
+						"Price": 13.49,
+						"CurrencyCode": "JPY",
+						"Status": "Available",
+						"Quantity": 30,
+						"UoM": "PC",
+						"Width": 11,
+						"Depth": 11,
+						"Height": 3,
+						"DimUnit": "cm"
+					},
+					{
+						"ProductId": "214-121-828",
+						"Name": "Laptop Case",
+						"Category": "Accessory",
+						"SupplierName": "Red Point Stores",
+						"Description": "Laptop Case with room for pencils and other items",
+						"WeightMeasure": 1289,
+						"WeightUnit": "g",
+						"Price": 78.99,
+						"CurrencyCode": "INR",
+						"Status": "Discontinued",
+						"Quantity": 15,
+						"UoM": "PC",
+						"Width": 53,
+						"Depth": 34,
+						"Height": 7,
+						"DimUnit": "cm"
+					},
+					{
+						"ProductId": "XKP-312548",
+						"Name": "USB Stick 16 GByte",
+						"Category": "Accessory",
+						"SupplierName": "Red Point Stores",
+						"Description": "USB 2.0 HighSpeed 16GB",
+						"WeightMeasure": 11,
+						"WeightUnit": "g",
+						"Price": 17.19,
+						"CurrencyCode": "EUR",
+						"Status": "Out of Stock",
+						"Quantity": 45,
+						"UoM": "PC",
+						"Width": 6,
+						"Depth": 2,
+						"Height": 0.5,
+						"DimUnit": "cm"
+					},
+					{
+						"ProductId": "KTZ-12012.V2",
+						"Name": "Deskjet Super Highspeed",
+						"Category": "Printer",
+						"SupplierName": "Red Point Stores",
+						"Description": "1200 dpi x 1200 dpi – up to 25 ppm (mono) / up to 24 ppm (colour) – capacity: 100 sheets – Hi-Speed USB2.0, Ethernet",
+						"WeightMeasure": 100,
+						"WeightUnit": "g",
+						"Price": 117.19,
+						"CurrencyCode": "EUR",
+						"Status": "Available",
+						"Quantity": 10,
+						"UoM": "PC",
+						"Width": 87,
+						"Depth": 45,
+						"Height": 39,
+						"DimUnit": "cm"
+					}
+					]
+		};
+		var oProdModel1 = new sap.ui.model.json.JSONModel();
+		oProdModel1.setData(oProdData1);
+		sap.ui.getCore().setModel(oProdModel1);
+		
+			
+		var oCol1 = new sap.m.Column({
+			header:new sap.m.Label({
+				text:"Product"
+			})
+		});
+		var oCol2 = new sap.m.Column({
+			header:new sap.m.Label({
+				text:"Supplier"
+			})
+		});
+		var oCol3 = new sap.m.Column({
+			header:new sap.m.Label({
+				text:"Dimensions"
+			})
+		});
+		var oCol4 = new sap.m.Column({
+			header:new sap.m.Label({
+				text:"Weight"
+			})
+		});
+		var oCol5 = new sap.m.Column({
+			header:new sap.m.Label({
+				text:"Price"
+			})
+		});
+		
+		var oResponTable1 = new sap.m.Table({
+			headerText:"Responsive Table - Products Table",
+			 columns:[
+				 oCol1,
+				 oCol2,
+				 oCol3,
+				 oCol4,
+				 oCol5
+			 ]
+		});
+		
+		
+		oResponTable1.setModel(oProdModel1);
+		//debugger;
+		oResponTable1.bindAggregation(
+			"items",{
+			path:"/ProductCollection",
+			sorter : new sap.ui.model.Sorter("Name"),
+			template:  new sap.m.ColumnListItem({
+	              cells:[
+	            	  	new sap.m.ObjectIdentifier({
+	            	  		title:"{Name}",
+	            	  		text:"{ProductId}"
+	            	  	}),
+						new sap.m.Text({
+							text:"{SupplierName}"
+						}),
+						new sap.m.Text({
+							text:"{Width} x {Depth} x {Height} {DimUnit}"
+						}),						
+						new sap.m.ObjectNumber({
+							number:"{WeightMeasure}",
+							unit:"{WeightUnit}",
+							state:{
+								path: "WeightMeasure",
+								formatter: function(fWeightMeasure){
+									try {
+										fWeightMeasure = parseFloat(fWeightMeasure);
+										if (fWeightMeasure < 0) {
+											return "None";
+										} else if (fWeightMeasure < 1000) {
+											return "Success";
+										} else if (fWeightMeasure < 2000) {
+											return "Warning";
+										} else {
+											return "Error"
+										}
+									} catch (err) {
+										return "None";
+										}
+								}
+								
+							}								
+						}),
+						new sap.ui.unified.Currency({
+							currency:"{CurrencyCode}",
+							//maxPrecision:3,
+							useSymbol:true,
+							value:"{Price}"
+						})
+						
+	            	  ]
+				})
+			});
+			
+		
+		//console.log("formatter status")
+		//console.log("oList2="+oList2.getModel().getData().names);
+		
+		var oPage2 = new sap.m.Page({
+			title: "Responsive Table Example",
+			content: [
+				oResponTable1
+			]
+		}); 
+		
+ 		var oResApp = new sap.m.App({
+ 			pages:[oPage2]
+ 		}).placeAt("content");
+ 		
+ 		
+ 		//console.log("oList2 B4 script end ="+oList2.getModel().getData().names);
+	</script>
+
+</head>
+<body class="sapUiBody" role="application">
+		<div id="content"></div>
+	</body>
+</html>

@@ -136,7 +136,7 @@ sap.ui.controller("resposivetableexample.tableView", {
 			var oTab = this.getView().byId("tableId");
 			oTab.getModel().getData().ProductCollection.pop();
 			oTab.getModel().refresh(true);
-		}
+		},
 
 		
 

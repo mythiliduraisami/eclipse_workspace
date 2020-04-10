@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="[Dual Selector]" />
+<script src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js" id="sap-ui-bootstrap" data-sap-ui-theme="sap_bluecrystal" data-sap-ui-libs="sap.m,sap.ui.commons"></script>
+  <meta charset="utf-8">
+  <style>
+  .container {
+	  display:flex;
+	  width: 900px;
+	}
+	
+	.container .sapUiHLayoutChildWrapper {
+	  display:flex;
+	}
+	
+	.container .sapUiHLayoutChildWrapper:nth-child(2) {
+	  margin: auto;
+	  margin-left:10px;
+	  margin-right:10px;
+	  vertical-align: middle
+	}
+  </style>
+  <title>JS Bin</title>
+  
+  <script>
+  var data = {"dataspecification":[
+	  {"variable":"Var1","type":"Character"},
+	  {"variable":"Var2","type":"Character"},
+	  {"variable":"Var3","type":"Numeric"},
+	  {"variable":"Var4","type":"Numeric"},
+	  {"variable":"Var5","type":"Character"}
+	]};
+
+	var data1={"dataspecification":[
+	]};
+
+	var oModel = new sap.ui.model.json.JSONModel(data);
+
+	var oList1 = new sap.m.Table({
+	  width:"350px",
+
+	  headerText:"Available Variables",
+	  columns:[
+	    new sap.m.Column({
+	      width:"1em",
+	      header:new sap.m.Label({text:"Name"})
+	    }),
+	    new sap.m.Column({
+	      width:"10px",
+	      header:new sap.m.Label({text:"Type"})
+	    })
+	  ],
+	  items:{
+	    path:"/dataspecification",
+	    template: new sap.m.ColumnListItem({
+	      cells:[
+	        new sap.m.Text({text:"{variable}"}),
+	        new sap.m.Text({text:"{type}"})
+	      ]
+	    })
+	  }
+	}).setModel(oModel);
+
+
+	oList1.setShowSeparators();
+	oList1.setMode(sap.m.ListMode.MultiSelect);
+
+
+
+	var oList2 = new sap.m.Table({
+	  width:"350px",
+	  headerText:"Selected By Variables",
+	  columns:[
+	    new sap.m.Column({
+	      width:"1em",
+	      header:new sap.m.Label({text:"Name"})
+	    }),
+	    new sap.m.Column({
+	      width:"10px",
+	      header:new sap.m.Label({text:"Type"})
+	    })
+	  ],
+	  items:{
+	    path:"/dataspecification",
+	    template: new sap.m.ColumnListItem({
+	      cells:[
+	        new sap.m.Text({text:"{variable}"}),
+	        new sap.m.Text({text:"{type}"})
+	      ]
+	    })
+	  }
+	}).setModel(new sap.ui.model.json.JSONModel(data1));
+	oList2.setMode(sap.m.ListMode.MultiSelect);
+
+	var oVLayout = new sap.ui.layout.VerticalLayout({
+
+	  content:[
+
+	    new sap.m.Button({
+	      text:">",
+	      press:selectItems
+	    }).addStyleClass("buttonClass"),
+	    new sap.m.Button({
+	      text:"<",
+	      press:deSelectItems
+	    }).addStyleClass("buttonClass")
+	  ]
+	});
+
+	var oLayout = new sap.ui.layout.HorizontalLayout({
+	  height:"500px",
+	  content:[oList1,oVLayout,oList2]
+	}).addStyleClass('container');
+	oLayout.placeAt("content");
+
+
+
+	function selectItems(oEvent){
+	  var selection=oList1.getSelectedContexts();
+
+	  selection.forEach(function(element, index, array){
+	    data1.dataspecification.push(element.getObject());
+	  }
+	                   );
+
+	  data1.dataspecification.forEach(function(element,index,array){
+	    data.dataspecification= removeObjectFromArray(data.dataspecification,"variable",element["variable"]);
+	  });
+	  oList1.setModel(new sap.ui.model.json.JSONModel(data));
+	  oList2.setModel(new sap.ui.model.json.JSONModel(data1));
+	}
+
+	function deSelectItems(oEvent){
+	  var selection=oList2.getSelectedContexts();
+
+	  selection.forEach(function(element, index, array){
+	    data.dataspecification.push(element.getObject());
+	  }
+	                   );
+
+	  data.dataspecification.forEach(function(element,index,array){
+	    data1.dataspecification= removeObjectFromArray(data1.dataspecification,"variable",element["variable"]);
+	  });
+	  oList1.setModel(new sap.ui.model.json.JSONModel(data));
+	  oList2.setModel(new sap.ui.model.json.JSONModel(data1));
+	}
+
+	function removeObjectFromArray (array,prop,value){
+	  return array.filter(function (val) {
+	    return val[prop] !== value;
+	  });
+	}
+
+  </script>
+</head>
+<body>
+
+  <div id="content"></div>
+ 
+  
+</div>
+</body>
+</html>

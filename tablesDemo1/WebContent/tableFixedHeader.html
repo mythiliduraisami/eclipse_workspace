@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js" id="sap-ui-bootstrap" data-sap-ui-theme="sap_bluecrystal" data-sap-ui-libs="sap.m"></script>
+  
+  <meta charset="utf-8">
+  <title>HighlightTableListItem</title>
+  <style>
+  .listItemColor{
+  background-color: #FFFF00 !important;
+  }
+  </style>
+  
+  <script>
+	var app = new sap.m.App("myApp", {
+                initialPage:"page1"
+            });
+    var dataObject = [
+                {Product: "Power Projector 4713", Weight: "1467"},
+                {Product: "Gladiator MX", Weight: "321"},
+                {Product: "Hurricane GX", Weight: "588"},
+                {Product: "Webcam", Weight: "700"},
+                {Product: "Monitor Locking Cable", Weight: "40"},
+                {Product: "Laptop Case", Weight: "1289"},
+                {Product: "USB Stick 16 GByte", Weight: "11"},
+                {Product: "Deskjet Super Highspeed", Weight: "100"},
+                {Product: "Laser Allround Pro", Weight: "2134"},
+                {Product: "Flat S", Weight: "1401"},
+                {Product: "Flat Medium", Weight: "1800"},
+                {Product: "Flat X-large II", Weight: "2100"},
+                {Product: "USB Stick 16 GByte", Weight: "11"},
+                {Product: "Deskjet Super Highspeed", Weight: "100"},
+                {Product: "Laser Allround Pro", Weight: "2134"},
+                {Product: "Flat S", Weight: "1401"},
+                {Product: "Flat Medium", Weight: "1800"},
+                {Product: "Flat X-large II", Weight: "2100"},
+                {Product: "USB Stick 16 GByte", Weight: "11"},
+                {Product: "Deskjet Super Highspeed", Weight: "100"},
+                {Product: "Laser Allround Pro", Weight: "2134"},
+                {Product: "Flat S", Weight: "1401"},
+                {Product: "Flat Medium", Weight: "1800"},
+                {Product: "Flat X-large II", Weight: "2100"}];          
+    
+    var model = new sap.ui.model.json.JSONModel();
+        model.setData({modelData: {productsData : []}});
+        sap.ui.getCore().setModel(model);
+        sap.ui.getCore().getModel().setProperty("/modelData/productsData", dataObject);
+	
+	var oTableCol = new sap.m.Table({showNoData:false,
+								columns:[new sap.m.Column({header:new sap.m.Label({text:"Product"})}),
+										new sap.m.Column({header:new sap.m.Label({text:"Weight"})}),
+										new sap.m.Column({header:new sap.m.Label({text:"Product Input"})}),
+										new sap.m.Column({header:new sap.m.Label({text:"Product DropDown"})})]});
+	var oTableItems = new sap.m.Table({columns:[new sap.m.Column(), new sap.m.Column(),new sap.m.Column(),new sap.m.Column()],
+									items:{
+									path: '/modelData/productsData',
+									template: new sap.m.ColumnListItem({cells:[new sap.m.Text({text:"{Product}"}),
+                                                        new sap.m.Text({text:"{Weight}"}),
+														new sap.m.Input(),
+														new sap.m.Select({items:[new sap.ui.core.Item({text:"Enabled"}),
+																				new sap.ui.core.Item({text:"Disabled"})]})]})
+									}
+									});
+	var oScrollContainer = new sap.m.ScrollContainer({height:"525px", vertical:true, focusable: true, content:[oTableItems]});
+	      var oPage = new sap.m.Page("page1", {
+                title:"Products Data",
+                content : [oTableCol,oScrollContainer],
+                enableScrolling: false
+            });
+                        
+            app.addPage(oPage);
+	app.placeAt("content");
+  
+  </script>
+
+    </head>
+    <body class="sapUiBody" role="application">
+        <div id="content"></div>
+    </body>
+</html>
