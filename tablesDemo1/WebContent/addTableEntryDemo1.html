@@ -161,7 +161,62 @@
 			type:"Emphasized",
 			icon:"sap-icon://add",
 			press: function(){
-        		var oNewObject = {
+				var oButton1 =new sap.m.Button({
+					text: "Save New Entry",
+
+                    tap: function(){
+                    	alert("New Entry should save<TBD>");
+                    }
+				});
+				var oButton2 =new sap.m.Button({
+					text: "Cancel",
+
+                    tap: function(){
+                    	alert("Cancel the entered details<TBD>");
+                    }
+				});
+				var oDialog = new sap.m.Dialog("Dialog1",{
+				     title:"Create Product Entries",				     
+				     buttons: [oButton1, oButton2],
+				     content:[
+				          new sap.m.Label({text:"ProductId"}),
+				          new sap.m.Input({maxLength: 20,id: "ProductId_ID",placeholder:"KUTZ-12012.V2"}),
+				          new sap.m.Label({text:"Name"}),
+				          new sap.m.Input({maxLength: 3, id: "Name_ID",placeholder:"Deskjet Super peed"}),
+				          new sap.m.Label({text:"Category"}),
+				          new sap.m.Input({maxLength: 20,id: "Category_ID",placeholder:"Printer"}),
+				          new sap.m.Label({text:"SupplierName"}),
+				          new sap.m.Input({maxLength: 20,id: "SupplierName_ID",placeholder:"Red Point Stores"}),
+				          new sap.m.Label({text:"Description"}),
+				          new sap.m.TextArea({cols:120, rows:3, maxLength: 250,id: "Description_ID",placeholder:"1200 dpi x 1200 dpi – up to 25 ppm (mono) / up to 24 ppm (colour) – capacity: 100 sheets – Hi-Speed USB2.0, Ethernet"}),
+				          new sap.m.Label({text:"WeightMeasure"}),
+				          new sap.m.Input({maxLength: 20,id: "WeightMeasure_ID",placeholder:"101"}),
+				          new sap.m.Label({text:"WeightUnit"}),
+				          new sap.m.Input({maxLength: 20,id: "WeightUnit_ID",placeholder:"g"}),
+				          new sap.m.Label({text:"Price"}),
+				          new sap.m.Input({maxLength: 20,id: "Price_ID",placeholder:"117.19"}),
+				          new sap.m.Label({text:"CurrencyCode"}),
+				          new sap.m.Input({maxLength: 20,id: "CurrencyCode_ID",placeholder:"EUR"}),
+				          new sap.m.Label({text:"Status"}),
+				          new sap.m.Input({maxLength: 20,id: "Status_ID",placeholder:"Available"}),
+				          new sap.m.Label({text:"Quantity"}),
+				          new sap.m.Input({type: "Number",maxLength: 20,id: "Quantity_ID",placeholder:"10"}),
+				          new sap.m.Label({text:"UoM"}),
+				          new sap.m.Input({maxLength: 20,id: "UoM_ID",placeholder:"PC"}),
+				          new sap.m.Label({text:"Width"}),
+				          new sap.m.Input({type: "Number", maxLength: 20,id: "Width_ID",placeholder:"87"}),
+				          new sap.m.Label({text:"Depth"}),
+				          new sap.m.Input({type: "Number",maxLength: 20,id: "Depth_ID",placeholder:"45"}),
+				          new sap.m.Label({text:"Height"}),
+				          new sap.m.Input({type: "Number",maxLength: 20,id: "Height_ID",placeholder:"39"}),
+				          new sap.m.Label({text:"DimUnit"}),
+				          new sap.m.Input({maxLength: 20,id: "DimUnit_ID",placeholder:"cm"})
+				     ]
+				});
+				oDialog.addStyleClass("sapUiContentPadding");
+				sap.ui.getCore().byId("Dialog1").open();
+			
+        		/*var oNewObject = {
         				"ProductId": "KUZ-12012.V2",
         				"Name": "Deskjet Super A Speed",
         				"Category": "Printer",
@@ -184,7 +239,7 @@
         		oProdModel1.refresh();
         		oResponTable1.setModel(oProdModel1);
 
-        		alert("Successfully added");
+        		alert("Successfully added");*/
 			}
 		});
 		var oDeleteButton1 = new sap.m.Button({
