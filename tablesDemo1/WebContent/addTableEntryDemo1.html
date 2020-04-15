@@ -12,6 +12,7 @@
 
 	<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
 	<script>
+	jQuery.sap.require("sap.m.MessageBox");
 
 		var oProdData1 = {
 				ProductCollection: [
@@ -164,56 +165,164 @@
 				var oButton1 =new sap.m.Button({
 					text: "Save New Entry",
 
-                    tap: function(){
-                    	alert("New Entry should save<TBD>");
+                    press: function(){
+            			
+                    	var content = sap.ui.getCore().getElementById("simpleForm1").getContent();
+                    	var fPrice1 = 0.0;
+                    	try {
+							fPrice1 = parseFloat(content[15].getValue());
+						} catch (e) {
+							// TODO: handle exception
+							console.log(e);
+						}
+                    	
+                		
+                    	var oNewObject2 = {
+                				
+                				/*"ProductId": sap.ui.getCore().getElementById("ProductId_ID").getValue(),
+                				"Name": sap.ui.getCore().getElementById("Name_ID").getValue(),
+                				"Category": sap.ui.getCore().getElementById("Category_ID").getValue(),
+                				"SupplierName": sap.ui.getCore().getElementById("SupplierName_ID").getValue(),
+                				"Description": sap.ui.getCore().getElementById("Description_ID").getValue(),
+                				"WeightMeasure": sap.ui.getCore().getElementById("WeightMeasure_ID").getValue(),
+                				"WeightUnit": sap.ui.getCore().getElementById("WeightUnit_ID").getValue(),
+                				"Price": sap.ui.getCore().getElementById("Price_ID").getValue(),
+                				"CurrencyCode": sap.ui.getCore().getElementById("CurrencyCode_ID").getValue(),
+                				"Status": sap.ui.getCore().getElementById("Status_ID").getValue(),
+                				"Quantity": sap.ui.getCore().getElementById("Quantity_ID").getValue(),
+                				"UoM": sap.ui.getCore().getElementById("UoM_ID").getValue(),
+                				"Width": sap.ui.getCore().getElementById("Width_ID").getValue(),
+                				"Depth": sap.ui.getCore().getElementById("Depth_ID").getValue(),
+                				"Height": sap.ui.getCore().getElementById("Height_ID").getValue(),
+                				"DimUnit": sap.ui.getCore().getElementById("DimUnit_ID").getValue(),*/
+                				"ProductId": content[1].getValue(),
+                				"Name": content[3].getValue(),
+                				"Category": content[5].getValue(),
+                				"SupplierName": content[7].getValue(),
+                				"Description": content[9].getValue(),
+                				"WeightMeasure": content[11].getValue(),
+                				"WeightUnit": content[13].getValue(),
+               					"Price": fPrice1,
+                				"CurrencyCode": content[17].getValue(),
+                				"Status": content[19].getValue(),
+                				"Quantity": content[21].getValue(),
+                				"UoM": content[23].getValue(),
+                				"Width": content[25].getValue(),
+                				"Depth": content[27].getValue(),
+                				"Height": content[29].getValue(),
+                				"DimUnit": content[31].getValue()      
+                			
+                		}
+                		
+                		oProdModel1.oData.ProductCollection.push(oNewObject2);
+                		oProdData1.ProductCollection.sort();
+                		oProdModel1.refresh();
+                		oResponTable1.setModel(oProdModel1);
+                		oDialog1.close();
+                    	alert("New Entry Added to JSONModel");
+
                     }
 				});
 				var oButton2 =new sap.m.Button({
 					text: "Cancel",
 
-                    tap: function(){
-                    	alert("Cancel the entered details<TBD>");
-                    }
+                    press: function(){
+                    	new sap.m.MessageBox.confirm("Do you want to close this window?", {
+                    	    title: "Confirm",                                    // default
+                    	    onClose: function(oAction) {
+                  	          if (oAction === sap.m.MessageBox.Action.YES) {
+                	        	  oDialog1.close();
+                	          }
+                	        },                                       // default
+                    	    styleClass: "",                                      // default
+                    	    actions: [ sap.m.MessageBox.Action.YES, sap.m.MessageBox.Action.NO ] ,         // default
+                    	    emphasizedAction: sap.m.MessageBox.Action.OK,        // default
+                    	    initialFocus: null,                                  // default
+                    	    textDirection: sap.ui.core.TextDirection.Inherit
+                    	});
+                     }
 				});
-				var oDialog = new sap.m.Dialog("Dialog1",{
+				var oDialog1 = new sap.m.Dialog("Dialog1",{
 				     title:"Create Product Entries",				     
 				     buttons: [oButton1, oButton2],
+				     closeOnNavigation:true,
 				     content:[
-				          new sap.m.Label({text:"ProductId"}),
-				          new sap.m.Input({maxLength: 20,id: "ProductId_ID",placeholder:"KUTZ-12012.V2"}),
-				          new sap.m.Label({text:"Name"}),
-				          new sap.m.Input({maxLength: 3, id: "Name_ID",placeholder:"Deskjet Super peed"}),
-				          new sap.m.Label({text:"Category"}),
-				          new sap.m.Input({maxLength: 20,id: "Category_ID",placeholder:"Printer"}),
-				          new sap.m.Label({text:"SupplierName"}),
-				          new sap.m.Input({maxLength: 20,id: "SupplierName_ID",placeholder:"Red Point Stores"}),
-				          new sap.m.Label({text:"Description"}),
-				          new sap.m.TextArea({cols:120, rows:3, maxLength: 250,id: "Description_ID",placeholder:"1200 dpi x 1200 dpi – up to 25 ppm (mono) / up to 24 ppm (colour) – capacity: 100 sheets – Hi-Speed USB2.0, Ethernet"}),
-				          new sap.m.Label({text:"WeightMeasure"}),
-				          new sap.m.Input({maxLength: 20,id: "WeightMeasure_ID",placeholder:"101"}),
-				          new sap.m.Label({text:"WeightUnit"}),
-				          new sap.m.Input({maxLength: 20,id: "WeightUnit_ID",placeholder:"g"}),
-				          new sap.m.Label({text:"Price"}),
-				          new sap.m.Input({maxLength: 20,id: "Price_ID",placeholder:"117.19"}),
-				          new sap.m.Label({text:"CurrencyCode"}),
-				          new sap.m.Input({maxLength: 20,id: "CurrencyCode_ID",placeholder:"EUR"}),
-				          new sap.m.Label({text:"Status"}),
-				          new sap.m.Input({maxLength: 20,id: "Status_ID",placeholder:"Available"}),
-				          new sap.m.Label({text:"Quantity"}),
-				          new sap.m.Input({type: "Number",maxLength: 20,id: "Quantity_ID",placeholder:"10"}),
-				          new sap.m.Label({text:"UoM"}),
-				          new sap.m.Input({maxLength: 20,id: "UoM_ID",placeholder:"PC"}),
-				          new sap.m.Label({text:"Width"}),
-				          new sap.m.Input({type: "Number", maxLength: 20,id: "Width_ID",placeholder:"87"}),
-				          new sap.m.Label({text:"Depth"}),
-				          new sap.m.Input({type: "Number",maxLength: 20,id: "Depth_ID",placeholder:"45"}),
-				          new sap.m.Label({text:"Height"}),
-				          new sap.m.Input({type: "Number",maxLength: 20,id: "Height_ID",placeholder:"39"}),
-				          new sap.m.Label({text:"DimUnit"}),
-				          new sap.m.Input({maxLength: 20,id: "DimUnit_ID",placeholder:"cm"})
-				     ]
+				    	 	new sap.ui.layout.form.SimpleForm("simpleForm1",{
+				    			title: "Add New Product",
+								maxContainerCols: 2,
+								content:[
+									new sap.m.Label({text:"ProductId"}),
+									new sap.m.Input({ maxLength: 15, placeholder:"KUTZ-12012.V2"}),
+									new sap.m.Label({text:"Name"}),
+									new sap.m.Input({maxLength: 25, placeholder:"Deskjet Super peed"}),
+									new sap.m.Label({text:"Category"}),
+									new sap.m.Input({maxLength: 20,placeholder:"Printer"}),
+									new sap.m.Label({text:"SupplierName"}),
+									new sap.m.Input({maxLength: 25,placeholder:"Red Point Stores"}),
+									new sap.m.Label({text:"Description"}),
+									new sap.m.TextArea({cols:80, rows:3, maxLength: 250,placeholder:"1200 dpi x 1200 dpi – up to 25 ppm (mono) / up to 24 ppm (colour) – capacity: 100 sheets – Hi-Speed USB2.0, Ethernet"}),
+									new sap.m.Label({text:"WeightMeasure"}),
+									new sap.m.Input({maxLength: 20,placeholder:"101"}),
+									new sap.m.Label({text:"WeightUnit"}),
+									new sap.m.Input({maxLength: 20,placeholder:"g"}),
+									new sap.m.Label({text:"Price"}),
+									new sap.m.Input({maxLength: 20,placeholder:"117.19"}),
+									new sap.m.Label({text:"CurrencyCode"}),
+									new sap.m.Input({maxLength: 20,placeholder:"EUR"}),
+									new sap.m.Label({text:"Status"}),
+									new sap.m.Input({maxLength: 20,placeholder:"Available"}),
+									new sap.m.Label({text:"Quantity"}),
+									new sap.m.Input({type: "Number",maxLength: 20,placeholder:"10"}),
+									new sap.m.Label({text:"UoM"}),
+									new sap.m.Input({maxLength: 20,placeholder:"PC"}),
+									new sap.m.Label({text:"Width"}),
+									new sap.m.Input({type: "Number", maxLength: 20,placeholder:"87"}),
+									new sap.m.Label({text:"Depth"}),
+									new sap.m.Input({type: "Number",maxLength: 20,placeholder:"45"}),
+									new sap.m.Label({text:"Height"}),
+									new sap.m.Input({type: "Number",maxLength: 20,placeholder:"39"}),
+									new sap.m.Label({text:"DimUnit"}),
+									new sap.m.Input({maxLength: 20,placeholder:"cm"})
+						          /*new sap.m.Label({text:"ProductId"}),
+						          new sap.m.Input({maxLength: 15,id: "ProductId_ID",placeholder:"KUTZ-12012.V2"}),
+						          new sap.m.Label({text:"Name"}),
+						          new sap.m.Input({maxLength: 25, id: "Name_ID",placeholder:"Deskjet Super peed"}),
+						          new sap.m.Label({text:"Category"}),
+						          new sap.m.Input({maxLength: 20,id: "Category_ID",placeholder:"Printer"}),
+						          new sap.m.Label({text:"SupplierName"}),
+						          new sap.m.Input({maxLength: 25,id: "SupplierName_ID",placeholder:"Red Point Stores"}),
+						          new sap.m.Label({text:"Description"}),
+						          new sap.m.TextArea({cols:120, rows:3, maxLength: 250,id: "Description_ID",placeholder:"1200 dpi x 1200 dpi – up to 25 ppm (mono) / up to 24 ppm (colour) – capacity: 100 sheets – Hi-Speed USB2.0, Ethernet"}),
+						          new sap.m.Label({text:"WeightMeasure"}),
+						          new sap.m.Input({maxLength: 20,id: "WeightMeasure_ID",placeholder:"101"}),
+						          new sap.m.Label({text:"WeightUnit"}),
+						          new sap.m.Input({maxLength: 20,id: "WeightUnit_ID",placeholder:"g"}),
+						          new sap.m.Label({text:"Price"}),
+						          new sap.m.Input({maxLength: 20,id: "Price_ID",placeholder:"117.19"}),
+						          new sap.m.Label({text:"CurrencyCode"}),
+						          new sap.m.Input({maxLength: 20,id: "CurrencyCode_ID",placeholder:"EUR"}),
+						          new sap.m.Label({text:"Status"}),
+						          new sap.m.Input({maxLength: 20,id: "Status_ID",placeholder:"Available"}),
+						          new sap.m.Label({text:"Quantity"}),
+						          new sap.m.Input({type: "Number",maxLength: 20,id: "Quantity_ID",placeholder:"10"}),
+						          new sap.m.Label({text:"UoM"}),
+						          new sap.m.Input({maxLength: 20,id: "UoM_ID",placeholder:"PC"}),
+						          new sap.m.Label({text:"Width"}),
+						          new sap.m.Input({type: "Number", maxLength: 20,id: "Width_ID",placeholder:"87"}),
+						          new sap.m.Label({text:"Depth"}),
+						          new sap.m.Input({type: "Number",maxLength: 20,id: "Depth_ID",placeholder:"45"}),
+						          new sap.m.Label({text:"Height"}),
+						          new sap.m.Input({type: "Number",maxLength: 20,id: "Height_ID",placeholder:"39"}),
+						          new sap.m.Label({text:"DimUnit"}),
+						          new sap.m.Input({maxLength: 20,id: "DimUnit_ID",placeholder:"cm"})*/
+						          ]
+							})
+				     ],
+				     afterClose:function(oEvent){
+				    	 oEvent.getSource().destroy();
+				     }
 				});
-				oDialog.addStyleClass("sapUiContentPadding");
+				oDialog1.addStyleClass("sapUiContentPadding");
 				sap.ui.getCore().byId("Dialog1").open();
 			
         		/*var oNewObject = {
@@ -252,8 +361,7 @@
 				var nSelected = oSelectedItems.length;
 				var sProducts = "";
 
-				alert("selcted="+nSelected);
-
+				//alert("selcted="+nSelected);
 
 				if (nRows > 0 && nSelected > 0) {
 					// Remove last items---
